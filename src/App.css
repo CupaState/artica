@@ -28,11 +28,90 @@
   color: #61dafb;
 }
 
+.bg-black {
+  background-color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url('./assets/main/captures.png') !important;
+}
+
+.arc-dark {
+  background-color: #282c34 !important;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+:root{
+  background-color: #000000;
+}
+
+.container-fluid{
+  margin: 0% !important;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.phoneText{
+  margin-right: 0;
+}
+
+.mailText{
+  transform: translate(-100%, 0);
+}
+
+.carousel-control-next-icon{
+  background-image: url('./assets/main/nextArrow.png') !important;
+  display: flex !important;
+  height: 5% !important;
+  width: 11% !important;
+  position: absolute;
+  bottom: 5%;
+}
+
+.carousel-control-prev-icon{
+  background-image: url("./assets/main/prevArrow.png") !important;
+  display: flex !important;
+  position: absolute;
+  height: 5% !important;
+  width: 11% !important;
+  bottom: 5%;
+}
+
+
+@media screen and (max-width: 980px)
+{
+  .phoneText{
+    margin-right: 0;
+    display: none;
+  }
+
+  .carousel-control-next-icon{
+    display: none !important;
+  }
+
+  .carousel-control-prev-icon{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1300px)
+{
+  .mailText{
+    display: none;
   }
 }
