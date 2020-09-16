@@ -1,0 +1,257 @@
+
+.home-photo-block{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.home-photo-block .home-photo-text{
+    position: absolute;
+    line-height: 45px;
+    overflow: hidden;
+    color: white;
+    margin-top: 24%;
+    margin-left: -27%;
+    transition: all 1s;
+    z-index: 100;
+}
+
+
+.image-block-div1{
+    width: 30%;
+    order: 0;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.image-block-div2{
+    width: 30%;
+    order: 1;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.home-photo-block::after{
+    content:'';
+    width:100%;
+    order:2;
+}
+
+.image-block-div3{
+    width: 30%;
+    order: 3;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.image-block-div4{
+    width: 30%;
+    order: 4;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 27px;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.example-img{
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    transition: all 1s;
+}
+
+.example-img:hover{
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none; /* IE 6-9 */
+}
+
+.next-arrow-i{
+    position: absolute;
+    background-repeat: no-repeat !important;
+    margin-top: 23%;
+    margin-left: -3%;
+    width: 30px;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+.other-services-block{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.other-services-container{
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    text-align: left;
+    padding: 5px;
+}
+
+.other-services-text{
+    position: absolute;
+    color: white;
+    margin-left: 5%;
+}
+
+.other-services-arrow{
+    position: absolute;
+    width: 30px;
+    margin-left: 90%;
+    filter: invert(1);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.promise-block{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.promise-text{
+    margin: auto;
+    color: white;
+
+}
+
+.promise-button-div{
+    margin: auto;
+    margin-left: -20%;
+}
+
+.promise-button{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    border-color: #4fbfc6;
+    border-radius: 50px;
+    outline: none;
+    outline-offset: 0;
+    font-weight: bolder;
+}
+
+.promise-button:focus{
+    outline: none;
+    outline-offset: 0;
+}
+  
+.promise-button:hover{
+    transition: .5s ease;
+    border-color: none;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    outline: none;
+    outline-offset: 0;
+}
+  
+.promise-button:active{
+    border-color: #4fbfc6;
+    border-radius: 50px;
+    outline: none;
+    outline-offset: 0;
+}
+
+.divider{
+    margin-top: 3%;
+    border-top: 1px solid #bbb;
+}
+
+.about-home-block{
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.about-home-text{
+   color: white;
+   font-size: 20px;
+   user-select: none;
+}
+
+.footer-info-block{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.footer-phone-div{
+    position: absolute;
+    align-self: center;
+    margin-top: 2%;
+}
+
+.footer-phone{
+    color: #4fbfc6;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.footer-mail-div{
+    position: absolute;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.footer-mail{
+    align-self: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+span{
+    font-family: "AvenirNextCyr-Regular";
+}

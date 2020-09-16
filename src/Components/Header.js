@@ -46,12 +46,10 @@ export default class Header extends Component {
                             className="d-inline-block align-top logo"
                             alt="logo"
                         />
-                        
                         <img
                         src={Phone}
                         className="phoneText"
-                        href="tel:+79687687976"
-                        onClick={ () => {window.open("tel:+79687687976")}}
+                        onClick={ () => {window.open("tel:+79779613936")}}
                         />
                         
                     </Navbar.Brand>
