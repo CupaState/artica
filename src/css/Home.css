@@ -149,7 +149,12 @@
     margin-left: 90%;
     filter: invert(1);
     opacity: 0.5;
+    transition: all 0.5s;
     cursor: pointer;
+}
+
+.other-services-arrow:hover{
+    transform: rotate(90deg);
 }
 
 .promise-block{
@@ -189,10 +194,11 @@
   
 .promise-button:hover{
     transition: .5s ease;
-    border-color: none;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 2px 0px rgba(8, 8, 8, 0.3);
     outline: none;
     outline-offset: 0;
+    filter: saturate(1);
+    background-color: #4fbfc6;
 }
   
 .promise-button:active{
@@ -242,7 +248,7 @@
 .footer-mail-div{
     position: absolute;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .footer-mail{

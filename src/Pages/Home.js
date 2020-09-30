@@ -1,10 +1,9 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import CarouselBox from "../Components/CarouselBox";
 import facadesArtImg from "../assets/main/facadesArtImg.png";
 import interiorsImg from "../assets/main/interiorsImg.png";
 import restorationImg from "../assets/main/restorationImg.png";
 import aeroImg from "../assets/main/aeroImg.png";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import ButtonUI from "../Components/Button";
 import MyModal from "../Components/MyModal";
 import nextArrowIcon from "../assets/icons/rightarrow.ico"
@@ -17,10 +16,15 @@ class Home extends Component {
         super(props);
         this.state = {
             show: false,
-        }
+        };
+        this.onClose = this.onClose.bind(this);
     }
 
-
+    onClose = (isShow) =>
+    {
+        this.setState({show: isShow});
+    }
+    
     render() {
 
         return (
@@ -143,7 +147,7 @@ class Home extends Component {
                             </span>
                         </div>
                     </div>
-                <MyModal isOpen = {this.state.show}/>
+                <MyModal isOpen = {this.state.show} onClose = {this.onClose}/>
             </>
             
         );

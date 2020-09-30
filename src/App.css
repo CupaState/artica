@@ -1,3 +1,15 @@
+body {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
 .App {
   text-align: center;
   background-color: black;
@@ -33,12 +45,22 @@
   background-color: black;
 }
 
+.navbar-light .navbar-toggler{
+  outline: none;
+  outline-offset: 0;
+}
+
 .navbar-toggler-icon {
   background-image: url('./assets/main/captures.png') !important;
 }
 
 .arc-dark {
   background-color: #282c34 !important;
+}
+
+.nav-link{
+  color: white !important;
+  font-size: 20px !important;
 }
 
 .logo {
@@ -61,21 +83,15 @@
   background-color: #000000;
 }
 
-.container-fluid{
-  margin: 0% !important;
-  display: flex !important;
-  justify-content: space-between;
-}
 
 .phoneText{
   margin-right: 0;
 }
 
 .mailText{
-
-  display: flex;
-  /* transform: translate(-100%, 0); */
   margin-left: -47%;
+  color: white;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -196,7 +212,6 @@
 span{
   font-family: "AvenirNextCyr-Regular";
 }
-
 
 @media screen and (max-width: 980px)
 {

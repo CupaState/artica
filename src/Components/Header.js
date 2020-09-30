@@ -9,8 +9,6 @@ import {
     NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import logo from "../assets/logo.png";
-import burger from "../assets/main/captures.png"
-import styles from "../App.css";
 import Phone from "../assets/main/phone.png"
 import Mail from "../assets/main/mail.png"
 
@@ -28,16 +26,16 @@ export default class Header extends Component {
     render() {
         return (
             <>
-            <Navbar className="primary" collapseOnSelect expand="md" bg="black" expand="false">
+            <Navbar className="primary" collapseOnSelect expand="sm" bg="black" expand="false">
                 <Container fluid>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                        <img
+                        <span
                         src={Mail}
                         className="mailText"
                         href="mail:info@art-tiger-studio.ru"
                         onClick = { () => {window.location='mailto:info@art-tiger-studio.ru?subject='+window.location.href;}}
                         alt="e-mail"
-                        />
+                        >info@art-tiger-studio.ru</span>
                     <Navbar.Brand href="/" >
                         <img
                             src={logo}
@@ -79,6 +77,6 @@ export default class Header extends Component {
             </Router>
             </>
             
-        )
+        );
     }
 }

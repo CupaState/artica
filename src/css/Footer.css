@@ -1,0 +1,81 @@
+.footer-block{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.footer-icon-vk{
+    order: 0;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+}
+
+.footer-icon-fb{
+    position: relative;
+    order: 1;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+}
+
+.footer-icon-yt{
+    position: relative;
+    order: 2;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+}
+
+.footer-icon-inst{
+    position: relative;
+    order: 3;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+}
+
+.footer-icon-whatsapp{
+    position: relative;
+    order: 4;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+}
+
+.footer-icon{
+    width: 40%;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.footer-icon:hover{
+    filter: invert(60%);
+}
+
+.footer-icon:active{
+    width: 30%;
+}
+
+.artica-bottom{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(29, 31, 30, 0.541);
+    margin-top: 3%;
+}
+
+.artica-bottom-text{
+    color: white;
+    line-height: 30px;
+    user-select: none;
+}
