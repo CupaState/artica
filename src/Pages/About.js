@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "../css/About.css";
 import "../css/Facades.css";
 import VideoHideBlock from "../Components/VideoHideBlock";
+import HideBlock from "../Components/HideBlock";
 import Tooltip from "../Components/Tooltip";
 import ButtonUI from "../Components/Button";
 import MyModal from "../Components/MyModal"
@@ -28,6 +29,8 @@ import doneVar3 from "../assets/aboutImg/doneVar3.png";
 
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
+import starFull from "../assets/icons/starFull.png";
+import star from "../assets/icons/star.png";
 
 
 class About extends Component {
@@ -35,9 +38,10 @@ class About extends Component {
     {
         super(props);
         this.state = {
-            uncover: false,
+            uncoverVideo: false,
             show: false,
-            images: doneVar1
+            images: doneVar1,
+            uncover: false,
         };
 
         this.onClose = this.onClose.bind(this);
@@ -205,14 +209,14 @@ class About extends Component {
                         src={nextArrowIcon}
                         onClick = {() =>
                                     {
-                                        this.setState({uncover: !this.state.uncover});
+                                        this.setState({uncoverVideo: !this.state.uncoverVideo});
                                     }
                                     }
                     />
                 </div>
 
                     <VideoHideBlock
-                        isUncover = {this.state.uncover}
+                        isUncover = {this.state.uncoverVideo}
                     />
 
                 <div className="about-work-wrapper">
@@ -313,11 +317,21 @@ class About extends Component {
                 </div>
 
                 <div className="sketch-create-wrapper">
-
-                    <img
-                        src={sourceWall}
-                        className="sketch-create-gallery-source"
-                    />
+                    <div>
+                        <img
+                            src={sourceWall}
+                            className="sketch-create-gallery-source"
+                        />
+                        <div className="sketch-create-gallery-text-div1">
+                            <span className="sketch-create-gallery-num1">
+                                1
+                            </span>
+                            <span className="sketch-create-gallery-text1">
+                                Вы присылаете нам фото объекта и параметры стен
+                            </span>
+                        </div>
+                    </div>
+                    
                     <div className="sketch-create-gallery">
                         <img
                             src={var1}
@@ -334,13 +348,202 @@ class About extends Component {
                             className="sketch-create-gallery-img3"
                             onMouseEnter={() => {this.setState({images: doneVar3});}}
                         />
+                        <div className="sketch-create-gallery-text-div2">
+                            <span className="sketch-create-gallery-num2">
+                                2
+                            </span>
+                            <span className="sketch-create-gallery-text2">
+                                Мы предлагаем вам изображения<br></br> для нанесения на стену или разрабатываем<br></br> индивидуальный эскиз
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <img
+                            className="sketch-create-gallery-done"
+                            src={this.state.images}
+                            alt="Эскиз"
+                        />
+                        <div  className="sketch-create-gallery-text-div3">
+                            <span className="sketch-create-gallery-num3">
+                                3
+                            </span>
+                            <span className="sketch-create-gallery-text3">
+                                После выбора изображения<br></br> 
+                                показываем, как оно будет выглядеть на поверхности.<br></br>
+                                После утверждения эскиза, рассчёта стоимости и подписания договора - начинаем работы
+                            </span>
+                        </div>    
+                    </div>
+                </div>
+
+                <div className="calculate-header-div">
+                    <span className="calculate-header">
+                        РАССЧЁТ СТОИМОСТИ ИЗОБРАЖЕНИЯ
+                    </span>
+                    <span className="calculate-header-text">
+                        Стоимость изображения зависит от сложности, проработки, количества<br></br> элементов
+                        и цветовой гаммы. <br></br>
+                        Ниже приведены цены нанесения изображения в интерьере за м<sup>2</sup>
+                    </span>
+                </div>
+
+                <div className="calculate-example-wrapper">
+
+                    <div className="calculate-example-div">
+                        <div className="calculate-example-star-div">
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                        </div>
+                        <div className="calculate-example-img"></div>
+                        <span className="calculate-example-price"> 3000 руб.</span>
+                    </div>
+
+                    <div className="calculate-example-div">
+                        <div className="calculate-example-star-div">
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                        </div>
+                        <div className="calculate-example-img"></div>
+                        <span className="calculate-example-price"> 5000 руб.</span>
+                    </div>
+
+                    <div className="calculate-example-div">
+                        <div className="calculate-example-star-div">
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={star}
+                            />
+                        </div>
+                        <div className="calculate-example-img"></div>
+                        <span className="calculate-example-price"> 7000 руб.</span>
+                    </div>
+
+                    <div className="calculate-example-div">
+                        <div className="calculate-example-star-div">
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                            <img
+                                className="calculate-example-star"
+                                src={starFull}
+                            />
+                        </div>
+                        <div className="calculate-example-img"></div>
+                        <span className="calculate-example-price"> 9000 руб.</span>
+                    </div>
+                </div>
+
+                <div
+                    className="divider-div"
+                >
+                    <hr className="facades-divider"></hr>
+                    <div
+                        className="facades-divider-header"
+                    >
+                        <span className="facades-divider-text">
+                            ПОДРОБНЕЕ
+                        </span>
                     </div>
                     <img
-                        className="sketch-create-gallery-done"
-                        src={this.state.images}
-                        alt="Эскиз"
+                        className="divider-arrow"
+                        src={nextArrowIcon}
+                        onClick = {() =>
+                                    {
+                                        this.setState({uncover: !this.state.uncover});
+                                    }
+                                    }
                     />
                 </div>
+                <HideBlock
+                    isUncover = {this.state.uncover}
+                    text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+                />
+
+                <div className="about-footer-info-block">
+                            <div className="footer-phone-div">
+                                <span
+                                    className="footer-phone"
+                                    onClick={ () => {window.open("tel:+79779613936")}}
+                                >
+                                    +7(977)691-39-36
+                                </span>
+                            </div>
+                            <div className="footer-mail-div">
+                                <span
+                                    className="footer-mail"
+                                    href="mail:info@art-tiger-studio.ru"
+                                    onClick={() => {window.location='mailto:info@art-tiger-studio.ru?subject='+window.location.href;}}
+                                >
+                                    info@art-tiger-studio.ru
+                                </span>
+                            </div>
+                        </div>
                 
                 <MyModal isOpen = {this.state.show} onClose = {this.onClose}/>
             </>
