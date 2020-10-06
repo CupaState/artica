@@ -31,7 +31,6 @@ constructor(props)
                     href="https://www.facebook.com/groups/1157346364376526/"
                     target="_blank"
                     onClick={() => {window.href="https://www.facebook.com/groups/1157346364376526/"}}
-
                 >
                     <img
                         src={facebook}

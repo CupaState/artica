@@ -12,7 +12,7 @@ export default class Button extends Component {
     render() {
         return (
             <button className={this.props.classNameButton} onClick = {this.props.onClick}>
-                <text className="textButtonUI">{this.props.text}</text>
+                <span className="textButtonUI">{this.props.text}</span>
             </button>
         )
     }

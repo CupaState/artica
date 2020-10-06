@@ -26,7 +26,10 @@ import var3 from "../assets/aboutImg/var3.png";
 import doneVar1 from "../assets/aboutImg/doneVar1.png";
 import doneVar2 from "../assets/aboutImg/doneVar2.png";
 import doneVar3 from "../assets/aboutImg/doneVar3.png";
-
+import img3000 from "../assets/aboutImg/img3000.png";
+import img5000 from "../assets/aboutImg/img5000.png";
+import img7000 from "../assets/aboutImg/img7000.png";
+import img9000 from "../assets/aboutImg/img9000.png";
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
 import starFull from "../assets/icons/starFull.png";
@@ -413,7 +416,10 @@ class About extends Component {
                                 src={star}
                             />
                         </div>
-                        <div className="calculate-example-img"></div>
+                        <img
+                            src={img3000}
+                            className="calculate-example-img"
+                        />
                         <span className="calculate-example-price"> 3000 руб.</span>
                     </div>
 
@@ -440,7 +446,10 @@ class About extends Component {
                                 src={star}
                             />
                         </div>
-                        <div className="calculate-example-img"></div>
+                        <img
+                            src={img5000}
+                            className="calculate-example-img"
+                        />
                         <span className="calculate-example-price"> 5000 руб.</span>
                     </div>
 
@@ -467,7 +476,10 @@ class About extends Component {
                                 src={star}
                             />
                         </div>
-                        <div className="calculate-example-img"></div>
+                        <img
+                            src={img7000}
+                            className="calculate-example-img"
+                        />
                         <span className="calculate-example-price"> 7000 руб.</span>
                     </div>
 
@@ -494,7 +506,10 @@ class About extends Component {
                                 src={starFull}
                             />
                         </div>
-                        <div className="calculate-example-img"></div>
+                        <img
+                            src={img9000}
+                            className="calculate-example-img"
+                        />
                         <span className="calculate-example-price"> 9000 руб.</span>
                     </div>
                 </div>

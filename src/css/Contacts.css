@@ -1,0 +1,144 @@
+.contacts-header-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.contacts-header{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+}
+
+.contact-phone-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: 7%;
+}
+
+.contact-phone-img{
+    width: 44px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.contact-phone-number{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.contact-phone-text{
+    color: white;
+    font-size: 20px;
+    user-select: none;
+}
+
+.contacts-button-div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+.contact-mail-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: 7%;
+}
+
+.contact-mail-img{
+    width: 44px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.contact-mail-text{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.contact-link-text-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.contact-link-text{
+    color: white;
+    font-size: 25px;
+    user-select: none;
+}
+
+.contact-link-icons-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+}
+
+.contact-link-icons{
+    width: 50px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.contact-link-icons:hover{
+    filter: invert(70%);
+}
+
+
+.contact-map-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.contacts-info-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 51%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contacts-info-header{
+    color: white;
+    font-size: 40px;
+    user-select: none;
+}
+
+.contacts-info-text{
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+    user-select: none;
+}
