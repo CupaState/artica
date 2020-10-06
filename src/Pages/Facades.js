@@ -10,7 +10,7 @@ import windowImg from "../assets/facadesImg/window.png";
 import waitingRoom from "../assets/facadesImg/WaitingRoom.png";
 
 import ModalImageGallery from "../Components/ModalImageGallery";
-import Gallery from "../Components/Gallery"
+import Gallery from "../Components/Gallery";
 
 
 // import Lightbox from 'react-lightbox-component';
@@ -132,6 +132,7 @@ class Facades extends Component {
                     </div>
                         <FacadesHideBlock
                             isUncover = {this.state.uncover}
+                            text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
                         />
                         <div className="wrapper-gallery-part">
                             <span className = "gallery-header">
@@ -493,9 +494,10 @@ class Facades extends Component {
                         <div className="vk-gallery-wrapper">
                             <a className="link-vk-gallery"
                                 href="https://vk.com/album-12967671_238254691"
+                                target="_blank"
                                 title="Галерея ВКонтакте"
                                 alt="Галерея ВКонтакте"
-                                onClick={() => {window.location.href="https://vk.com/album-12967671_238254691"}}
+                                onClick={() => {window.href="https://vk.com/album-12967671_238254691"}}
                             >
                                 <span className="link-vk-gallery-text">
                                     Посмотреть ещё больше идей в нашей группе ВК

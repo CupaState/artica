@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Carousel from "react-bootstrap/Carousel";
-import ButtonUI from "./Button"
 import "../css/Carousel.css"
 
 import carousel1 from "../assets/carousel/carousel1.png";

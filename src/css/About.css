@@ -1,0 +1,220 @@
+.about-header-div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 3%;;
+}
+
+.about-header-text{
+    color: white;
+    font-size: 30px;
+    user-select: none;
+}
+
+.how-to-work-wrapper{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    flex-flow: wrap;
+    width: 80%;
+}
+
+.how-to-work-div{
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 11%;
+    user-select: none;
+}
+
+.how-to-work-num{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 100px;
+    color: white;
+    margin: 0 auto;
+}
+
+.how-to-work-img-div{
+    width: 200px;
+    height: 200px;
+}
+
+.how-to-work-img{
+    margin-top: 20%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.how-to-work-div1{
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 11%;
+    user-select: none;
+}
+
+.how-to-work-img-div1{
+    margin-left: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.how-to-work-img1{
+    margin-top: 10%;
+    width: 40%;
+    cursor: pointer;
+}
+
+.how-to-work-text{
+    position: absolute;
+    color: white;
+    left: 0%;
+}
+
+.how-to-work-text1{
+    position: absolute;
+    color: white;
+    left: 0%;
+}
+
+.facades-divider{
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid #4fbfc6;
+    z-index: 0;
+}
+
+.about-work-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    user-select: none;
+}
+
+.about-work-item{
+    position: relative;
+    margin: 4%;
+}
+
+.about-work-img-block{
+    height: 200px;
+}
+
+.about-work-img{
+    width: 60%;
+}
+
+.about-work-blue-text{
+    position: absolute;
+    color:  #4fbfc6;
+    top: 60%;
+    left: 0%;
+
+}
+
+.about-work-white-text{
+    position: absolute;
+    color: white;
+    top: 100%;
+    left: 0%;
+    font-size: 15px;
+}
+
+.about-promise-block{
+    display: flex;
+    position: relative;
+    margin-top: 15%;
+}
+
+.sketch-create{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.sketch-create-header{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    user-select: none;
+}
+
+.sketch-create-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap:  nowrap;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7%;
+    transition: all 1s;
+}
+
+.sketch-create-gallery-source{
+    user-select: none;
+}
+
+.sketch-create-gallery-done{
+    user-select: none;
+    width: 383px;
+}
+
+.sketch-create-gallery{
+    margin: 0 auto;
+}
+
+.sketch-create-gallery-img1{
+    filter: brightness(70%);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.sketch-create-gallery-img2{
+    filter: brightness(70%);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: all 1s;
+} 
+
+.sketch-create-gallery-img3{
+    filter: brightness(70%);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.sketch-create-gallery-img1:hover{
+    filter: brightness(100%);
+}
+
+.sketch-create-gallery-img2:hover{
+    filter: brightness(100%);
+}
+
+.sketch-create-gallery-img3:hover{
+    filter: brightness(100%);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+span{
+    font-family: "AvenirNextCyr-Regular";
+  }

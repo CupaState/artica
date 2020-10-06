@@ -18,6 +18,9 @@
     margin: 10% auto; 
     transform: translateX(-50%);
     user-select: none;
+    -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
 }
 
 .gallery-back-arrow{

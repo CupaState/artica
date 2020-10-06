@@ -17,41 +17,60 @@ constructor(props)
         return (
             <>
             <div className="footer-block">
-                <div className="footer-icon-vk">
+                <a className="footer-icon-vk"
+                    href="https://vk.com/arttiger_catalog"
+                    target="_blank"
+                    onClick={() => {window.href="https://vk.com/arttiger_catalog"}}
+                >
                     <img
                         src={vk}
                         className="footer-icon"
-                        onClick={() => {window.location.href="https://vk.com/arttiger_catalog"}}
                     />
-                </div>
-                <div className="footer-icon-fb">
+                </a>
+                <a className="footer-icon-fb"
+                    href="https://www.facebook.com/groups/1157346364376526/"
+                    target="_blank"
+                    onClick={() => {window.href="https://www.facebook.com/groups/1157346364376526/"}}
+
+                >
                     <img
                         src={facebook}
                         className="footer-icon"
-                        onClick={() => {window.location.href="https://www.facebook.com/groups/1157346364376526/"}}
                     />
-                </div>
-                <div className="footer-icon-yt">
+                </a>
+                <a className="footer-icon-yt"
+                    href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"
+                    target="_blank"
+                    onClick={() => {window.href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"}}
+
+                >
                     <img
                         src={youtoube}
                         className="footer-icon"
-                        onClick={() => {window.location.href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"}}
                     />
-                </div>
-                <div className="footer-icon-inst">
+                </a>
+                <a className="footer-icon-inst"
+                    href="https://www.instagram.com/art_tiger_/"
+                    target="_blank"
+                    onClick={() => {window.href="https://www.instagram.com/art_tiger_/"}}
+
+                >
                     <img 
                         src={instagram}
                         className="footer-icon"
-                        onClick={() => {window.location.href="https://www.instagram.com/art_tiger_/"}}
                     />
-                </div>
-                <div className="footer-icon-whatsapp">
+                </a>
+                <a className="footer-icon-whatsapp"
+                    href="https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании"
+                    target="_blank"
+                    onClick={() => {window.open('https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании')}}
+
+                >
                     <img 
                         src={whatsapp}
                         className="footer-icon"
-                        onClick={() => {window.open(' https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании')}}
                     />
-                </div>
+                </a>
             </div>
             <div className="artica-bottom">
                 <span className="artica-bottom-text">

@@ -15,7 +15,7 @@ export default class MyModal extends Component
     {
         const show = false;
             return (
-                <Modal show = {this.props.isOpen} onHide = {()=>{this.props.onClose(show)}}>
+                <Modal className="modal-wrapper" show = {this.props.isOpen} onHide = {()=>{this.props.onClose(show)}}>
                     <Modal.Body>
                         <img fluid
                             src={closeButton}

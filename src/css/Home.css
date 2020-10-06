@@ -167,6 +167,7 @@
 .promise-text{
     margin: auto;
     color: white;
+    user-select: none;
 
 }
 

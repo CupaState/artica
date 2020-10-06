@@ -1,0 +1,32 @@
+.tooltip-text{
+    position: absolute;
+    color: white;
+    padding: 5px;
+    top: -50px;
+    left: 80%;
+    background-color:black;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+    box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+}
+
+.tooltip-question{
+    position: absolute;
+    filter: invert(100%);
+    opacity: 0;
+    width: 10%;
+    right: 5%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.how-to-work-div:hover .tooltip-question{
+    opacity: 1.0;
+}
+
+.how-to-work-div1:hover .tooltip-question{
+    opacity: 1.0;
+}
