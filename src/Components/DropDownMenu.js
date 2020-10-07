@@ -1,0 +1,162 @@
+import React, { Component } from 'react';
+import "../css/DropDownMenu.css";
+import MenuOther from "../Components/MenuOther";
+
+import arrow from "../assets/icons/rightarrow.ico";
+import vkIcon from "../assets/menuIcons/vkIcon.ico";
+import instagramIcon from "../assets/menuIcons/instagramIcon.ico";
+import facebookIcon from "../assets/menuIcons/facebookIcon.ico";
+import whatsappIcon from "../assets/menuIcons/whatsappIcon.ico";
+import youtubeIcon from "../assets/menuIcons/youtubeIcon.ico";
+
+
+export default class DropDownMenu extends Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            isShowOther: false,
+        }
+        this.closeOther = this.closeOther.bind(this);
+    }
+
+    closeOther(isShowOther)
+    {
+        this.setState({isShowOther: isShowOther})
+    }
+
+    render() {
+        const isShowMenu = this.props.isShowMenu
+        return (
+            <>
+                {
+                    isShowMenu &&
+                    <div className="menu-wrapper">
+                        <img
+                            src={arrow}
+                            className="menu-arrow"
+                            onClick= {() => {this.props.closeMenu(false)}}
+                        />
+                        <a
+                            href="/facades"
+                            target="_blank"
+                            className="menu-main-link1"
+                        >
+                            РОСПИСЬ ФАСАДОВ
+                        </a>
+                        <a
+                            href="/interiors"
+                            target="_blank"
+                            className="menu-main-link"
+                        >
+                            ОФОРМЛЕНИЕ ИНТЕРЬЕРОВ
+                        </a>
+                        <a
+                            href="/restoration"
+                            target="_blank"
+                            className="menu-main-link"
+                        >
+                            РЕСТАВРАЦИЯ
+                        </a>
+                        <a
+                            href="/airbrushing"
+                            target="_blank"
+                            className="menu-main-link"
+                        >
+                            АЭРОГРАФИЯ
+                        </a>
+                        <div className="menu-other-div">
+                            <span className="menu-other-text">
+                                ДРУГИЕ УСЛУГИ
+                            </span>
+                            <img
+                                src={arrow}
+                                className="menu-other-arrow"
+                                onClick = {() => {this.setState({isShowOther: !this.state.isShowOther})}}
+                            />
+                            <MenuOther isShowOther = { this.state.isShowOther }/>
+                        </div>
+
+                        <a
+                            href="/contacts"
+                            target="_blank"
+                            className="menu-link1"
+                        >
+                            О КОМПАНИИ
+                        </a>
+                        <a
+                            href="/about"
+                            target="_blank"
+                            className="menu-link"
+                        >
+                            КАК МЫ РАБОТАЕМ
+                        </a>
+                        <a
+                            href="/contacts"
+                            target="_blank"
+                            className="menu-link"
+                        >
+                            КОНТАКТЫ
+                        </a>
+
+                        <div className="menu-icon-wrapper">
+                            <a
+                                className="menu-icon"
+                                href="https://vk.com/arttiger_catalog"
+                                target="_blank"
+                            >
+                                <img
+                                    src={vkIcon}
+                                    className="menu-icon-img"
+                                />
+                            </a>
+                            <a
+                                className="menu-icon"
+                                href="https://www.instagram.com/art_tiger_/"
+                                target="_blank"
+                            >
+                                <img
+                                    src={instagramIcon}
+                                    className="menu-icon-img"
+                                />
+                            </a>
+                            <a
+                                className="menu-icon"
+                                href="https://www.facebook.com/groups/1157346364376526/"
+                                target="_blank"
+                            >
+                                <img
+                                    src={facebookIcon}
+                                    className="menu-icon-img"
+                                />
+                            </a>
+                            <a
+                                className="menu-icon"
+                                href="https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании"
+                                target="_blank"
+                                onClick={() => {window.open('https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании')}}
+                            >
+                                <img
+                                    src={whatsappIcon}
+                                    className="menu-icon-img"
+                                />
+                            </a>
+                            <a
+                                className="menu-icon"
+                                href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"
+                                target="_blank"
+                            >
+                                <img
+                                    src={youtubeIcon}
+                                    className="menu-icon-img"
+                                />
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                }
+            </>
+        )
+    }
+}

@@ -1,0 +1,144 @@
+.menu-wrapper{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 70%;
+    z-index: 9999;
+    height:auto;
+    background-color: rgb(47, 46, 46);
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.menu-arrow{
+    position: absolute;
+    filter: invert(100%);
+    width: 7%;
+    left: 5%;
+    top: 9%;
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+.menu-arrow:hover{
+    transform: rotate(90deg);
+}
+
+.menu-other-arrow{
+    filter: invert(100%);
+    width: 8%;
+    margin-left: 3%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.menu-other-arrow:hover{
+    transform: rotate(90deg);
+}
+
+.menu-main-link1{
+    margin-top: 2%;
+    margin-left: 20%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.menu-main-link1:hover{
+    color: rgb(179, 177, 177) !important;
+}
+
+.menu-main-link{
+    color: white;
+    padding: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.menu-main-link:hover{
+    color: rgb(179, 177, 177) !important;
+}
+
+.menu-other-div{
+    align-self: flex-start;
+    margin-left: 3%;
+    margin-top: 2%;
+    transition: all 0.5s;
+}
+
+.menu-other-text{
+    color: white;
+    padding: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-other-text:hover{
+    color: rgb(179, 177, 177) !important;
+}
+
+.menu-link1{
+    color:rgb(179, 177, 177) !important;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 20px;
+    align-self: flex-start;
+    transition: all 0.5s;
+}
+
+.menu-link1:hover{
+    color: white !important;
+}
+
+.menu-link{
+    color:rgb(179, 177, 177) !important;
+    padding: 10px;
+    padding-top: 15px;
+    margin-left: 20%;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.menu-link:hover{
+    color: white !important;
+}
+
+.menu-icon-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.menu-icon{
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.menu-icon-img{
+    filter: invert(100%);
+    width: 70%;
+}
+
+.menu-icon:hover{
+    filter: invert(80%);
+}
+
+a {
+    color: white !important;
+    text-decoration: none
+  }

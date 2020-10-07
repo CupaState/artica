@@ -1,0 +1,37 @@
+.header-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+}
+
+.header-captures{
+    position: absolute;
+    left: 1%;
+    cursor: pointer;
+}
+
+.header-logo{
+    padding: 1%;
+}
+
+.header-logo-img{
+    cursor: pointer;
+}
+
+.header-mail{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 7%;
+    cursor: pointer;
+}
+
+.header-phone{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    right: 2%;
+    cursor: pointer;
+}

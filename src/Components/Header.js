@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import { 
     Navbar,
     Container,
-    Button,
-    Nav,
     FormControl,
+    Nav,
     Form,
     NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import logo from "../assets/logo.png";
-import Phone from "../assets/main/phone.png"
-import Mail from "../assets/main/mail.png"
+import Phone from "../assets/main/phone.png";
+import Mail from "../assets/main/mail.png";
 
 
 import Home from '../Pages/Home';

@@ -20,7 +20,6 @@ constructor(props)
                 <a className="footer-icon-vk"
                     href="https://vk.com/arttiger_catalog"
                     target="_blank"
-                    onClick={() => {window.href="https://vk.com/arttiger_catalog"}}
                 >
                     <img
                         src={vk}
@@ -30,7 +29,6 @@ constructor(props)
                 <a className="footer-icon-fb"
                     href="https://www.facebook.com/groups/1157346364376526/"
                     target="_blank"
-                    onClick={() => {window.href="https://www.facebook.com/groups/1157346364376526/"}}
                 >
                     <img
                         src={facebook}
@@ -40,8 +38,6 @@ constructor(props)
                 <a className="footer-icon-yt"
                     href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"
                     target="_blank"
-                    onClick={() => {window.href="https://www.youtube.com/channel/UCuBoNl2xm6HlkZLc9qR-9TA"}}
-
                 >
                     <img
                         src={youtoube}
@@ -51,8 +47,6 @@ constructor(props)
                 <a className="footer-icon-inst"
                     href="https://www.instagram.com/art_tiger_/"
                     target="_blank"
-                    onClick={() => {window.href="https://www.instagram.com/art_tiger_/"}}
-
                 >
                     <img 
                         src={instagram}

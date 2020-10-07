@@ -1,0 +1,19 @@
+.menu-other-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menu-other-link{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 15%;
+    align-self: flex-start;
+}
+
+.menu-other-link:hover{
+    color: rgb(179, 177, 177) !important;
+}
