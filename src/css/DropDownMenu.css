@@ -24,6 +24,13 @@
     border-radius: 10px;
 }
 
+.menu-wrapper.is-close{
+    position: absolute;
+    left: -9000px;
+    right: 9000px;
+    transition: left 1s, right 1s;
+}
+
 .menu-arrow{
     position: absolute;
     filter: invert(100%);

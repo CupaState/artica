@@ -13,6 +13,9 @@ export default class Tooltip extends Component {
             showQuestion: false,
         };
 
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+
         this.toggle = this.toggle.bind(this);
     }
 
@@ -23,10 +26,31 @@ export default class Tooltip extends Component {
         });
     }
 
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+      }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+      }
+
+    handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+            const wrapper = document.getElementById("wrapper");
+            wrapper.classList.toggle("is-close");
+            setTimeout(this.setState({showQuestion: false}), 1000);
+        }
+      }
+
+
     render() {
 
         return (
-            <div className="tooltip-div">
+            <div className="tooltip-div" ref={this.setWrapperRef} id="wrapper">
                 <img
                     className="tooltip-question"
                     src={questionIcon}

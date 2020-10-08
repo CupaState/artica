@@ -14,7 +14,30 @@ export default class DropDownMenu extends Component {
     constructor(props)
     {
         super(props);
+
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
     }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+      }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+      }
+
+    handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+            const wrapper = document.getElementById("wrapper");
+            wrapper.classList.toggle("is-close");
+            setTimeout(this.props.closeMenu, 1000, false);
+        }
+      }
 
     render() {
         const isShowMenu = this.props.isShowMenu
@@ -24,6 +47,8 @@ export default class DropDownMenu extends Component {
                     isShowMenu &&
                     <div
                         className="menu-wrapper"
+                        ref={this.setWrapperRef}
+                        id="wrapper"
                     >
                         <img
                             src={arrow}
