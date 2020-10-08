@@ -129,6 +129,7 @@ body {
   justify-content: space-between;
   align-content: center;
   font-size: 8;
+  user-select: none;
 }
 
 

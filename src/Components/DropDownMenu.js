@@ -14,15 +14,6 @@ export default class DropDownMenu extends Component {
     constructor(props)
     {
         super(props);
-        this.state = {
-            isShowOther: false,
-        }
-        this.closeOther = this.closeOther.bind(this);
-    }
-
-    closeOther(isShowOther)
-    {
-        this.setState({isShowOther: isShowOther})
     }
 
     render() {
@@ -31,7 +22,9 @@ export default class DropDownMenu extends Component {
             <>
                 {
                     isShowMenu &&
-                    <div className="menu-wrapper">
+                    <div
+                        className="menu-wrapper"
+                    >
                         <img
                             src={arrow}
                             className="menu-arrow"
@@ -65,17 +58,8 @@ export default class DropDownMenu extends Component {
                         >
                             АЭРОГРАФИЯ
                         </a>
-                        <div className="menu-other-div">
-                            <span className="menu-other-text">
-                                ДРУГИЕ УСЛУГИ
-                            </span>
-                            <img
-                                src={arrow}
-                                className="menu-other-arrow"
-                                onClick = {() => {this.setState({isShowOther: !this.state.isShowOther})}}
-                            />
-                            <MenuOther isShowOther = { this.state.isShowOther }/>
-                        </div>
+
+                        <MenuOther/>
 
                         <a
                             href="/contacts"

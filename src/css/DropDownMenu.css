@@ -12,6 +12,12 @@
     background-color: rgb(47, 46, 46);
     flex-wrap: wrap;
     flex-direction: column;
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -24,24 +30,12 @@
     width: 7%;
     left: 5%;
     top: 9%;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     transition: all 0.5s;
 }
 
 .menu-arrow:hover{
-    transform: rotate(90deg);
-}
-
-.menu-other-arrow{
-    filter: invert(100%);
-    width: 8%;
-    margin-left: 3%;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.menu-other-arrow:hover{
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 .menu-main-link1{
@@ -66,25 +60,6 @@
 }
 
 .menu-main-link:hover{
-    color: rgb(179, 177, 177) !important;
-}
-
-.menu-other-div{
-    align-self: flex-start;
-    margin-left: 3%;
-    margin-top: 2%;
-    transition: all 0.5s;
-}
-
-.menu-other-text{
-    color: white;
-    padding: 10px;
-    margin-left: 20%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.menu-other-text:hover{
     color: rgb(179, 177, 177) !important;
 }
 
@@ -126,7 +101,6 @@
 .menu-icon{
     padding: 10px;
     cursor: pointer;
-
 }
 
 .menu-icon-img{
@@ -135,10 +109,35 @@
 }
 
 .menu-icon:hover{
-    filter: invert(80%);
+    filter: invert(30%);
 }
 
 a {
     color: white !important;
     text-decoration: none
   }
+
+  @-webkit-keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
