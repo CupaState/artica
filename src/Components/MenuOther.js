@@ -31,7 +31,7 @@ export default class MenuOther extends Component {
                     onClick = {() => { this.handleClick() }}
                 />
                 <div
-                    className="wrapper"
+                    className="wrapper-other"
                     id="wrap"
                 >
                     <a      

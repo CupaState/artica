@@ -34,12 +34,12 @@ class Home extends Component {
                     <span className="textBelowCarousel">
                     Опишите свою задачу или прикрепите дизайн<br></br> проект,
                      и мы свяжемся с Вами для консультации
+                     </span>
                      <ButtonUI
                        classNameButton = "callButtonUI"
                        text = "Заказать обратный звонок"
                        onClick = {() => {this.setState({show: !this.state.show})}}
                     />
-                    </span>
                 </div>
 
                     <div className="home-photo-block">

@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+import Preloader from "./Preloader/Preloader";
 import NewHeader from "./Components/NewHeader";
+import Footer from "./Components/Footer";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+function App (){
 
-function App() {
   return (
     <div className="App">
       <NewHeader/>

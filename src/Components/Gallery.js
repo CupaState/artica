@@ -10,7 +10,30 @@ export default class Gallery extends Component {
     {
         super(props);
         this.imgArray = this.props.ImageArr;
+
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
     }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+      }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+      }
+
+    handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+            const wrapper = document.getElementById("wrapper-big-gallery");
+            wrapper.classList.add("is-close");
+            setTimeout(this.props.closeGallery, 1000, false);
+        }
+      }
 
 
     render() {
@@ -19,7 +42,11 @@ export default class Gallery extends Component {
             <div>
                 {
                     isShowGallery &&
-                    <div className="gallery-component-wrapper">
+                    <div
+                        className="gallery-component-wrapper"
+                        id="wrapper-big-gallery"
+                        ref={this.setWrapperRef}
+                    >
                         <div className="gallery-component">
                             <MapImgArray ImageArr={this.imgArray} />
                             
@@ -27,7 +54,12 @@ export default class Gallery extends Component {
                         <img
                                 src={closeButton}
                                 className="gallery-component-close-btn"
-                                onClick={() => {this.props.closeGallery(false);}}
+                                onClick = {() => {
+                                    const wrapper = document.getElementById("wrapper-big-gallery");
+                                    wrapper.classList.add("is-close");
+                                    setTimeout(this.props.closeGallery, 1000, false);
+                                }}
+                                // onClick={() => {this.props.closeGallery(false);}}
                             />
                     </div>
                 }

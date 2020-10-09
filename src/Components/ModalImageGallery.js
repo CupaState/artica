@@ -12,7 +12,7 @@ export default class ModalImageGallery extends Component {
         super(props);
         this.state = {
             thisSlide: this.props.ImgArrIndex,
-        }
+        };
 
         this.prevSlide = this.prevSlide.bind(this);
         this.forwardSlide = this.forwardSlide.bind(this);
@@ -70,12 +70,18 @@ export default class ModalImageGallery extends Component {
             return(
             <div>
                 { isShowImage && 
-                <div className="gallery-wrapper-block-show"
+                <div
+                    className="gallery-wrapper-block-show"
+                    id="animate"
                 >
                     <img
                         src={closeButton}
                         className="gallery-close-btn"
-                        onClick={() => {this.props.closeImage(false);}}
+                        id="close"
+                        ref={this.setWrapperRef}
+                        onClick = {() => { const wrapper = document.getElementById("animate");
+                                            wrapper.classList.add("is-close");
+                                            setTimeout(this.props.closeImage, 1000, false);}}
                     />
                     <img
                         src={backArrow}

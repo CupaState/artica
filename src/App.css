@@ -114,58 +114,49 @@ body {
 }
 
 .blockBelowCarousel{
-  position: relative;
-  background-color: black;
   display: flex;
-  margin: 5%;    
-
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  flex-wrap: wrap;
 }
 
 .textBelowCarousel{
-  position: relative;
   color: white;
-  margin-left: 25%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
   font-size: 8;
   user-select: none;
+  margin-right: 2.5%;
 }
 
 
 .imgCallButton{
-  position: absolute;
-  display: flex;
   height: 100%;
   padding-left: 7%;
   align-content: space-between;
 }
 
 .textButtonUI{
-  display: flex;
-  align-content: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden
-
+  overflow: hidden;
+  font-size: 15px;
+  padding: 3px;
 }
 
 .callButtonUI{
-  position: absolute;
   display: flex;
-  height: 100% !important;
-  width: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
   color: white;
   background-color: black;
   border-color: #4fbfc6;
   border-radius: 50px;
   align-content: space-between;
-  left: 110%;
   outline: none;
   outline-offset: 0;
+  flex-wrap: wrap;
+  margin-left: 2.5%;
 }
 
 .callButtonUI:focus{
@@ -210,55 +201,25 @@ body {
   left: 21%;
 }
 
-span{
-  font-family: "AvenirNextCyr-Regular";
-}
-
-@media screen and (max-width: 980px)
+@media screen and (max-width: 1300px)
 {
-  .phoneText{
-    margin-right: 0;
+  .mailText{
     display: none;
   }
-
-  .carousel-control-next-icon{
-    display: none !important;
-  }
-
-  .carousel-control-prev-icon{
-    display: none !important;
-  }
-
-  .imgCallButton{
-    position: absolute;
-    display: flex;
-    height: 100%;
-    bottom: 0;
-  }
 }
 
-@media screen and (max-width: 1100px)
+@media screen and (max-width: 1200px)
 {
+  .blockBelowCarousel{
+    margin-left: -40%;
+  }
+
   .callButtonUI{
-    position: absolute;
-    display: flex;
-    height: 100% !important;
-    width: 50%;
-    color: white;
-    background-color: black;
-    border-color: #4fbfc6;
-    border-radius: 50px;
-    align-content: space-between;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    bottom: -250%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    outline: none;
-    outline-offset: 0;
+    width: 10%;
+  }
+
+  .textButtonUI{
+    font-size: 12px;
   }
 
   .textBelowCarousel{
@@ -271,12 +232,68 @@ span{
   }
 }
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1000px)
 {
-  .mailText{
+  .blockBelowCarousel{
+    flex-direction: column;
+  }
+
+  .callButtonUI{
+    margin-right: -31%;
+    margin-top: 2%;
+  }
+
+  .phoneText{
+    margin-right: 0;
     display: none;
   }
+
+  /* .carousel-control-next-icon{
+
+  }
+
+  .carousel-control-prev-icon{
+
+  } */
+
+  .imgCallButton{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    bottom: 0;
+  }
 }
+
+@media screen and (max-width: 950px)
+{
+  .callButtonUI{
+    width: 14% !important;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .callButtonUI{
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .callButtonUI{
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 350px)
+{
+  .callButtonUI{
+    width: 40% !important;
+  }
+}
+
+
+
 
 @font-face{
   font-family: "AvenirNextCyr-Regular";
@@ -284,3 +301,41 @@ span{
   font-style: normal; 
   font-weight: normal; 
 }
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:10px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color: rgb(39, 38, 38);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border: 1px solid;
+  border-color: rgb(47, 46, 46);
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: rgb(12, 12, 12);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background-color:#191a1a;
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:10px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar{
+  width: 10px;
+  }
+
+  span{
+    font-family: "AvenirNextCyr-Regular";
+  }

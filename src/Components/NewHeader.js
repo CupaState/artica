@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import "../css/NewHeader.css";
-import { 
-    Navbar,
-    Container,
-    FormControl,
-    Nav,
-    Form,
-    NavDropdown } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import logo from "../assets/logo.png";
-import Phone from "../assets/main/phone.png";
-import Mail from "../assets/main/mail.png";
+import messageMail from "../assets/icons/messageMail.ico";
+import phoneCall from "../assets/icons/phoneCall.ico";
 import captures from '../assets/main/captures.png';
 
 import Home from '../Pages/Home';
@@ -54,6 +47,11 @@ export default class NewHeader extends Component {
                     >
                         info@art-tiger-studio.ru
                     </span>
+                    <img
+                        src={messageMail}
+                        className="mail-icon-header"
+                        onClick={() => {window.location='mailto:info@art-tiger-studio.ru?subject='+window.location.href;}}
+                    />
                     <a className="header-logo"
                         href="/"
                         target="_blank"
@@ -70,6 +68,11 @@ export default class NewHeader extends Component {
                     >
                         +7 (977) 961-39-36
                     </span>
+                    <img
+                        src={phoneCall}
+                        className="phone-icon-header"
+                        onClick={ () => {window.open("tel:+79779613936")}}
+                    />
                 </div>
 
                 <Router>

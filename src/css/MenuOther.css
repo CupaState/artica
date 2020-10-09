@@ -34,7 +34,7 @@
     transform: rotate(90deg);
 }
 
-.wrapper{
+.wrapper-other{
     display: flex;
     position: relative;
     justify-content: center;
@@ -44,7 +44,7 @@
     transition: all 1s;
 }
 
-.wrapper.is-open{
+.wrapper-other.is-open{
     margin-left: 0px;
 }
 

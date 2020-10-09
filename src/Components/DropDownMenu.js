@@ -34,7 +34,7 @@ export default class DropDownMenu extends Component {
     handleClickOutside(event) {
         if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
             const wrapper = document.getElementById("wrapper");
-            wrapper.classList.toggle("is-close");
+            wrapper.classList.add("is-close");
             setTimeout(this.props.closeMenu, 1000, false);
         }
       }
@@ -53,7 +53,11 @@ export default class DropDownMenu extends Component {
                         <img
                             src={arrow}
                             className="menu-arrow"
-                            onClick= {() => {this.props.closeMenu(false)}}
+                            onClick = {() => {
+                                const wrapper = document.getElementById("wrapper");
+                                wrapper.classList.add("is-close");
+                                setTimeout(this.props.closeMenu, 1000, false);
+                            }}
                         />
                         <a
                             href="/facades"
