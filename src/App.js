@@ -1,9 +1,10 @@
-import React, { Component, Suspense, lazy } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import NewHeader from "./Components/NewHeader";
 import Footer from "./Components/Footer";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component{
   constructor(props)
@@ -15,12 +16,17 @@ class App extends Component{
   {
     return (
       <div>
-      <div
-        className="hidden-app"
-        id="preloader"
-      >
-        <span className="preloader-text">ARTIKA</span>
-      </div>
+        <div
+          className="cssload-preloader"
+          id="preloader"
+        >
+          <span>A</span>
+          <span>R</span>
+          <span>T</span>
+          <span>I</span>
+          <span>K</span>
+          <span>A</span>
+        </div>
       <div className="App" id="app-wrapper">
         <NewHeader/>
         <Footer/>
@@ -33,10 +39,13 @@ class App extends Component{
 
 window.onload = function()
 {
-  const wrapper = document.getElementById("app-wrapper");
-  wrapper.classList.add("load");
-  const preloader = document.getElementById("preloader")
-  preloader.classList.add("hide");
+  setTimeout(()=>{
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("hide");
+    const wrapper = document.getElementById("app-wrapper");
+    wrapper.classList.add("load");
+  }, 1000)
+
 }
 
 export default App;
