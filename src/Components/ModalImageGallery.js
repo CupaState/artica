@@ -81,7 +81,7 @@ export default class ModalImageGallery extends Component {
                         ref={this.setWrapperRef}
                         onClick = {() => { const wrapper = document.getElementById("animate");
                                             wrapper.classList.add("is-close");
-                                            setTimeout(this.props.closeImage, 1000, false);}}
+                                            setTimeout(this.props.closeImage, 500, false);}}
                     />
                     <img
                         src={backArrow}

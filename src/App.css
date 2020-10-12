@@ -332,13 +332,10 @@ span:nth-last-child(3) {
   text-align: center;
   background-color: black;
   filter: none;
-  /* margin-left: 0px; */
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
 @-webkit-keyframes slideInDown {
