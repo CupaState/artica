@@ -84,7 +84,7 @@ export default class ModalImageGallery extends Component {
                     id="animate"
                     onClick={
                         (event) => {
-                            if(event.target !== document.getElementById("modal-body"))
+                            if(event.target === document.getElementById("modal-body"))
                             {
                                 const wrapper = document.getElementById("animate");
                                 wrapper.classList.add("is-close");
