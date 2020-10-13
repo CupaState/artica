@@ -47,12 +47,14 @@ class Home extends Component {
                             <img 
                                 src={facadesArtImg}
                                 className="example-img"
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/facades')}}
                             />
                             <span className="home-photo-text">Роспись Фасадов</span>
                             <img
                                 className="next-arrow-i"
                                 src={nextArrowIcon}
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/facades')}}
                             />
                         </div>
@@ -60,12 +62,14 @@ class Home extends Component {
                             <img 
                                 src={interiorsImg}
                                 className="example-img"
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/interiors')}}
                             />
                             <span className="home-photo-text">Интерьеры</span>
                             <img
                                 className="next-arrow-i"
                                 src={nextArrowIcon}
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/interiors')}}
                             />
                         </div>
@@ -73,12 +77,14 @@ class Home extends Component {
                             <img 
                                 src={restorationImg}
                                 className="example-img"
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/restoration')}}
                             />
                             <span className="home-photo-text">Реставрация</span>
                             <img
                                 className="next-arrow-i"
                                 src={nextArrowIcon}
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/restoration')}}
                             />
                         </div>
@@ -86,12 +92,14 @@ class Home extends Component {
                             <img 
                                 src={aeroImg}
                                 className="example-img"
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/airbrushing')}}
                             />
                             <span className="home-photo-text">Аэрография на авто и мото</span>
                             <img
                                 className="next-arrow-i"
                                 src={nextArrowIcon}
+                                alt="перейти на страницу"
                                 onClick={()=>{window.open('/airbrushing')}}
                             />
                         </div>
@@ -102,6 +110,7 @@ class Home extends Component {
                             <img
                                 className="other-services-arrow"
                                 src={nextArrowIcon}
+                                alt="другие услуги"
                             />
                         </div>
                     </div>
