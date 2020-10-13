@@ -1,26 +1,58 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Modal, Form, Row, Col } from "react-bootstrap";
 import ButtonUI from "./Button";
-import closeButton from "../assets/icons/closeButton.svg"
-import "../css/Modal.css"
+import closeButton from "../assets/icons/closeButton.svg";
+import "../css/Modal.css";
+import PhoneInput, { isPossiblePhoneNumber } from 'react-phone-number-input';
 
-export default class MyModal extends Component
+export default function MyModal(props)
 {
-    constructor(props)
-    {
-        super(props);
-    }
 
-    render()
-    {
         const show = false;
+
+        let buttonAddClass = "order-modal-btn";
+        let inputAddClass = "";
+        let disabled = true
+
+        const [value, setValue] = useState();
+
+        const phoneNumber = isPossiblePhoneNumber(value);
+
+        if(phoneNumber)
+        {
+            inputAddClass = "ok";
+            disabled = false;
+        }
+
+        const checkInput = function (value)
+        {
+            if(!isPossiblePhoneNumber(value))
+            {
+                inputAddClass="error";
+                buttonAddClass= "order-modal-error"
+                disabled = true;
+            }
+            else if(inputAddClass === "")
+            {
+                inputAddClass="";
+            }
+            else
+            {
+                inputAddClass="ok";
+                disabled = false;
+            }
+        }
+
+        checkInput(value);
+
             return (
-                <Modal className="modal-wrapper" show = {this.props.isOpen} onHide = {()=>{this.props.onClose(show)}}>
+                <Modal className="modal-wrapper" show = {props.isOpen} onHide = {()=>{props.onClose(show)}}>
                     <Modal.Body>
                         <img fluid
                             src={closeButton}
+                            alt="закрыть"
                             className = "close-modal-btn"
-                            onClick = {()=>{this.props.onClose(show)}}
+                            onClick = {()=>{props.onClose(show)}}
                         />
                         <Form action="telegram.php" method="POST" >
                             <Row className="row-modal-content">
@@ -28,14 +60,20 @@ export default class MyModal extends Component
                                     <Form.Control type="text" placeholder="Введите имя" />
                                 </Col>
                                 <Col>
-                                    <Form.Control type="text" placeholder="Введите телефон"/>
+                                    <PhoneInput
+                                        placeholder="Введите телефон*"
+                                        international
+                                        value={value}
+                                        onChange={setValue}
+                                        className={inputAddClass}
+                                    />
                                 </Col>
                                 <Col className = "col-modal-btn">
                                     <ButtonUI
-                                    classNameButton="order-modal-btn"
-                                    text = "Заказать"
-                                    onClick = {this.handleClose}
-                                    type="submit"
+                                        classNameButton={buttonAddClass}
+                                        text = "Заказать"
+                                        type="submit"
+                                        disabled={disabled}
                                     />
                                 </Col>
                             </Row>
@@ -50,7 +88,5 @@ export default class MyModal extends Component
                     </Modal.Body>
                 </Modal>
             );
-    }
-
     
 }

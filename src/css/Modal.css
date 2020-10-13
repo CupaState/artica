@@ -42,24 +42,19 @@
     border-color: #4fbfc6;
     border-radius: 50px;
     align-content: space-between;
-    outline: none;
-    outline-offset: 0;
     font-weight: bolder;
-
-}
-
-.order-modal-btn:focus{
     outline: none;
     outline-offset: 0;
-  }
+    cursor: pointer;
+}
   
   .order-modal-btn:hover{
     transition: .5s ease;
     background-color: #4fbfc6;
     border-color: none;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
     outline: none;
     outline-offset: 0;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
   }
   
   .order-modal-btn:active{
@@ -67,6 +62,22 @@
     border-radius: 50px;
     outline: none;
     outline-offset: 0;
+  }
+
+  .order-modal-error{
+    position: absolute;
+    display: block;
+    height: 100% !important;
+    width: 150px;
+    color: #dd4c4c;
+    background-color:  #c85757;
+    border-color: #c84d4d;
+    border-radius: 50px;
+    align-content: space-between;
+    font-weight: bolder;
+    outline: none;
+    outline-offset: 0;
+    cursor: pointer;
   }
 
 .col-modal-btn{
@@ -124,4 +135,47 @@
     margin-top: 2% !important;
     margin-left: 0.7% !important;
     align-content: space-between;
+}
+
+.PhoneInputCountryIconImg{
+    position: absolute;
+    width: 10%;
+    top: -40%;
+    left: 45%;
+}
+
+.PhoneInputCountrySelect{
+    display: none;
+}
+
+.PhoneInputInput{
+    width: 170px !important;
+    height: 50px !important; 
+    color: rgba(161, 155, 155, 0.623);
+    border-radius: 20px !important;
+    background-color: rgba(32, 30, 30, 0.808) !important;
+    border: none !important;
+    outline: none;
+    outline-offset: 0;
+    color: rgb(143, 129, 129);
+}
+
+.ok{
+    position: absolute;
+    width: 170px !important;
+    height: 50px !important; 
+    border-radius: 20px !important;
+    background-color: rgba(9, 255, 0, 0.808) !important;
+    outline: none;
+    outline-offset: 0;
+}
+
+.error{
+    position: absolute;
+    width: 170px !important;
+    height: 50px !important; 
+    border-radius: 20px !important;
+    background-color: rgba(41, 36, 36, 0.808) !important;
+    outline: none;
+    outline-offset: 0;
 }

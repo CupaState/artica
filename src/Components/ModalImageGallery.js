@@ -57,7 +57,7 @@ export default class ModalImageGallery extends Component {
 
     UNSAFE_componentWillReceiveProps(nextProps)
     {
-        if(nextProps.ImgArrIndex != this.props.ImgArrIndex)
+        if(nextProps.ImgArrIndex !== this.props.ImgArrIndex)
         {
             return this.setState({thisSlide: nextProps.ImgArrIndex})
         }
@@ -66,41 +66,66 @@ export default class ModalImageGallery extends Component {
 
     render() {
         const isShowImage = this.props.isShowImage;
+
+        if(isShowImage)
         {
+            document.body.style.overflow="hidden";
+        }
+        else
+        {
+            document.body.style.overflow="";
+        }
+
             return(
             <div>
                 { isShowImage && 
                 <div
                     className="gallery-wrapper-block-show"
                     id="animate"
+                    onClick={
+                        (event) => {
+                            if(event.target !== document.getElementById("modal-body"))
+                            {
+                                const wrapper = document.getElementById("animate");
+                                wrapper.classList.add("is-close");
+                                setTimeout(this.props.closeImage, 500, false);
+                            }
+                        }
+                    }
                 >
-                    <img
-                        src={closeButton}
-                        className="gallery-close-btn"
-                        id="close"
-                        ref={this.setWrapperRef}
-                        onClick = {() => { const wrapper = document.getElementById("animate");
-                                            wrapper.classList.add("is-close");
-                                            setTimeout(this.props.closeImage, 500, false);}}
-                    />
-                    <img
-                        src={backArrow}
-                        className="gallery-back-arrow"
-                        onClick={() => {this.prevSlide(this.state.thisSlide);}}
-                    />
-                    <img
-                        src={forwardArrow}
-                        className="gallery-forward-arrow"
-                        onClick= { () => {this.forwardSlide(this.state.thisSlide);}}
-                    />
-                    <img
-                        src={this.props.ImageArr[this.state.thisSlide]}
-                        className="gallery-img-block"
-                    />              
+                    <div id="modal-body" style={{zIndex: 1000}}>
+                        <img
+                            src={closeButton}
+                            className="gallery-close-btn"
+                            alt="закрыть"
+                            onClick = {() => { const wrapper = document.getElementById("animate");
+                                                wrapper.classList.add("is-close");
+                                                setTimeout(this.props.closeImage, 500, false);}}
+                        />
+                        <img
+                            src={backArrow}
+                            className="gallery-back-arrow"
+                            alt="предыдущий слайд"
+                            onClick={() => {this.prevSlide(this.state.thisSlide);}}
+                        />
+                        <img
+                            src={forwardArrow}
+                            className="gallery-forward-arrow"
+                            alt="следующий слайд"
+                            onClick= { () => {this.forwardSlide(this.state.thisSlide);}}
+                        />
+                        <img
+                            src={this.props.ImageArr[this.state.thisSlide]}
+                            className="gallery-img-block"
+                            alt="изображение"
+                            onClick= { () => {this.forwardSlide(this.state.thisSlide);}}
+                        />  
+                    </div>
+
+            
                 </div>
                 }
             </div>
         );
-        }
     }
 }

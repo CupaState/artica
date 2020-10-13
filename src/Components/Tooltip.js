@@ -54,6 +54,7 @@ export default class Tooltip extends Component {
                 <img
                     className="tooltip-question"
                     src={questionIcon}
+                    alt="подсказка"
                     onClick={() => {this.setState({showQuestion: !this.state.showQuestion});}}
                 />
                 { this.state.showQuestion && 
