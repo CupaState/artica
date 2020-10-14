@@ -48,7 +48,7 @@ export default function MyModal(props)
             return (
                 <Modal className="modal-wrapper" show = {props.isOpen} onHide = {()=>{props.onClose(show)}}>
                     <Modal.Body>
-                        <img fluid
+                        <img
                             src={closeButton}
                             alt="закрыть"
                             className = "close-modal-btn"

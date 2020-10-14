@@ -36,7 +36,6 @@ export default class MenuOther extends Component {
                 >
                     <a      
                         href="#"
-                        target="_blank"
                         className="menu-other-link"
                         id="gonchar"
                     >
@@ -44,7 +43,6 @@ export default class MenuOther extends Component {
                     </a>
                     <a      
                         href="#"
-                        target="_blank"
                         className="menu-other-link"
                         id="uvelir"
                     >

@@ -37,6 +37,7 @@ class Home extends Component {
                      </span>
                      <ButtonUI
                        classNameButton = "callButtonUI"
+                       classNameText = "textButtonUI"
                        text = "Заказать обратный звонок"
                        onClick = {() => {this.setState({show: !this.state.show})}}
                     />
@@ -124,6 +125,7 @@ class Home extends Component {
                             <div className="promise-button-div">
                                 <ButtonUI
                                     classNameButton = "promise-button"
+                                    classNameText = "textButtonUI-promise"
                                     text = "Закажи эскиз"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />

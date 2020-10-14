@@ -62,28 +62,24 @@ export default class DropDownMenu extends Component {
                         />
                         <a
                             href="/facades"
-                            target="_blank"
                             className="menu-main-link1"
                         >
                             РОСПИСЬ ФАСАДОВ
                         </a>
                         <a
                             href="/interiors"
-                            target="_blank"
                             className="menu-main-link"
                         >
                             ОФОРМЛЕНИЕ ИНТЕРЬЕРОВ
                         </a>
                         <a
                             href="/restoration"
-                            target="_blank"
                             className="menu-main-link"
                         >
                             РЕСТАВРАЦИЯ
                         </a>
                         <a
                             href="/airbrushing"
-                            target="_blank"
                             className="menu-main-link"
                         >
                             АЭРОГРАФИЯ

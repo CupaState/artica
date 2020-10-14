@@ -471,19 +471,14 @@ span:nth-last-child(3) {
 
 .textBelowCarousel{
   color: white;
-  font-size: 8;
+  font-size: 19px;
   user-select: none;
   margin-right: 2.5%;
 }
 
-
-.imgCallButton{
-  height: 100%;
-  padding-left: 7%;
-  align-content: space-between;
-}
-
 .textButtonUI{
+  position: absolute;
+  margin: 0 auto;
   overflow: hidden;
   font-size: 15px;
   padding: 3px;
@@ -576,7 +571,6 @@ span:nth-last-child(3) {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    font-size: 8;
   }
 }
 
@@ -589,6 +583,12 @@ span:nth-last-child(3) {
   .callButtonUI{
     margin-right: -31%;
     margin-top: 2%;
+    width: 11%;
+  }
+
+  .textButtonUI{
+    font-size: 12px;
+    padding: 3px;
   }
 
   .phoneText{
@@ -596,33 +596,64 @@ span:nth-last-child(3) {
     display: none;
   }
 
-  /* .carousel-control-next-icon{
-
-  }
-
-  .carousel-control-prev-icon{
-
-  } */
-
-  .imgCallButton{
-    position: absolute;
-    display: flex;
-    height: 100%;
-    bottom: 0;
+  .textBelowCarousel{
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 950px)
 {
   .callButtonUI{
+    width: 11% !important;
+  }
+
+  .textBelowCarousel{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px)
+{
+  .callButtonUI{
+    width: 13% !important;
+    height: 47px;
+  }
+
+  .textBelowCarousel{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  .callButtonUI{
     width: 14% !important;
+    height: 45px;
+  }
+
+  .textBelowCarousel{
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px)
 {
   .callButtonUI{
-    width: 20% !important;
+    width: 15% !important;
+    height: 43px;
+  }
+
+  .textButtonUI{
+    font-size: 10px;
+    padding: 4px !important;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .callButtonUI{
+    width: 16% !important;
+    height: 40px;
   }
 }
 
@@ -630,13 +661,23 @@ span:nth-last-child(3) {
 {
   .callButtonUI{
     width: 30% !important;
+    height: 35px;
+  }
+
+  .textBelowCarousel{
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 350px)
 {
   .callButtonUI{
-    width: 40% !important;
+    width: 35% !important;
+    height: 30px;
+  }
+
+  .textBelowCarousel{
+    font-size: 10px;
   }
 }
 

@@ -13,7 +13,7 @@ export default class Button extends Component {
                 onClick = {this.props.onClick}
                 disabled={this.props.disabled}
             >
-                <span className="textButtonUI">{this.props.text}</span>
+                <span className={this.props.classNameText}>{this.props.text}</span>
             </button>
         )
     }
