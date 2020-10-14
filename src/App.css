@@ -327,6 +327,10 @@ span:nth-last-child(3) {
   transition: left 1s;
 }
 
+.App.load.hide{
+  display: none;
+}
+
 .App.load{
   display: block;
   text-align: center;

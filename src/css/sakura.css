@@ -1,0 +1,46 @@
+.sakura-wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.sakura{
+    width: 100%;
+    height: 100%;
+}
+
+.anand-name{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: rgb(219, 150, 150);
+    text-shadow: 1px 1px 1px black;
+}
+
+.cupastate{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 300%;
+    color: rgb(219, 150, 150);
+    text-shadow: 1px 5px 1px rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.sakura-audio{
+    display: none;
+}
+
+.opened-wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+    user-select: none;
+}
