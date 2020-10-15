@@ -397,7 +397,23 @@
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    border-color: rgb(186, 184, 182);
+    width: 15.5vw;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 32px;
+    transition: all 1s;
+}
+
+.facades-photo-div1{
+    display: flex;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 15.5vw;
+    overflow: hidden;
     border: 3px solid;
     border-color: rgb(182, 179, 179);
     border-radius: 32px;
@@ -461,7 +477,7 @@
 .facades-bottom-button{
     position: absolute;
     height: 50px;
-    width: 200px;
+    width: 19%;
     color: white;
     background-color: black;
     border-color: #4fbfc6;
@@ -471,6 +487,10 @@
     outline-offset: 0;
     font-weight: bolder;
 
+}
+
+.textButtonUI-facades{
+    font-size: 15px;
 }
 
 .facades-bottom-button:focus{
@@ -563,6 +583,10 @@
 
     .present-text{
         font-size: 38px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 7%;
     }
 
 }
@@ -792,6 +816,15 @@
         font-size: 36px;
     }
 
+    .facades-bottom-button{
+        height: 45px;
+        width: 19%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 1000px)
@@ -918,6 +951,34 @@
         font-size: 36px;
     }
 
+    .facades-bottom-button{
+        margin-top: 0%;
+        height: 43px;
+        width: 19%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 13px;
+    }
+
+    .facades-photo-div1{
+        display: none;
+    }
+
+    .facades-photo-block{
+        width: 80vw;
+        margin-bottom: 5%;
+    }
+
+    .facades-photo-div{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 3px solid;
+        border-color: rgb(182, 179, 179);
+        border-radius: 20px;
+    }
 }
 
 @media screen and (max-width: 900px)
@@ -1042,6 +1103,30 @@
         font-size: 33px;
     }
 
+    .facades-bottom-button{
+        margin-top: 0%;
+        height: 40px;
+        width: 19%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 11px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 8%;
+    }
+    
+    .facades-photo-div{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 3px solid;
+        border-color: rgb(182, 179, 179);
+        border-radius: 17px;
+    }
+
 }
 
 @media screen and (max-width: 800px)
@@ -1138,14 +1223,13 @@
         display: flex;
         position: relative;
         width: 50%;
-        height: 50px;
+        height: 45px;
         order: 1;
         margin: 0 auto;
         margin-top: 5%;
         border-color: rgb(186, 184, 182);
-        border: 3px solid;
-        border-color: rgb(182, 179, 179);
-        border-radius: 17px;
+        border: 1px solid;
+        border-radius: 30px;
         transition: all 1s;
         justify-content: center;
         align-items: center;
@@ -1203,6 +1287,36 @@
     .present-text{
         font-size: 31px;
     }
+
+    .facades-bottom-button{
+        margin-top: 2%;
+        height: 40px;
+        width: 25%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 12px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 10%;
+    }
+
+    .facades-photo-block{
+        flex-direction: column !important;
+    }
+
+    .facades-photo-div{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 3px solid;
+        border-color: rgb(182, 179, 179);
+        border-radius: 25px;
+        width: 35vw;
+    }
+
 
 }
 
@@ -1307,6 +1421,18 @@
         font-size: 30px;
     }
 
+    .gallery-more-photo-mobile{
+        width: 50%;
+        height: 40px;
+        margin-top: 5%;
+        border: 1px solid;
+        border-radius: 30px;
+    }
+
+    .gallery-more-photo-text{
+        font-size: 18px !important;
+    }
+
 }
 
 @media screen and (max-width: 600px)
@@ -1364,14 +1490,14 @@
     .gallery-img-div1{
         margin-right: 0%;
         margin-bottom: 3%;
-        border: 3px solid;
+        border: 2px solid;
         border-radius: 20px;
     }
     
     .gallery-img-div2{
         margin-left: 0%;
         margin-top: 3%;
-        border: 3px solid;
+        border: 2px solid;
         border-radius: 20px;
     }
 
@@ -1411,6 +1537,43 @@
 
     .present-text{
         font-size: 27px;
+    }
+
+    .facades-bottom-button{
+        margin-top: 5%;
+        height: 40px;
+        width: 30%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 11px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 13%;
+    }
+
+    .gallery-more-photo-mobile{
+        width: 50%;
+        height: 35px;
+        margin-top: 5%;
+        border: 1px solid;
+        border-radius: 30px;
+    }
+
+    .gallery-more-photo-text{
+        font-size: 16px !important;
+    }
+
+    .facades-photo-div{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 2px solid;
+        border-color: rgb(182, 179, 179);
+        border-radius: 17px;
+        width: 37vw;
     }
 
 }
@@ -1501,6 +1664,40 @@
 
     .present-text{
         font-size: 24px;
+    }
+
+    .facades-bottom-button{
+        margin-top: 10%;
+        height: 35px;
+        width: 35%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 11px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 17%;
+    }
+
+    .gallery-more-photo-mobile{
+        width: 50%;
+        height: 27px;
+        margin-top: 5%;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+
+    .gallery-more-photo-text{
+        font-size: 15px !important;
+    }
+
+    .gallery-img-div1{
+        border-radius: 13px;
+    }
+
+    .gallery-img-div2{
+        border-radius: 13px;
     }
 
 }
@@ -1594,6 +1791,38 @@
         font-size: 22px;
     }
 
+    .facades-bottom-button{
+        margin-top: 10%;
+        height: 35px;
+        width: 45%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 11px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 17%;
+    }
+
+    .facades-photo-div{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border-color: rgb(182, 179, 179);
+        border-radius: 15px;
+        width: 40vw;
+    }
+
+    .gallery-img-div1{
+        border-radius: 13px;
+    }
+
+    .gallery-img-div2{
+        border-radius: 13px;
+    }
+
 }
 
 @media screen and (max-width: 350px)
@@ -1669,6 +1898,32 @@
 
     .present-text{
         font-size: 20px;
+    }
+
+    .facades-bottom-button{
+        margin-top: 13%;
+        height: 35px;
+        width: 45%;
+    }
+    
+    .textButtonUI-facades{
+        font-size: 11px;
+    }
+
+    .facades-footer-info-block{
+        margin-top: 20%;
+    }
+
+    .gallery-more-photo-mobile{
+        width: 50%;
+        height: 23px;
+        margin-top: 5%;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+
+    .gallery-more-photo-text{
+        font-size: 10px !important;
     }
 
 }

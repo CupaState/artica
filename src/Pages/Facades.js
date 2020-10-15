@@ -350,7 +350,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -363,7 +363,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -376,7 +376,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -389,7 +389,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -402,7 +402,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -415,7 +415,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -428,7 +428,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -441,7 +441,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -454,7 +454,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -467,7 +467,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -480,7 +480,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -493,7 +493,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -506,7 +506,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -519,7 +519,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -532,7 +532,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -545,7 +545,7 @@ class Facades extends Component {
                                         }}
                                     />
                                 </div>
-                                <div className="facades-photo-div">
+                                <div className="facades-photo-div1">
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
@@ -583,9 +583,8 @@ class Facades extends Component {
 
                         <div className="facades-bottom-button-div">
                                 <ButtonUI
-                                    // classNameButton = "facades-bottom-button"
-                                    classNameButton = "promise-button"
-                                    classNameText = "textButtonUI-promise"
+                                    classNameButton = "facades-bottom-button"
+                                    classNameText = "textButtonUI-facades"
                                     text = "ЭСКИЗ БЕСПЛАТНО"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />
