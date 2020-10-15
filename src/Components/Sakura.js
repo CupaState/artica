@@ -12,7 +12,7 @@ export default class Sakura extends Component {
             layerClass: "opened-wrapper",
             clickLayer: function()
             {
-                console.log("Hello!");
+                console.log("Hello from CupaState");
             },
             closeSakura: this.props.closeSakura
         }
@@ -65,7 +65,7 @@ export default class Sakura extends Component {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        'z-index': 100,
+                        zIndex: 100,
                     }}
                     ></div>
                     
@@ -75,13 +75,13 @@ export default class Sakura extends Component {
                         className="sakura"
                         allowFullScreen={true}
                         seamless={true}
-                        allow-pointer-lock={true}
                     ></iframe>
                     <audio
                         src={track}
                         type="audio/mp3"
                         autoPlay={ true }
                         id="audio"
+                        loop={true}
                     ></audio>
                 </div>
             }

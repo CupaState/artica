@@ -17,6 +17,7 @@
     position: absolute;
     bottom: 5%;
     left: 5%;
+    font-size: 17px;
     color: rgb(219, 150, 150);
     text-shadow: 1px 1px 1px black;
 }
@@ -24,7 +25,7 @@
 .cupastate{
     position: absolute;
     font-weight: bolder;
-    font-size: 300%;
+    font-size: 50px;
     color: rgb(219, 150, 150);
     text-shadow: 1px 5px 1px rgb(0, 0, 0);
     opacity: 0.8;
@@ -43,4 +44,45 @@
     height: 100%;
     cursor: none;
     user-select: none;
+}
+
+@media screen and (max-width: 800px)
+{
+    .cupastate{
+      font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 700px)
+{
+    .cupastate{
+      font-size: 35px;
+    }
+    
+    .anand-name{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .cupastate{
+      font-size: 33px;
+    }
+    
+    .anand-name{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .cupastate{
+      font-size: 30px;
+    }
+    
+    .anand-name{
+        font-size: 10px;
+    }
 }

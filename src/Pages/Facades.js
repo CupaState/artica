@@ -12,11 +12,6 @@ import waitingRoom from "../assets/facadesImg/WaitingRoom.png";
 import ModalImageGallery from "../Components/ModalImageGallery";
 import Gallery from "../Components/Gallery";
 
-
-// import Lightbox from 'react-lightbox-component';
-// import Lightbox from 'react-image-lightbox';
-// import 'react-image-lightbox/style.css'; 
-
 class Facades extends Component {
     constructor(props)
     {
@@ -75,6 +70,7 @@ class Facades extends Component {
                         <img
                             className="facadeHeaderImg"
                             src={facadesHeader}
+                            alt="Роспись фасадов"
                         />
                         <span
                             className="facadeHeaderText"
@@ -104,6 +100,7 @@ class Facades extends Component {
                             <div className="promise-button-div">
                                 <ButtonUI
                                     classNameButton = "promise-button"
+                                    classNameText = "textButtonUI-promise"
                                     text = "Заказать эскиз"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />
@@ -115,14 +112,22 @@ class Facades extends Component {
                         <hr className="facades-divider"></hr>
                         <div
                             className="facades-divider-header"
+                            onClick = {() =>
+                                {
+                                    this.setState({uncover: !this.state.uncover});
+                                }
+                              }
                         >
-                            <span className="facades-divider-text">
+                            <span
+                                className="facades-divider-text"
+                            >
                                 ПОДРОБНЕЕ О РОСПИСИ ФАСАДОВ
                             </span>
                         </div>
                         <img
                             className="divider-arrow"
                             src={nextArrowIcon}
+                            alt="следующий слайд"
                             onClick = {() =>
                                         {
                                             this.setState({uncover: !this.state.uncover});
@@ -139,44 +144,63 @@ class Facades extends Component {
                                 Галерея наших работ
                             </span>
                             <div className="gallery-wrapper">
-                                <a className="gallery-img-div1">
-                                    <img
-                                        className="gallery-img"
-                                        src={kitchenImg}
-                                        title="Нажмите для увеличения изображения"
-                                        onClick={() =>
-                                            {this.setState({isShowImage: true});
-                                            this.imgIndex = 0;
-                                        }}
-                                    />
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div1"
+                                        href
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={kitchenImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {this.setState({isShowImage: true});
+                                                this.imgIndex = 0;
+                                            }}
+                                        />
+
+                                    </a>
                                     <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
-                                </a>
-                                <a className="gallery-img-div2">
-                                    <img
-                                        className="gallery-img"
-                                        src={windowImg}
-                                        title="Нажмите для увеличения изображения"
-                                        onClick={() =>
-                                            {
-                                                this.setState({isShowImage: true});
-                                                this.imgIndex = 1;
-                                        }}
-                                    />
-                                    <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
-                                </a>
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                    </span>                                 
+                                </div>
+
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div2"
+                                        href
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={windowImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {
+                                                    this.setState({isShowImage: true});
+                                                    this.imgIndex = 1;
+                                            }}
+                                        />
+                                    </a>
+                                        <span className="gallery-text1">
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                        </span>
+                                </div>
+
                         </div>
                     </div>
                     <div className="gallery-bottom-wrapper">
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -189,10 +213,14 @@ class Facades extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -205,10 +233,14 @@ class Facades extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -229,6 +261,14 @@ class Facades extends Component {
                                 </span>
                             </div>
                     </div>
+                            <div
+                                className="gallery-more-photo-mobile"
+                                onClick={() => {this.setState({isShowGallery: true});}}
+                            >
+                                <span className="gallery-more-photo-text">
+                                    Больше фото
+                                </span>
+                            </div>
                         <div className="text-block-div">
                             <span className="text-block-idea">
                                 Идея для вашей росписи
@@ -253,6 +293,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -265,6 +306,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -277,6 +319,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -289,6 +332,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -301,6 +345,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -313,6 +358,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -325,6 +371,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -337,6 +384,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -349,6 +397,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -361,6 +410,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -373,6 +423,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -385,6 +436,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -397,6 +449,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -409,6 +462,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -421,6 +475,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -433,6 +488,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -445,6 +501,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -457,6 +514,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -469,6 +527,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -481,6 +540,7 @@ class Facades extends Component {
                                     <img
                                         className="gallery-img-small"
                                         src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                         {
@@ -495,6 +555,7 @@ class Facades extends Component {
                             <a className="link-vk-gallery"
                                 href="https://vk.com/album-12967671_238254691"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 title="Галерея ВКонтакте"
                                 alt="Галерея ВКонтакте"
                                 onClick={() => {window.href="https://vk.com/album-12967671_238254691"}}
