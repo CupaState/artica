@@ -193,28 +193,32 @@ class Facades extends Component {
                         </div>
                     </div>
                     <div className="gallery-bottom-wrapper">
+                        <div className="gallery-wrapper-block-small-div">
                             <a
-                                className="gallery-img-div3"
-                                href
-                            >
-                                <img
-                                    className="gallery-img-small"
-                                    src={waitingRoom}
-                                    alt="изображение"
-                                    title="Нажмите для увеличения изображения"
-                                    onClick={() =>
-                                        {
-                                            this.setState({isShowImage: true});
-                                            this.imgIndex = 2;
-                                    }}
-                                />
-                                <span className="gallery-text-bottom">
+                                    className="gallery-img-div3"
+                                    href
+                                >
+                                    <img
+                                        className="gallery-img-small"
+                                        src={waitingRoom}
+                                        alt="изображение"
+                                        title="Нажмите для увеличения изображения"
+                                        onClick={() =>
+                                            {
+                                                this.setState({isShowImage: true});
+                                                this.imgIndex = 2;
+                                        }}
+                                    />
+                                </a>
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
-                            <a
-                                className="gallery-img-div3"
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
+                        <a
+                                className="gallery-img-div4"
                                 href
                             >
                                 <img
@@ -228,13 +232,16 @@ class Facades extends Component {
                                             this.imgIndex = 3;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
-                                    Зал ожидания <br></br>
-                                    18м<sup>2</sup>|38 000руб.|5 дней
-                                </span>
                             </a>
+                            <span className="gallery-text-bottom-small">
+                                Зал ожидания <br></br>
+                                18м<sup>2</sup>|38 000руб.|5 дней
+                            </span>
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
                             <a
-                                className="gallery-img-div3"
+                                className="gallery-img-div5"
                                 href
                             >
                                 <img
@@ -248,11 +255,13 @@ class Facades extends Component {
                                             this.imgIndex = 4;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
+                            </a>
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
+                        </div>
+
                             <div className="gallery-more-photo"
                             onClick={() => {this.setState({isShowGallery: true});}}
                             >
@@ -574,7 +583,9 @@ class Facades extends Component {
 
                         <div className="facades-bottom-button-div">
                                 <ButtonUI
-                                    classNameButton = "facades-bottom-button"
+                                    // classNameButton = "facades-bottom-button"
+                                    classNameButton = "promise-button"
+                                    classNameText = "textButtonUI-promise"
                                     text = "ЭСКИЗ БЕСПЛАТНО"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />
