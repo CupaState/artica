@@ -68,6 +68,7 @@ class Restoration extends Component {
                         <img
                             className="facadeHeaderImg"
                             src={restorationHeader}
+                            alt="Реставрация"
                         />
                         <span
                             className="RestorationHeaderText"
@@ -114,6 +115,7 @@ class Restoration extends Component {
                         <img
                             className="divider-arrow"
                             src={nextArrowIcon}
+                            alt="подробнее"
                             onClick = {() =>
                                         {
                                             this.setState({uncover: !this.state.uncover});
@@ -130,10 +132,14 @@ class Restoration extends Component {
                                 Галерея наших работ
                             </span>
                             <div className="gallery-wrapper">
-                                <a className="gallery-img-div1">
+                                <a
+                                    className="gallery-img-div1"
+                                    href
+                                >
                                     <img
                                         className="gallery-img"
                                         src={kitchenImg}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {this.setState({isShowImage: true});
@@ -145,10 +151,14 @@ class Restoration extends Component {
                                         3м<sup>2</sup>|30 000руб.|6 дней
                                     </span>
                                 </a>
-                                <a className="gallery-img-div2">
+                                <a
+                                    className="gallery-img-div2"
+                                    href
+                                >
                                     <img
                                         className="gallery-img"
                                         src={windowImg}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {
@@ -164,10 +174,14 @@ class Restoration extends Component {
                         </div>
                     </div>
                     <div className="gallery-bottom-wrapper">
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -180,10 +194,14 @@ class Restoration extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -196,10 +214,14 @@ class Restoration extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -239,6 +261,7 @@ class Restoration extends Component {
                     <div className="restoration-element-div">
                         <img
                             className="restoration-element-img"
+                            alt="изображение"
                             src={cupboard}
                         />
                     </div>
@@ -253,6 +276,7 @@ class Restoration extends Component {
                         <img
                             className="restoration-element-img"
                             src={doors}
+                            alt="изображение"
                         />
                     </div>
 
@@ -266,6 +290,7 @@ class Restoration extends Component {
                         <img
                             className="restoration-element-img"
                             src={dressers}
+                            alt="изображение"
                         />
                     </div>
 
@@ -279,6 +304,7 @@ class Restoration extends Component {
                         <img
                             className="restoration-element-img"
                             src={chairs}
+                            alt="изображение"
                         />
                     </div>
 
@@ -286,6 +312,7 @@ class Restoration extends Component {
                             <a className="link-vk-gallery"
                                 href="https://vk.com/album-12967671_238255746"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 title="Галерея ВКонтакте"
                                 alt="Галерея ВКонтакте"
                                 onClick={() => {window.href="https://vk.com/album-12967671_238255746"}}
