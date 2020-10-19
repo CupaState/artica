@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import "../css/Facades.css";
 import "../css/Restoration.css";
+import "../css/Interiors.css";
 import ButtonUI from "../Components/Button";
 import RestorationHideBlock from "../Components/HideBlock";
 import MyModal from "../Components/MyModal";
 import ModalImageGallery from "../Components/ModalImageGallery";
 import Gallery from "../Components/Gallery";
-
+import LittleHideBlock from "../Components/LittleHideBlock";
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
 
@@ -71,17 +72,17 @@ class Restoration extends Component {
                             alt="Реставрация"
                         />
                         <span
-                            className="RestorationHeaderText"
+                            className="interiorsHeaderText"
                         >
                             Роспись и реставрация мебели
                         </span>
                         <span
-                            className="facadeHeaderPriceText"
+                            className="interiorsHeaderPriceText"
                         >
                            Ручная работа от 5000 руб. за предмет | скидка 5% при заказе от 3-х элементов
                         </span>
                         <span
-                            className="facadeHeaderGarantText"
+                            className="interiorsHeaderGarantText"
                         >
                             Гарантия на работы<br></br>
                             5 лет
@@ -108,7 +109,14 @@ class Restoration extends Component {
                         <div
                             className="facades-divider-header"
                         >
-                            <span className="facades-divider-text">
+                            <span
+                                className="facades-divider-text"
+                                onClick = {() =>
+                                    {
+                                        this.setState({uncover: !this.state.uncover});
+                                    }
+                                  }
+                            >
                                 ПОДРОБНЕЕ О РЕСТАВРАЦИИ
                             </span>
                         </div>
@@ -132,71 +140,82 @@ class Restoration extends Component {
                                 Галерея наших работ
                             </span>
                             <div className="gallery-wrapper">
-                                <a
-                                    className="gallery-img-div1"
-                                    href
-                                >
-                                    <img
-                                        className="gallery-img"
-                                        src={kitchenImg}
-                                        alt="изображение"
-                                        title="Нажмите для увеличения изображения"
-                                        onClick={() =>
-                                            {this.setState({isShowImage: true});
-                                            this.imgIndex = 0;
-                                        }}
-                                    />
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div1"
+                                        href={true}
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={kitchenImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {this.setState({isShowImage: true});
+                                                this.imgIndex = 0;
+                                            }}
+                                        />
+
+                                    </a>
                                     <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
-                                </a>
-                                <a
-                                    className="gallery-img-div2"
-                                    href
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                    </span>                                 
+                                </div>
+
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div2"
+                                        href={true}
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={windowImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {
+                                                    this.setState({isShowImage: true});
+                                                    this.imgIndex = 1;
+                                            }}
+                                        />
+                                    </a>
+                                        <span className="gallery-text1">
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                        </span>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div className="gallery-bottom-wrapper">
+                        <div className="gallery-wrapper-block-small-div">
+                            <a
+                                    className="gallery-img-div3"
+                                    href={true}
                                 >
                                     <img
-                                        className="gallery-img"
-                                        src={windowImg}
+                                        className="gallery-img-small"
+                                        src={waitingRoom}
                                         alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {
                                                 this.setState({isShowImage: true});
-                                                this.imgIndex = 1;
+                                                this.imgIndex = 2;
                                         }}
                                     />
-                                    <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
                                 </a>
-                        </div>
-                    </div>
-                    <div className="gallery-bottom-wrapper">
-                            <a
-                                className="gallery-img-div3"
-                                href
-                            >
-                                <img
-                                    className="gallery-img-small"
-                                    src={waitingRoom}
-                                    alt="изображение"
-                                    title="Нажмите для увеличения изображения"
-                                    onClick={() =>
-                                        {
-                                            this.setState({isShowImage: true});
-                                            this.imgIndex = 2;
-                                    }}
-                                />
-                                <span className="gallery-text-bottom">
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
-                            <a
-                                className="gallery-img-div3"
-                                href
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
+                        <a
+                                className="gallery-img-div4"
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"
@@ -209,14 +228,17 @@ class Restoration extends Component {
                                             this.imgIndex = 3;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
-                                    Зал ожидания <br></br>
-                                    18м<sup>2</sup>|38 000руб.|5 дней
-                                </span>
                             </a>
+                            <span className="gallery-text-bottom-small">
+                                Зал ожидания <br></br>
+                                18м<sup>2</sup>|38 000руб.|5 дней
+                            </span>
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
                             <a
-                                className="gallery-img-div3"
-                                href
+                                className="gallery-img-div5"
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"
@@ -229,11 +251,13 @@ class Restoration extends Component {
                                             this.imgIndex = 4;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
+                            </a>
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
+                        </div>
+
                             <div className="gallery-more-photo"
                             onClick={() => {this.setState({isShowGallery: true});}}
                             >
@@ -242,9 +266,17 @@ class Restoration extends Component {
                                 </span>
                             </div>
                     </div>
+                            <div
+                                className="gallery-more-photo-mobile"
+                                onClick={() => {this.setState({isShowGallery: true});}}
+                            >
+                                <span className="gallery-more-photo-text">
+                                    Больше фото
+                                </span>
+                            </div>
                     <div className="text-block-div">
                             <span className="text-block-idea">
-                                Идеи для вдохновения
+                                Идеи для Вашей росписи
                             </span>
                             <span className="text-block-promise">
                                 Не можете представить свою будущую роспись?<br></br>
@@ -252,61 +284,78 @@ class Restoration extends Component {
                                 Нарисуем похожее или скомбинируем Ваши идеи
                             </span>
                     </div>
-                    <div className="facades-text-block">
-                        <span className="facades-text">
-                            Шкафы
-                        </span>
+
+                    <div className="interiors-example-block">
+                            <span className="interiors-text">
+                                Шкафы
+                            </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={cupboard}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            alt="изображение"
-                            src={cupboard}
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block1">
+                        <span className="interiors-text">
                             Двери
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={doors}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={doors}
-                            alt="изображение"
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block1">
+                        <span className="interiors-text">
                             Комоды и тумбочки
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={dressers}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={dressers}
-                            alt="изображение"
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block2">
+                        <span className="interiors-text">
                             Стулья
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={chairs}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-lost-div">
-                        <img
-                            className="restoration-element-img"
-                            src={chairs}
-                            alt="изображение"
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper1"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
 
                     <div className="vk-gallery-wrapper">
                             <a className="link-vk-gallery"
@@ -332,6 +381,7 @@ class Restoration extends Component {
                         <div className="facades-bottom-button-div">
                                 <ButtonUI
                                     classNameButton = "facades-bottom-button"
+                                    classNameText = "textButtonUI-facades"
                                     text = "ЭСКИЗ БЕСПЛАТНО"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />

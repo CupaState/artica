@@ -147,7 +147,7 @@ class Facades extends Component {
                                 <div className="gallery-wrapper-block-div">
                                     <a
                                         className="gallery-img-div1"
-                                        href
+                                        href={true}
                                     >
                                         <img
                                             className="gallery-img"
@@ -170,7 +170,7 @@ class Facades extends Component {
                                 <div className="gallery-wrapper-block-div">
                                     <a
                                         className="gallery-img-div2"
-                                        href
+                                        href={true}
                                     >
                                         <img
                                             className="gallery-img"
@@ -196,7 +196,7 @@ class Facades extends Component {
                         <div className="gallery-wrapper-block-small-div">
                             <a
                                     className="gallery-img-div3"
-                                    href
+                                    href={true}
                                 >
                                     <img
                                         className="gallery-img-small"
@@ -219,7 +219,7 @@ class Facades extends Component {
                         <div className="gallery-wrapper-block-small-div">
                         <a
                                 className="gallery-img-div4"
-                                href
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"
@@ -242,7 +242,7 @@ class Facades extends Component {
                         <div className="gallery-wrapper-block-small-div">
                             <a
                                 className="gallery-img-div5"
-                                href
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"

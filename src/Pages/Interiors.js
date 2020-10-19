@@ -7,6 +7,7 @@ import InteriorsHideBlock from "../Components/HideBlock";
 import MyModal from "../Components/MyModal";
 import ModalImageGallery from "../Components/ModalImageGallery";
 import Gallery from "../Components/Gallery";
+import LittleHideBlock from "../Components/LittleHideBlock";
 
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
@@ -142,7 +143,7 @@ class Interiors extends Component {
                                 <div className="gallery-wrapper-block-div">
                                     <a
                                         className="gallery-img-div1"
-                                        href
+                                        href={true}
                                     >
                                         <img
                                             className="gallery-img"
@@ -165,7 +166,7 @@ class Interiors extends Component {
                                 <div className="gallery-wrapper-block-div">
                                     <a
                                         className="gallery-img-div2"
-                                        href
+                                        href={true}
                                     >
                                         <img
                                             className="gallery-img"
@@ -191,7 +192,7 @@ class Interiors extends Component {
                         <div className="gallery-wrapper-block-small-div">
                             <a
                                     className="gallery-img-div3"
-                                    href
+                                    href={true}
                                 >
                                     <img
                                         className="gallery-img-small"
@@ -214,7 +215,7 @@ class Interiors extends Component {
                         <div className="gallery-wrapper-block-small-div">
                         <a
                                 className="gallery-img-div4"
-                                href
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"
@@ -237,7 +238,7 @@ class Interiors extends Component {
                         <div className="gallery-wrapper-block-small-div">
                             <a
                                 className="gallery-img-div5"
-                                href
+                                href={true}
                             >
                                 <img
                                     className="gallery-img-small"
@@ -283,11 +284,11 @@ class Interiors extends Component {
                                 Нарисуем похожее или скомбинируем Ваши идеи
                             </span>
                     </div>
-                    <div className="ineriors-example-block">
+                    <div className="interiors-example-block">
                             <span className="interiors-text">
                                 Роспись гостиных и спален
                             </span>
-                            <div className="interiors-element-div">
+                        <div className="interiors-element-div">
                             <img
                                 className="interiors-element-img"
                                 src={livingRoom}
@@ -295,8 +296,13 @@ class Interiors extends Component {
                             />
                         </div>
                     </div>
+
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
                     
-                    <div className="ineriors-example-block1">
+                    <div className="interiors-example-block1">
                             <span className="interiors-text">
                                 Роспись кухонь
                             </span>
@@ -309,8 +315,13 @@ class Interiors extends Component {
                         </div>
                     </div>
 
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
 
-                    <div className="ineriors-example-block1">
+
+                    <div className="interiors-example-block1">
                         <span className="interiors-text">
                             Роспись детских комнат
                         </span>
@@ -323,7 +334,12 @@ class Interiors extends Component {
                         </div>
                     </div>
 
-                    <div className="ineriors-example-block2">
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас "
+                    />
+
+                    <div className="interiors-example-block2">
                         <span className="interiors-text">
                             Роспись ванных и санузлов
                         </span>
@@ -335,6 +351,11 @@ class Interiors extends Component {
                             />
                         </div>
                     </div>
+
+                    <LittleHideBlock
+                        className="little-block-wrapper1"
+                        text = "Пластмассовый мир победил... Всех, кроме нас/ ВИНИЛ"
+                    />
 
                     <div className="vk-gallery-wrapper">
                             <a className="link-vk-gallery"

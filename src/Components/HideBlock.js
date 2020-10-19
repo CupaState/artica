@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
 import "../css/HideBlock.css";
 
 export default class FacadesHideBlock extends Component {
-    constructor(props)
-    {
-        super(props);
-    }
 
     render() {
         const isUncover = this.props.isUncover;
@@ -23,7 +18,7 @@ export default class FacadesHideBlock extends Component {
             return(
                 <div>
                 </div>
-            )
+            );
 
     }
 }

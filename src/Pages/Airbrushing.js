@@ -7,6 +7,7 @@ import InteriorsHideBlock from "../Components/HideBlock";
 import MyModal from "../Components/MyModal";
 import ModalImageGallery from "../Components/ModalImageGallery";
 import Gallery from "../Components/Gallery";
+import LittleHideBlock from "../Components/LittleHideBlock";
 
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
@@ -31,6 +32,7 @@ class Airbrushing extends Component {
             uncover: false,
             isShowImage: false,
             isShowGallery: false,
+            isOpenBlock: true
         };
         this.onClose = this.onClose.bind(this);
         this.closeImage = this.closeImage.bind(this);
@@ -70,9 +72,10 @@ class Airbrushing extends Component {
                         <img
                             className="facadeHeaderImg"
                             src={airHeader}
+                            alt="Аэрография"
                         />
                         <span
-                            className="RestorationHeaderText"
+                            className="interiorsHeaderText"
                         >
                             Аэрография на автомобилях и мотоциклах
                         </span>
@@ -108,6 +111,11 @@ class Airbrushing extends Component {
                         <hr className="facades-divider"></hr>
                         <div
                             className="facades-divider-header"
+                            onClick = {() =>
+                                {
+                                    this.setState({uncover: !this.state.uncover});
+                                }
+                            }
                         >
                             <span className="facades-divider-text">
                                 ПОДРОБНЕЕ ОБ АЭРОГРАФИИ
@@ -116,6 +124,7 @@ class Airbrushing extends Component {
                         <img
                             className="divider-arrow"
                             src={nextArrowIcon}
+                            alt="подробнее"
                             onClick = {() =>
                                         {
                                             this.setState({uncover: !this.state.uncover});
@@ -127,65 +136,92 @@ class Airbrushing extends Component {
                             isUncover = {this.state.uncover}
                             text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
                     />
+
                     <div className="wrapper-gallery-part">
                             <span className = "gallery-header">
                                 Галерея наших работ
                             </span>
+                            
                             <div className="gallery-wrapper">
-                                <a className="gallery-img-div1">
-                                    <img
-                                        className="gallery-img"
-                                        src={kitchenImg}
-                                        title="Нажмите для увеличения изображения"
-                                        onClick={() =>
-                                            {this.setState({isShowImage: true});
-                                            this.imgIndex = 0;
-                                        }}
-                                    />
+                                <div className="gallery-wrapper-block-div">
+                                    <a 
+                                        className="gallery-img-div1"
+                                        href={true}
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={kitchenImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {this.setState({isShowImage: true});
+                                                this.imgIndex = 0;
+                                            }}
+                                        />
+                                    </a>
                                     <span className="gallery-text">
                                         Кухня-гостиная <br></br>
                                         3м<sup>2</sup>|30 000руб.|6 дней
                                     </span>
-                                </a>
-                                <a className="gallery-img-div2">
+                                </div>
+
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div2"
+                                        href={true}
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={windowImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {
+                                                    this.setState({isShowImage: true});
+                                                    this.imgIndex = 1;
+                                            }}
+                                        />
+                                    </a>
+                                    <span className="gallery-text1">
+                                        Кухня-гостиная <br></br>
+                                        3м<sup>2</sup>|30 000руб.|6 дней
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="gallery-bottom-wrapper">
+                        <div className="gallery-wrapper-block-small-div">
+                            <a
+                                    className="gallery-img-div3"
+                                    href={true}
+                                >
                                     <img
-                                        className="gallery-img"
-                                        src={windowImg}
+                                        className="gallery-img-small"
+                                        src={waitingRoom}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {
                                                 this.setState({isShowImage: true});
-                                                this.imgIndex = 1;
+                                                this.imgIndex = 2;
                                         }}
                                     />
-                                    <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
                                 </a>
-                        </div>
-                    </div>
-                    <div className="gallery-bottom-wrapper">
-                            <a className="gallery-img-div3">
-                                <img
-                                    className="gallery-img-small"
-                                    src={waitingRoom}
-                                    title="Нажмите для увеличения изображения"
-                                    onClick={() =>
-                                        {
-                                            this.setState({isShowImage: true});
-                                            this.imgIndex = 2;
-                                    }}
-                                />
-                                <span className="gallery-text-bottom">
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
-                            <a className="gallery-img-div3">
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
+                        <a
+                                className="gallery-img-div4"
+                                href={true}
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -193,15 +229,22 @@ class Airbrushing extends Component {
                                             this.imgIndex = 3;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
-                                    Зал ожидания <br></br>
-                                    18м<sup>2</sup>|38 000руб.|5 дней
-                                </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <span className="gallery-text-bottom-small">
+                                Зал ожидания <br></br>
+                                18м<sup>2</sup>|38 000руб.|5 дней
+                            </span>
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
+                            <a
+                                className="gallery-img-div5"
+                                href={true}
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -209,19 +252,29 @@ class Airbrushing extends Component {
                                             this.imgIndex = 4;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
+                            </a>
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
+                        </div>
+
                             <div className="gallery-more-photo"
-                            onClick={() => {this.setState({isShowGallery: true});}}
+                                onClick={() => {this.setState({isShowGallery: true});}}
                             >
                                 <span className="gallery-more-photo-text">
                                     Больше фото
                                 </span>
                             </div>
                     </div>
+                            <div
+                                className="gallery-more-photo-mobile"
+                                onClick={() => {this.setState({isShowGallery: true});}}
+                            >
+                                <span className="gallery-more-photo-text">
+                                    Больше фото
+                                </span>
+                            </div>
                     <div className="text-block-div">
                             <span className="text-block-idea">
                                 Идеи для Вашей росписи
@@ -232,75 +285,101 @@ class Airbrushing extends Component {
                                 Нарисуем похожее или скомбинируем Ваши идеи
                             </span>
                     </div>
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block">
+                        <span className="interiors-text">
                             Легковые автомобили
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={car}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={car}
+                        <LittleHideBlock
+                            className="little-block-wrapper"
+                            text = "Пластмассовый мир победил... Всех, кроме нас "
                         />
-                    </div>
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block1">
+                        <span className="interiors-text">
                             Внедорожники
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={SUV}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={SUV}
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас/ ВНЕДОРОЖНИКИ"
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block1">
+                        <span className="interiors-text">
                             Мотоциклы
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={motocycle}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={motocycle}
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас/ МОТИКИ"
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block1">
+                        <span className="interiors-text">
                             Грузовые и автобусы
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={trailer}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={trailer}
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper"
+                        text = "Пластмассовый мир победил... Всех, кроме нас/ Трейлеры"
+                    />
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="interiors-example-block2">
+                        <span className="interiors-text">
                             Автовинил
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={autoVinyl}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-lost-div">
-                        <img
-                            className="restoration-element-img"
-                            src={autoVinyl}
-                        />
-                    </div>
+                    <LittleHideBlock
+                        className="little-block-wrapper1"
+                        text = "Пластмассовый мир победил... Всех, кроме нас/ ВИНИЛ"
+                    />
 
                     <div className="vk-gallery-wrapper">
                             <a className="link-vk-gallery"
                                 href="https://vk.com/album-12967671_238023379"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 title="Галерея ВКонтакте"
                                 alt="Галерея ВКонтакте"
                                 onClick={() => {window.href="https://vk.com/album-12967671_238023379"}}
@@ -320,6 +399,7 @@ class Airbrushing extends Component {
                         <div className="facades-bottom-button-div">
                                 <ButtonUI
                                     classNameButton = "facades-bottom-button"
+                                    classNameText = "textButtonUI-facades"
                                     text = "ЭСКИЗ БЕСПЛАТНО"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />
