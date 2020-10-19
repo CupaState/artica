@@ -72,7 +72,7 @@ class Interiors extends Component {
                             alt="оформление интерьеров"
                         />
                         <span
-                            className="RestorationHeaderText"
+                            className="interiorsHeaderText"
                         >
                             Художественное оформление интерьеров
                         </span>
@@ -109,6 +109,11 @@ class Interiors extends Component {
                         <hr className="facades-divider"></hr>
                         <div
                             className="facades-divider-header"
+                            onClick = {() =>
+                                {
+                                    this.setState({uncover: !this.state.uncover});
+                                }
+                              }
                         >
                             <span className="facades-divider-text">
                                 ПОДРОБНЕЕ ОБ ОФОРМЛЕНИИ ИНТЕРЬЕРОВ
@@ -134,70 +139,81 @@ class Interiors extends Component {
                                 Галерея наших работ
                             </span>
                             <div className="gallery-wrapper">
-                                <a
-                                    className="gallery-img-div1"
-                                    href
-                                >
-                                    <img
-                                        className="gallery-img"
-                                        src={kitchenImg}
-                                        alt="изображение"
-                                        title="Нажмите для увеличения изображения"
-                                        onClick={() =>
-                                            {this.setState({isShowImage: true});
-                                            this.imgIndex = 0;
-                                        }}
-                                    />
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div1"
+                                        href
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={kitchenImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {this.setState({isShowImage: true});
+                                                this.imgIndex = 0;
+                                            }}
+                                        />
+
+                                    </a>
                                     <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
-                                </a>
-                                <a
-                                    className="gallery-img-div2"
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                    </span>                                 
+                                </div>
+
+                                <div className="gallery-wrapper-block-div">
+                                    <a
+                                        className="gallery-img-div2"
+                                        href
+                                    >
+                                        <img
+                                            className="gallery-img"
+                                            src={windowImg}
+                                            alt="изображение"
+                                            title="Нажмите для увеличения изображения"
+                                            onClick={() =>
+                                                {
+                                                    this.setState({isShowImage: true});
+                                                    this.imgIndex = 1;
+                                            }}
+                                        />
+                                    </a>
+                                        <span className="gallery-text1">
+                                            Кухня-гостиная <br></br>
+                                            3м<sup>2</sup>|30 000руб.|6 дней
+                                        </span>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div className="gallery-bottom-wrapper">
+                        <div className="gallery-wrapper-block-small-div">
+                            <a
+                                    className="gallery-img-div3"
                                     href
                                 >
                                     <img
-                                        className="gallery-img"
-                                        src={windowImg}
+                                        className="gallery-img-small"
+                                        src={waitingRoom}
                                         alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {
                                                 this.setState({isShowImage: true});
-                                                this.imgIndex = 1;
+                                                this.imgIndex = 2;
                                         }}
                                     />
-                                    <span className="gallery-text">
-                                        Кухня-гостиная <br></br>
-                                        3м<sup>2</sup>|30 000руб.|6 дней
-                                    </span>
                                 </a>
-                        </div>
-                    </div>
-                    <div className="gallery-bottom-wrapper">
-                            <a
-                                className="gallery-img-div3"
-                                href
-                            >
-                                <img
-                                    className="gallery-img-small"
-                                    src={waitingRoom}
-                                    alt="изображение"
-                                    title="Нажмите для увеличения изображения"
-                                    onClick={() =>
-                                        {
-                                            this.setState({isShowImage: true});
-                                            this.imgIndex = 2;
-                                    }}
-                                />
-                                <span className="gallery-text-bottom">
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
-                            <a
-                                className="gallery-img-div3"
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
+                        <a
+                                className="gallery-img-div4"
                                 href
                             >
                                 <img
@@ -211,13 +227,16 @@ class Interiors extends Component {
                                             this.imgIndex = 3;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
-                                    Зал ожидания <br></br>
-                                    18м<sup>2</sup>|38 000руб.|5 дней
-                                </span>
                             </a>
+                            <span className="gallery-text-bottom-small">
+                                Зал ожидания <br></br>
+                                18м<sup>2</sup>|38 000руб.|5 дней
+                            </span>
+                        </div>
+
+                        <div className="gallery-wrapper-block-small-div">
                             <a
-                                className="gallery-img-div3"
+                                className="gallery-img-div5"
                                 href
                             >
                                 <img
@@ -231,11 +250,13 @@ class Interiors extends Component {
                                             this.imgIndex = 4;
                                     }}
                                 />
-                                <span className="gallery-text-bottom">
+                            </a>
+                                <span className="gallery-text-bottom-small">
                                     Зал ожидания <br></br>
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
-                            </a>
+                        </div>
+
                             <div className="gallery-more-photo"
                             onClick={() => {this.setState({isShowGallery: true});}}
                             >
@@ -244,6 +265,14 @@ class Interiors extends Component {
                                 </span>
                             </div>
                     </div>
+                            <div
+                                className="gallery-more-photo-mobile"
+                                onClick={() => {this.setState({isShowGallery: true});}}
+                            >
+                                <span className="gallery-more-photo-text">
+                                    Больше фото
+                                </span>
+                            </div>
                     <div className="text-block-div">
                             <span className="text-block-idea">
                                 Идеи для Вашей росписи
@@ -254,60 +283,57 @@ class Interiors extends Component {
                                 Нарисуем похожее или скомбинируем Ваши идеи
                             </span>
                     </div>
-                    <div className="facades-text-block">
-                        <span className="facades-text">
-                            Роспись гостиных и спален
-                        </span>
+                    <div className="ineriors-example-block">
+                            <span className="interiors-text">
+                                Роспись гостиных и спален
+                            </span>
+                            <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={livingRoom}
+                                alt="изображение"
+                            />
+                        </div>
+                    </div>
+                    
+                    <div className="ineriors-example-block1">
+                            <span className="interiors-text">
+                                Роспись кухонь
+                            </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={kitchenArt}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={livingRoom}
-                            alt="изображение"
-                        />
-                    </div>
 
-                    <div className="facades-text-block">
-                        <span className="facades-text">
-                            Роспись кухонь
-                        </span>
-                    </div>
-
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={kitchenArt}
-                            alt="изображение"
-                        />
-                    </div>
-
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="ineriors-example-block1">
+                        <span className="interiors-text">
                             Роспись детских комнат
                         </span>
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={childrensRoom}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
-                    <div className="restoration-element-div">
-                        <img
-                            className="restoration-element-img"
-                            src={childrensRoom}
-                            alt="изображение"
-                        />
-                    </div>
-
-                    <div className="facades-text-block">
-                        <span className="facades-text">
+                    <div className="ineriors-example-block2">
+                        <span className="interiors-text">
                             Роспись ванных и санузлов
                         </span>
-                    </div>
-
-                    <div className="restoration-element-lost-div">
-                        <img
-                            className="restoration-element-img"
-                            src={bathRoom}
-                            alt="изображение"
-                        />
+                        <div className="interiors-element-div">
+                            <img
+                                className="interiors-element-img"
+                                src={bathRoom}
+                                alt="изображение"
+                            />
+                        </div>
                     </div>
 
                     <div className="vk-gallery-wrapper">
@@ -334,6 +360,7 @@ class Interiors extends Component {
                         <div className="facades-bottom-button-div">
                                 <ButtonUI
                                     classNameButton = "facades-bottom-button"
+                                    classNameText = "textButtonUI-facades"
                                     text = "ЭСКИЗ БЕСПЛАТНО"
                                     onClick = {() => {this.setState({show: !this.state.show})}}
                                 />
