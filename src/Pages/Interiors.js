@@ -69,6 +69,7 @@ class Interiors extends Component {
                         <img
                             className="facadeHeaderImg"
                             src={interiorsHeader}
+                            alt="оформление интерьеров"
                         />
                         <span
                             className="RestorationHeaderText"
@@ -116,6 +117,7 @@ class Interiors extends Component {
                         <img
                             className="divider-arrow"
                             src={nextArrowIcon}
+                            alt="подробнее об интерьерах"
                             onClick = {() =>
                                         {
                                             this.setState({uncover: !this.state.uncover});
@@ -132,10 +134,14 @@ class Interiors extends Component {
                                 Галерея наших работ
                             </span>
                             <div className="gallery-wrapper">
-                                <a className="gallery-img-div1">
+                                <a
+                                    className="gallery-img-div1"
+                                    href
+                                >
                                     <img
                                         className="gallery-img"
                                         src={kitchenImg}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {this.setState({isShowImage: true});
@@ -147,10 +153,14 @@ class Interiors extends Component {
                                         3м<sup>2</sup>|30 000руб.|6 дней
                                     </span>
                                 </a>
-                                <a className="gallery-img-div2">
+                                <a
+                                    className="gallery-img-div2"
+                                    href
+                                >
                                     <img
                                         className="gallery-img"
                                         src={windowImg}
+                                        alt="изображение"
                                         title="Нажмите для увеличения изображения"
                                         onClick={() =>
                                             {
@@ -166,10 +176,14 @@ class Interiors extends Component {
                         </div>
                     </div>
                     <div className="gallery-bottom-wrapper">
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -182,10 +196,14 @@ class Interiors extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -198,10 +216,14 @@ class Interiors extends Component {
                                     18м<sup>2</sup>|38 000руб.|5 дней
                                 </span>
                             </a>
-                            <a className="gallery-img-div3">
+                            <a
+                                className="gallery-img-div3"
+                                href
+                            >
                                 <img
                                     className="gallery-img-small"
                                     src={waitingRoom}
+                                    alt="изображение"
                                     title="Нажмите для увеличения изображения"
                                     onClick={() =>
                                         {
@@ -242,6 +264,7 @@ class Interiors extends Component {
                         <img
                             className="restoration-element-img"
                             src={livingRoom}
+                            alt="изображение"
                         />
                     </div>
 
@@ -255,6 +278,7 @@ class Interiors extends Component {
                         <img
                             className="restoration-element-img"
                             src={kitchenArt}
+                            alt="изображение"
                         />
                     </div>
 
@@ -268,6 +292,7 @@ class Interiors extends Component {
                         <img
                             className="restoration-element-img"
                             src={childrensRoom}
+                            alt="изображение"
                         />
                     </div>
 
@@ -281,6 +306,7 @@ class Interiors extends Component {
                         <img
                             className="restoration-element-img"
                             src={bathRoom}
+                            alt="изображение"
                         />
                     </div>
 
@@ -288,6 +314,7 @@ class Interiors extends Component {
                             <a className="link-vk-gallery"
                                 href="https://vk.com/album-12967671_238023379"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 title="Галерея ВКонтакте"
                                 alt="Галерея ВКонтакте"
                                 onClick={() => {window.href="https://vk.com/album-12967671_238023379"}}
