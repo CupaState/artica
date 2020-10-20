@@ -487,7 +487,7 @@ class About extends Component {
                                 Мы предлагаем вам изображения<br></br> для нанесения на стену или разрабатываем<br></br> индивидуальный эскиз
                             </span>
                             <span className="sketch-create-gallery-text2-mobile">
-                                Мы предлагаем вам изображения<br></br> для нанесения на стену <br></br> или разрабатываем<br></br> индивидуальный эскиз
+                                Мы предлагаем <br></br> вам изображения<br></br> для нанесения на стену <br></br> или разрабатываем<br></br> индивидуальный эскиз
                             </span>
                         </div>
                         
@@ -679,6 +679,11 @@ class About extends Component {
                     <hr className="facades-divider"></hr>
                     <div
                         className="facades-divider-header"
+                        onClick = {() =>
+                            {
+                                this.setState({uncover: !this.state.uncover});
+                            }
+                        }
                     >
                         <span className="facades-divider-text">
                             ПОДРОБНЕЕ
@@ -689,10 +694,10 @@ class About extends Component {
                         src={nextArrowIcon}
                         alt="подробнее"
                         onClick = {() =>
-                                    {
-                                        this.setState({uncover: !this.state.uncover});
-                                    }
-                                    }
+                            {
+                                this.setState({uncover: !this.state.uncover});
+                            }
+                        }
                     />
                 </div>
                 <HideBlock

@@ -308,7 +308,7 @@
 
 .sketch-create-gallery-num3{
     position: absolute;
-    margin-top: 2%;
+    margin-top: 1.5%;
     color: white;
     font-size: 16px;
     border: 2px solid;
@@ -395,6 +395,7 @@
 .calculate-example-price{
     margin-top: 2%;
     color: white;
+    font-size: 16px;
     user-select: none;
 }
 
@@ -506,7 +507,7 @@
     }
     
     .sketch-create-gallery-num2{
-        margin-top: 1%;
+        margin-top: 1.3%;
         font-size: 15px;
         border: 2px solid;
         border-color: white;
@@ -520,7 +521,7 @@
     }
     
     .sketch-create-gallery-num3{
-        margin-top: 2%;
+        margin-top: 1.5%;
         font-size: 15px;
         border: 2px solid;
         border-color: white;
@@ -531,6 +532,18 @@
     .sketch-create-gallery-text3{
         margin-top: 5%;
         font-size: 15px;
+    }
+/*  */
+    .calculate-header-div{
+        margin-top: 20%;
+    }
+    .calculate-header{
+        font-size: 29px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 5%;
+        font-size: 19px;
     }
     
 }
@@ -622,7 +635,6 @@
     .sketch-create-header{
         font-size: 28px;
     }
-    /*  */
 
     .sketch-create-gallery-num1{
         margin-top: 2%;
@@ -639,7 +651,6 @@
     }
     
     .sketch-create-gallery-num2{
-        margin-top: 1%;
         font-size: 14px;
         border: 2px solid;
         border-color: white;
@@ -653,7 +664,6 @@
     }
     
     .sketch-create-gallery-num3{
-        margin-top: 2%;
         font-size: 14px;
         border: 2px solid;
         border-color: white;
@@ -664,6 +674,15 @@
     .sketch-create-gallery-text3{
         margin-top: 5%;
         font-size: 14px;
+    }
+
+    .calculate-header{
+        font-size: 28px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 5%;
+        font-size: 18px;
     }
 }
 
@@ -755,8 +774,6 @@
         font-size: 27px;
     }
 
-    /*  */
-
     .sketch-create-gallery-num1{
         margin-top: 2%;
         font-size: 13.5px;
@@ -772,7 +789,6 @@
     }
     
     .sketch-create-gallery-num2{
-        margin-top: 1%;
         font-size: 13.5px;
         border: 2px solid;
         border-color: white;
@@ -786,7 +802,6 @@
     }
     
     .sketch-create-gallery-num3{
-        margin-top: 2%;
         font-size: 13.5px;
         border: 2px solid;
         border-color: white;
@@ -797,6 +812,15 @@
     .sketch-create-gallery-text3{
         margin-top: 5%;
         font-size: 13.5px;
+    }
+
+    .calculate-header{
+        font-size: 27px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 6%;
+        font-size: 17px;
     }
 }
 
@@ -854,7 +878,7 @@
         font-size: 13px;
         top: 0%;
     }
-/*  */
+
     .about-work-wrapper{
         margin-bottom: -15%;
     }
@@ -907,7 +931,6 @@
     }
     
     .sketch-create-gallery-num2{
-        margin-top: 1%;
         font-size: 13px;
         border: 2px solid;
         border-color: white;
@@ -921,7 +944,6 @@
     }
     
     .sketch-create-gallery-num3{
-        margin-top: 2%;
         font-size: 13px;
         border: 2px solid;
         border-color: white;
@@ -937,6 +959,20 @@
         display: inline;
         margin-top: 7%;
         font-size: 13.5px;
+    }
+
+    .calculate-header-div{
+        margin-top: 20%;
+        margin-bottom: 17%;
+    }
+
+    .calculate-header{
+        font-size: 26.5px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 6%;
+        font-size: 16.5px;
     }
 }
 
@@ -1020,10 +1056,7 @@
     .sketch-create-gallery-num1{
         margin-top: 2%;
         font-size: 13px;
-        border: 2px solid;
-        border-color: white;
         width: 24px;
-        border-radius: 100px;
     }
 
     .sketch-create-gallery-text1{
@@ -1032,12 +1065,8 @@
     }
     
     .sketch-create-gallery-num2{
-        margin-top: 1%;
         font-size: 13px;
-        border: 2px solid;
-        border-color: white;
         width: 24px;
-        border-radius: 100px;
     }
     
     .sketch-create-gallery-text2{
@@ -1051,12 +1080,8 @@
     }
     
     .sketch-create-gallery-num3{
-        margin-top: 2%;
         font-size: 13px;
-        border: 2px solid;
-        border-color: white;
         width: 24px;
-        border-radius: 100px;
     }
     
     .sketch-create-gallery-text3{
@@ -1067,6 +1092,20 @@
         display: inline;
         margin-top: 7%;
         font-size: 13.5px;
+    }
+
+    .calculate-header-div{
+        margin-top: 23%;
+        margin-bottom: 20%;
+    }
+
+    .calculate-header{
+        font-size: 25px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 6%;
+        font-size: 15px;
     }
 }
 
@@ -1130,7 +1169,7 @@
         font-size: 13px;
         top: 0%;
     }
-/*  */
+
     .about-work-wrapper{
         margin-bottom: -15%;
     }
@@ -1155,6 +1194,64 @@
 
     .sketch-create-header{
         font-size: 24px;
+    }
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 12px;
+        border: 2px solid;
+        border-color: white;
+        width: 22.5px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 7%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num2{
+        font-size: 12px;
+        width: 22.5px;
+    }
+    
+    .sketch-create-gallery-text2{
+        display: none;
+    }
+
+    .sketch-create-gallery-text2-mobile{
+        margin-top: 6.5%;
+        font-size: 13.5px;
+        display: inline;
+    }
+    
+    .sketch-create-gallery-num3{
+        font-size: 12px;
+        width: 22.5px;
+    }
+    
+    .sketch-create-gallery-text3{
+        display: none;
+    }
+
+    .sketch-create-gallery-text3-mobile{
+        display: inline;
+        margin-top: 7%;
+        font-size: 13.5px;
+    }
+
+    .calculate-header-div{
+        margin-top: 23%;
+        margin-bottom: 25%;
+    }
+
+    .calculate-header{
+        font-size: 24px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 7%;
+        font-size: 14px;
     }
 
 }
@@ -1226,6 +1323,88 @@
 
     .sketch-create-wrapper{
         margin-top: 10%;
+    }
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 7%;
+        font-size: 13px;
+    }
+    
+    .sketch-create-gallery-num2{
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text2-mobile{
+        margin-top: 6.5%;
+        font-size: 13px;
+        display: inline;
+    }
+    
+    .sketch-create-gallery-num3{
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text3-mobile{
+        display: inline;
+        margin-top: 7%;
+        font-size: 13px;
+    }
+
+    .calculate-header-div{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+
+    .calculate-header{
+        font-size: 23px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 7%;
+        font-size: 13px;
+    }
+
+    .calculate-example-wrapper{
+        flex-wrap: wrap;
+        margin-top: 15%;
+    }
+    
+    .calculate-example-div{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 20%
+    }
+    
+    .calculate-example-star-div{
+        margin-top: 3%;
+    }
+    
+    .calculate-example-star{
+        width: 8%;
+        margin: 1%;
+    }
+    
+    .calculate-example-img{
+        margin-top: 1%;
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+    }
+    
+    .calculate-example-price{
+        margin-top: 2%;
+        font-size: 15px;
     }
 }
 
@@ -1320,6 +1499,87 @@
     .sketch-create-wrapper{
         margin-top: 10%;
     }
+
+    .sketch-create-gallery-num1{
+        margin-top: 3%;
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 10%;
+        font-size: 13px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 2.5%;
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text2-mobile{
+        margin-top: 9%;
+        font-size: 13px;
+        display: inline;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2.5%;
+        font-size: 12px;
+        width: 22.5px;
+    }
+
+    .sketch-create-gallery-text3-mobile{
+        display: inline;
+        margin-top: 9%;
+        font-size: 13px;
+    }
+
+    .calculate-header-div{
+        margin-top: 32%;
+        margin-bottom: 30%;
+    }
+
+    .calculate-header{
+        font-size: 22px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 8%;
+        font-size: 12.5px;
+    }
+
+        .calculate-example-wrapper{
+        flex-wrap: wrap;
+        margin-top: 15%;
+    }
+    
+    .calculate-example-div{
+        flex-wrap: wrap;
+        width: 40%
+    }
+    
+    .calculate-example-star-div{
+        margin-top: 3%;
+    }
+    
+    .calculate-example-star{
+        width: 8%;
+        margin: 1%;
+    }
+    
+    .calculate-example-img{
+        margin-top: 1%;
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+    }
+    
+    .calculate-example-price{
+        margin-top: 2%;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 500px)
@@ -1385,12 +1645,55 @@
     }
 
     .sketch-create-header{
-        font-size: 20px;
+        /* font-size: 20px; */
+        display: none;
     }
 
     .sketch-create-wrapper{
-        margin-top: 11%;
+        display: none;
     }
+
+    .calculate-header-div{
+        margin-top: 0%;
+        margin-bottom: 30%;
+    }
+
+    .calculate-header{
+        font-size: 18px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 8%;
+        font-size: 11px;
+    }
+
+    .calculate-example-div{
+        flex-wrap: wrap;
+        width: 40%
+    }
+    
+    .calculate-example-star-div{
+        margin-top: 3%;
+    }
+    
+    .calculate-example-star{
+        width: 8%;
+        margin: 1%;
+    }
+    
+    .calculate-example-img{
+        margin-top: 1%;
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+    }
+    
+    .calculate-example-price{
+        margin-top: 2%;
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (max-width: 400px)
@@ -1454,14 +1757,13 @@
         font-size: 10px;
         top: 0%;
     }
-/*  */
     .about-work-wrapper{
-        margin-bottom: -15%;
+        margin-bottom: -10%;
         flex-direction: column;
     }
     
     .about-work-item{
-        margin: 1.5%;
+        margin: 3%;
     }
     
     .about-work-img-block{
@@ -1484,6 +1786,47 @@
 
     .sketch-create-wrapper{
         margin-top: 12%;
+    }
+
+    .calculate-header-div{
+        margin-top: 0%;
+        margin-bottom: 32%;
+    }
+
+    .calculate-header{
+        font-size: 16px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 8%;
+        font-size: 10px;
+    }
+
+    .calculate-example-div{
+        flex-wrap: wrap;
+        width: 40%
+    }
+    
+    .calculate-example-star-div{
+        margin-top: 3%;
+    }
+    
+    .calculate-example-star{
+        width: 8%;
+        margin: 1%;
+    }
+    
+    .calculate-example-img{
+        margin-top: 1%;
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+    }
+    
+    .calculate-example-price{
+        margin-top: 2%;
+        font-size: 12px;
     }
 }
 
@@ -1549,8 +1892,52 @@
         top: 0%;
     }
 
+    .about-work-img-block{
+        height: 23vh;
+    }
+
     .sketch-create-header{
         font-size: 16px;
+    }
+
+    .calculate-header-div{
+        margin-top: 0%;
+        margin-bottom: 32%;
+    }
+
+    .calculate-header{
+        font-size: 15px;
+    }
+    
+    .calculate-header-text{
+        margin-top: 8%;
+        font-size: 10px;
+    }
+
+    .calculate-example-div{
+        width: 40%
+    }
+    
+    .calculate-example-star-div{
+        margin-top: 3%;
+    }
+    
+    .calculate-example-star{
+        width: 8%;
+        margin: 1%;
+    }
+    
+    .calculate-example-img{
+        margin-top: 1%;
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 5%;
+    }
+    
+    .calculate-example-price{
+        margin-top: 3%;
+        font-size: 11.5px;
     }
 }
 
