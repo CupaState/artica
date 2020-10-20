@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import "../css/About.css";
 import "../css/Facades.css";
+import "../css/Home.css";
+
 import VideoHideBlock from "../Components/VideoHideBlock";
 import HideBlock from "../Components/HideBlock";
 import Tooltip from "../Components/Tooltip";
 import ButtonUI from "../Components/Button";
-import MyModal from "../Components/MyModal"
+import MyModal from "../Components/MyModal";
 
 import worker from "../assets/aboutImg/worker.png";
 import message from "../assets/aboutImg/message.png";
@@ -74,7 +76,10 @@ class About extends Component {
                         </div>
 
 
-                        <Tooltip text = "Ipsum" />
+                        <Tooltip
+                            text = "Ipsum"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -97,7 +102,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "Lorem"/>
+                        <Tooltip
+                            text = "Lorem"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -121,7 +129,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "sdfjdffndfglaalgnn gfkflflslagn rkkfmzg"/>
+                        <Tooltip
+                            text = "sdfjdffndfglaalgnn gfkflflslagn rkkfmzg"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -144,7 +155,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "DFhla;gfgrpq"/>
+                        <Tooltip
+                            text = "DFhla;gfgrpq"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -167,7 +181,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "oefkvlef;lfekfe'afe'la'adw"/>
+                        <Tooltip
+                            text = "oefkvlef;lfekfe'afe'la'adw"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -190,7 +207,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "poewjljdnfga;brfgbzsghvnsmu,mnzbfvd"/>
+                        <Tooltip
+                            text = "poewjljdnfga;brfgbzsghvnsmu,mnzbfvd"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -213,7 +233,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "apodg;jhbvl,vroepsxvc"/>
+                        <Tooltip
+                            text = "apodg;jhbvl,vroepsxvc"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -236,7 +259,10 @@ class About extends Component {
                             </span> 
                         </div>
 
-                        <Tooltip text = "[esd;jgvlbsfcfecd]"/>
+                        <Tooltip
+                            text = "[esd;jgvlbsfcfecd]"
+                            className="tooltip-question"
+                        />
 
                         <div className="how-to-work-img-div">
                             <img
@@ -259,6 +285,11 @@ class About extends Component {
                     <hr className="facades-divider"></hr>
                     <div
                         className="facades-divider-header"
+                        onClick = {() =>
+                            {
+                                this.setState({uncoverVideo: !this.state.uncoverVideo});
+                            }
+                        }
                     >
                         <span className="facades-divider-text">
                             ПОСМОТРЕТЬ ВИДЕООТЗЫВЫ
@@ -269,10 +300,10 @@ class About extends Component {
                         src={nextArrowIcon}
                         alt="подробнее"
                         onClick = {() =>
-                                    {
-                                        this.setState({uncoverVideo: !this.state.uncoverVideo});
-                                    }
-                                    }
+                            {
+                                this.setState({uncoverVideo: !this.state.uncoverVideo});
+                            }
+                        }
                     />
                 </div>
 
@@ -283,7 +314,9 @@ class About extends Component {
                 <div className="about-work-wrapper">
 
                     <div className="about-work-item">
-                        <div className="about-work-img-block">
+                        <div
+                            className="about-work-img-block"
+                        >
                             <img
                                 src={roller}
                                 className="about-work-img"
@@ -299,6 +332,13 @@ class About extends Component {
                             Благодаря соблюдению технологии роспись будет яркой и
                             продержится минимум 5 лет
                         </span>
+                        <Tooltip
+                            text="Тщательно подготовим поверхность перед работой. 
+                            Покроем лаком после завершения. 
+                            Благодаря соблюдению технологии роспись будет яркой и
+                            продержится минимум 5 лет"
+                            className="tooltip-question-visible"
+                        />
                     </div>
 
                     <div className="about-work-item">
@@ -318,6 +358,13 @@ class About extends Component {
                             позволяет выполнять 
                             даже крупные заказы за 2-3 дня
                         </span>
+                        <Tooltip
+                            text="Нужно сделать быстрее?
+                            Большой штат художников 
+                            позволяет выполнять 
+                            даже крупные заказы за 2-3 дня"
+                            className="tooltip-question-visible"
+                        />
                     </div>
 
                     <div className="about-work-item">
@@ -339,6 +386,15 @@ class About extends Component {
                             Независимо от высоты стены
                             работа будет выглядеть отлично
                         </span>
+                        <Tooltip
+                            text="Пишем на бетоне, кирпиче, 
+                            крашеной штукатурке, 
+                            железных воротах,
+                            бумаге и даже стекле. 
+                            Независимо от высоты стены
+                            работа будет выглядеть отлично"
+                            className="tooltip-question-visible"
+                        />
                     </div>
 
                     <div className="about-work-item">
@@ -356,6 +412,11 @@ class About extends Component {
                             Предложим несколько разных вариантов исполнения,<br></br>
                             чтобы подобрать для Вас наиболее подходящий по цене и технологии
                         </span>
+                        <Tooltip
+                            text="Предложим несколько разных вариантов исполнения,
+                            чтобы подобрать для Вас наиболее подходящий по цене и технологии"
+                            className="tooltip-question-visible"
+                        />
                     </div>
                 </div>
 
@@ -369,6 +430,7 @@ class About extends Component {
                     <div className="promise-button-div">
                         <ButtonUI
                             classNameButton = "promise-button"
+                            classNameText = "textButtonUI-promise"
                             text = "Заказать эскиз"
                             onClick = {() => {this.setState({show: !this.state.show})}}
                         />
@@ -424,6 +486,9 @@ class About extends Component {
                             <span className="sketch-create-gallery-text2">
                                 Мы предлагаем вам изображения<br></br> для нанесения на стену или разрабатываем<br></br> индивидуальный эскиз
                             </span>
+                            <span className="sketch-create-gallery-text2-mobile">
+                                Мы предлагаем вам изображения<br></br> для нанесения на стену <br></br> или разрабатываем<br></br> индивидуальный эскиз
+                            </span>
                         </div>
                         
                     </div>
@@ -441,6 +506,10 @@ class About extends Component {
                                 После выбора изображения<br></br> 
                                 показываем, как оно будет выглядеть на поверхности.<br></br>
                                 После утверждения эскиза, рассчёта стоимости и подписания договора - начинаем работы
+                            </span>
+                            <span className="sketch-create-gallery-text3-mobile">
+                                После выбора изображения<br></br> 
+                                показываем, как оно будет выглядеть на поверхности.
                             </span>
                         </div>    
                     </div>

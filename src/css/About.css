@@ -109,10 +109,11 @@
 .about-work-item{
     position: relative;
     margin: 4%;
+    cursor: pointer;
 }
 
 .about-work-img-block{
-    height: 200px;
+    height: 25.5vh
 }
 
 .about-work-img{
@@ -124,7 +125,7 @@
     color:  #4fbfc6;
     top: 60%;
     left: 0%;
-
+    font-size: 16px;
 }
 
 .about-work-white-text{
@@ -132,6 +133,21 @@
     color: white;
     top: 100%;
     left: 0%;
+    font-size: 15px;
+}
+
+.about-work-white-div-mobile{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+}
+
+.about-work-white-text-mobile{
+    position: absolute;
+    color: white;
     font-size: 15px;
 }
 
@@ -169,12 +185,12 @@
 
 .sketch-create-gallery-source{
     user-select: none;
+    width: 23.8vw;
 }
 
 .sketch-create-gallery-done{
     user-select: none;
-    width: 383px;
-    height: 550px;
+    width: 23.8vw;
 }
 
 .sketch-create-gallery{
@@ -188,6 +204,7 @@
     margin-bottom: 1%;
     cursor: pointer;
     transition: all 1s;
+    width: 24.2vw;
 }
 
 .sketch-create-gallery-img2{
@@ -196,6 +213,7 @@
     margin-bottom: 1%;
     cursor: pointer;
     transition: all 1s;
+    width: 24.2vw;
 } 
 
 .sketch-create-gallery-img3{
@@ -204,6 +222,7 @@
     margin-bottom: 1%;
     cursor: pointer;
     transition: all 1s;
+    width: 24.2vw;
 }
 
 .sketch-create-gallery-img1:hover{
@@ -225,9 +244,23 @@
     flex-wrap: wrap;
 }
 
+.sketch-create-gallery-text-div2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sketch-create-gallery-text-div3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .sketch-create-gallery-num1{
     position: absolute;
     margin-top: 2%;
+    font-size: 16px;
     color: white;
     border: 2px solid;
     border-color: white;
@@ -239,21 +272,16 @@
 .sketch-create-gallery-text1{
     position: absolute;
     margin-top: 5%;
+    font-size: 16px;
     color: white;
     user-select: none;
-}
-
-.sketch-create-gallery-text-div2{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .sketch-create-gallery-num2{
     position: absolute;
     margin-top: 1%;
     color: white;
+    font-size: 16px;
     border: 2px solid;
     border-color: white;
     width: 30px;
@@ -264,20 +292,25 @@
 .sketch-create-gallery-text2{
     position: absolute;
     margin-top: 4.5%;
+    font-size: 16px;
     color: white;
     user-select: none;
 }
 
-.sketch-create-gallery-text-div3{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.sketch-create-gallery-text2-mobile{
+    position: absolute;
+    margin-top: 4.5%;
+    font-size: 16px;
+    color: white;
+    user-select: none;
+    display: none;
 }
 
 .sketch-create-gallery-num3{
     position: absolute;
     margin-top: 2%;
     color: white;
+    font-size: 16px;
     border: 2px solid;
     border-color: white;
     width: 30px;
@@ -289,6 +322,16 @@
     position: absolute;
     margin-top: 5%;
     color: white;
+    font-size: 16px;
+    user-select: none;
+}
+
+.sketch-create-gallery-text3-mobile{
+    display: none;
+    position: absolute;
+    margin-top: 5%;
+    color: white;
+    font-size: 16px;
     user-select: none;
 }
 
@@ -418,6 +461,78 @@
         top: 0%;
     }
     
+    .about-work-item{
+
+        margin: 4%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh
+    }
+    
+    .about-work-img{
+        width: 60%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 15px;
+    }
+    
+    .about-work-white-text{
+        top: 100%;
+        left: 0%;
+        font-size: 14px;
+    }
+
+    .sketch-create-header{
+        font-size: 29px;
+    }
+/*  */
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 15px;
+        border: 2px solid;
+        border-color: white;
+        width: 28px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 5%;
+        font-size: 15px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 1%;
+        font-size: 15px;
+        border: 2px solid;
+        border-color: white;
+        width: 28px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text2{
+        margin-top: 4.5%;
+        font-size: 15px;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2%;
+        font-size: 15px;
+        border: 2px solid;
+        border-color: white;
+        width: 28px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text3{
+        margin-top: 5%;
+        font-size: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 1200px)
@@ -473,6 +588,82 @@
     .how-to-work-text{
         font-size: 14px;
         top: 0%;
+    }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: 20%;
+    }
+    
+    .about-work-item{
+
+        margin: 4%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh
+    }
+    
+    .about-work-img{
+        width: 58%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 15px;
+    }
+    
+    .about-work-white-text{
+        top: 100%;
+        left: 0%;
+        font-size: 14px;
+    }
+
+    .sketch-create-header{
+        font-size: 28px;
+    }
+    /*  */
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 14px;
+        border: 2px solid;
+        border-color: white;
+        width: 26px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 1%;
+        font-size: 14px;
+        border: 2px solid;
+        border-color: white;
+        width: 26px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text2{
+        margin-top: 4.5%;
+        font-size: 14px;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2%;
+        font-size: 14px;
+        border: 2px solid;
+        border-color: white;
+        width: 26px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text3{
+        margin-top: 5%;
+        font-size: 14px;
     }
 }
 
@@ -530,6 +721,83 @@
         font-size: 13px;
         top: 0%;
     }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: 20%;
+    }
+    
+    .about-work-item{
+
+        margin: 4%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh;
+    }
+    
+    .about-work-img{
+        width: 56%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 14px;
+    }
+    
+    .about-work-white-text{
+        top: 100%;
+        left: 0%;
+        font-size: 13px;
+    }
+
+    .sketch-create-header{
+        font-size: 27px;
+    }
+
+    /*  */
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 13.5px;
+        border: 2px solid;
+        border-color: white;
+        width: 25px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 5%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 1%;
+        font-size: 13.5px;
+        border: 2px solid;
+        border-color: white;
+        width: 25px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text2{
+        margin-top: 4.5%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2%;
+        font-size: 13.5px;
+        border: 2px solid;
+        border-color: white;
+        width: 25px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text3{
+        margin-top: 5%;
+        font-size: 13.5px;
+    }
 }
 
 @media screen and (max-width: 1000px)
@@ -586,6 +854,90 @@
         font-size: 13px;
         top: 0%;
     }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: -15%;
+    }
+    
+    .about-work-item{
+
+        margin: 3%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh;
+    }
+    
+    .about-work-img{
+        width: 50%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 14px;
+    }
+    
+    .about-work-white-text{
+        display: none;
+    }
+
+    .about-promise-block{
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .sketch-create-header{
+        font-size: 25px;
+    }
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 7%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 1%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text2{
+        margin-top: 6.5%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text3{
+        display: none;
+    }
+
+    .sketch-create-gallery-text3-mobile{
+        display: inline;
+        margin-top: 7%;
+        font-size: 13.5px;
+    }
 }
 
 @media screen and (max-width: 900px)
@@ -641,6 +993,80 @@
     .how-to-work-text{
         font-size: 13px;
         top: 0%;
+    }
+    
+    .about-work-wrapper{
+        margin-bottom: -15%;
+    }
+    
+    .about-work-item{
+        margin: 2%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh;
+    }
+    
+    .about-work-img{
+        width: 45%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 14px;
+    }
+
+    .sketch-create-gallery-num1{
+        margin-top: 2%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+
+    .sketch-create-gallery-text1{
+        margin-top: 7%;
+        font-size: 13.5px;
+    }
+    
+    .sketch-create-gallery-num2{
+        margin-top: 1%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text2{
+        display: none;
+    }
+
+    .sketch-create-gallery-text2-mobile{
+        margin-top: 6.5%;
+        font-size: 13.5px;
+        display: inline;
+    }
+    
+    .sketch-create-gallery-num3{
+        margin-top: 2%;
+        font-size: 13px;
+        border: 2px solid;
+        border-color: white;
+        width: 24px;
+        border-radius: 100px;
+    }
+    
+    .sketch-create-gallery-text3{
+        display: none;
+    }
+
+    .sketch-create-gallery-text3-mobile{
+        display: inline;
+        margin-top: 7%;
+        font-size: 13.5px;
     }
 }
 
@@ -703,6 +1129,32 @@
     .how-to-work-text{
         font-size: 13px;
         top: 0%;
+    }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: -15%;
+    }
+    
+    .about-work-item{
+        margin: 1%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh;
+    }
+    
+    .about-work-img{
+        width: 40%;
+    }
+    
+    .about-work-blue-text{
+        top: 65%;
+        left: 0%;
+        font-size: 13px;
+    }
+
+    .sketch-create-header{
+        font-size: 24px;
     }
 
 }
@@ -767,6 +1219,14 @@
         font-size: 13px;
         top: 0%;
     }
+
+    .sketch-create-header{
+        font-size: 24px;
+    }
+
+    .sketch-create-wrapper{
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -829,6 +1289,36 @@
     .how-to-work-text{
         font-size: 10px;
         top: 0%;
+    }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: -15%;
+    }
+    
+    .about-work-item{
+        margin: 1%;
+    }
+    
+    .about-work-img-block{
+        height: 25.5vh;
+    }
+    
+    .about-work-img{
+        width: 40%;
+    }
+    
+    .about-work-blue-text{
+        top: 50%;
+        left: 0%;
+        font-size: 13px;
+    }
+
+    .sketch-create-header{
+        font-size: 22px;
+    }
+
+    .sketch-create-wrapper{
+        margin-top: 10%;
     }
 }
 
@@ -893,6 +1383,14 @@
         font-size: 10px;
         top: 0%;
     }
+
+    .sketch-create-header{
+        font-size: 20px;
+    }
+
+    .sketch-create-wrapper{
+        margin-top: 11%;
+    }
 }
 
 @media screen and (max-width: 400px)
@@ -956,6 +1454,37 @@
         font-size: 10px;
         top: 0%;
     }
+/*  */
+    .about-work-wrapper{
+        margin-bottom: -15%;
+        flex-direction: column;
+    }
+    
+    .about-work-item{
+        margin: 1.5%;
+    }
+    
+    .about-work-img-block{
+        height: 15vh;
+    }
+    
+    .about-work-img{
+        width: 35%;
+    }
+    
+    .about-work-blue-text{
+        top: 60%;
+        left: 0%;
+        font-size: 12px;
+    }
+
+    .sketch-create-header{
+        font-size: 18px;
+    }
+
+    .sketch-create-wrapper{
+        margin-top: 12%;
+    }
 }
 
 @media screen and (max-width: 350px)
@@ -1018,6 +1547,10 @@
     .how-to-work-text{
         font-size: 10px;
         top: 0%;
+    }
+
+    .sketch-create-header{
+        font-size: 16px;
     }
 }
 

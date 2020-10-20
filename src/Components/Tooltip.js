@@ -1,4 +1,4 @@
-import React, { Component, ReactDOM } from 'react';
+import React, { Component } from 'react';
 import "../css/Tooltip.css";
 
 import questionIcon from "../assets/icons/question.ico";
@@ -51,7 +51,7 @@ export default class Tooltip extends Component {
         return (
             <div className="tooltip-div" ref={this.setWrapperRef} id="wrapper">
                 <img
-                    className="tooltip-question"
+                    className={ this.props.className }
                     src={questionIcon}
                     alt="подсказка"
                     onClick={() => {
