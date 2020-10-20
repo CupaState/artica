@@ -48,19 +48,19 @@ export default class Tooltip extends Component {
 
 
     render() {
-
         return (
             <div className="tooltip-div" ref={this.setWrapperRef} id="wrapper">
                 <img
                     className="tooltip-question"
                     src={questionIcon}
                     alt="подсказка"
-                    onClick={() => {this.setState({showQuestion: !this.state.showQuestion});}}
+                    onClick={() => {
+                        this.setState({showQuestion: !this.state.showQuestion});
+                }}
                 />
                 { this.state.showQuestion && 
                 <span 
                     className = "tooltip-text"
-                    onMouseOut = {() => {this.toggle()}}
                 > {this.props.text} </span>
                 }
             </div>

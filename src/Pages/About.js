@@ -67,7 +67,12 @@ class About extends Component {
                 <div className="how-to-work-wrapper">
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 1 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                1
+                            </span>
+                        </div>
+
 
                         <Tooltip text = "Ipsum" />
 
@@ -75,15 +80,22 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={message}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Обсуждение проекта
                             </span>
+                        </div>
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 2 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                2
+                            </span> 
+                        </div>
 
                         <Tooltip text = "Lorem"/>
 
@@ -91,16 +103,23 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={worker}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
-                                Выезд специалиста:<br></br>
                                 Замер и фотографировние объекта
                             </span>
+                        </div>
+ 
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 3 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                3
+                            </span> 
+                        </div>
 
                         <Tooltip text = "sdfjdffndfglaalgnn gfkflflslagn rkkfmzg"/>
 
@@ -108,15 +127,22 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={project}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Подготовка дизайн-проекта
                             </span>
+                        </div>
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 4 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                4
+                            </span> 
+                        </div>
 
                         <Tooltip text = "DFhla;gfgrpq"/>
 
@@ -124,15 +150,22 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={list}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Заключение договора
                             </span>
+                        </div>
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 5 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                5
+                            </span> 
+                        </div>
 
                         <Tooltip text = "oefkvlef;lfekfe'afe'la'adw"/>
 
@@ -140,15 +173,22 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={prepare}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Подготовка поверхности
-                            </span>        
+                            </span> 
+                        </div>
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 6 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                6
+                            </span> 
+                        </div>
 
                         <Tooltip text = "poewjljdnfga;brfgbzsghvnsmu,mnzbfvd"/>
 
@@ -156,15 +196,22 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={paint}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Работа художников
                             </span>
+                        </div>
                     </div>
 
                     <div className="how-to-work-div">
-                        <div className="how-to-work-num"> 7 </div>
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                7
+                            </span> 
+                        </div>
 
                         <Tooltip text = "apodg;jhbvl,vroepsxvc"/>
 
@@ -172,27 +219,37 @@ class About extends Component {
                             <img
                                 className="how-to-work-img"
                                 src={approve}
+                                alt="изображение"
                             />
                         </div>
+                        <div className="how-to-work-text-div">
                             <span className="how-to-work-text">
                                 Утверждение проекта
                             </span>
+                        </div>
                     </div>
 
-                    <div className="how-to-work-div1">
-                        <div className="how-to-work-num"> 8 </div>
+                    <div className="how-to-work-div">
+                        <div className="how-to-work-num">
+                            <span className="how-to-work-num-text">
+                                8
+                            </span> 
+                        </div>
 
                         <Tooltip text = "[esd;jgvlbsfcfecd]"/>
 
-                        <div className="how-to-work-img-div1">
+                        <div className="how-to-work-img-div">
                             <img
                                 className="how-to-work-img1"
                                 src={coverLayer}
+                                alt="изображение"
                             />
                         </div>
-                            <span className="how-to-work-text1">
+                        <div className="how-to-work-text-div">
+                            <span className="how-to-work-text">
                                 Нанесение защитного покрытия
                             </span>
+                        </div>
                     </div>
                 </div>
 
@@ -210,6 +267,7 @@ class About extends Component {
                     <img
                         className="divider-arrow"
                         src={nextArrowIcon}
+                        alt="подробнее"
                         onClick = {() =>
                                     {
                                         this.setState({uncoverVideo: !this.state.uncoverVideo});
@@ -229,6 +287,7 @@ class About extends Component {
                             <img
                                 src={roller}
                                 className="about-work-img"
+                                alt="изображение"
                             />
                         </div>
                         <span className="about-work-blue-text">
@@ -247,6 +306,7 @@ class About extends Component {
                             <img
                                 src={clock}
                                 className="about-work-img"
+                                alt="изображение"
                             />
                         </div>
                         <span className="about-work-blue-text">
@@ -265,6 +325,7 @@ class About extends Component {
                             <img
                                 src={wall}
                                 className="about-work-img"
+                                alt="изображение"
                             />
                         </div>
                         <span className="about-work-blue-text">
@@ -285,6 +346,7 @@ class About extends Component {
                             <img
                                 src={cash}
                                 className="about-work-img"
+                                alt="изображение"
                             />
                         </div>
                         <span className="about-work-blue-text">
@@ -324,6 +386,7 @@ class About extends Component {
                         <img
                             src={sourceWall}
                             className="sketch-create-gallery-source"
+                            alt="изображение"
                         />
                         <div className="sketch-create-gallery-text-div1">
                             <span className="sketch-create-gallery-num1">
@@ -339,15 +402,18 @@ class About extends Component {
                         <img
                             src={var1}
                             className="sketch-create-gallery-img1"
+                            alt="изображение"
                             onMouseEnter={() => {this.setState({images: doneVar1});}}
                         />         
                         <img
                             src={var2}
+                            alt="изображение"
                             className="sketch-create-gallery-img2"
                             onMouseEnter={() => {this.setState({images: doneVar2});}}
                         />
                         <img
                             src={var3}
+                            alt="изображение"
                             className="sketch-create-gallery-img3"
                             onMouseEnter={() => {this.setState({images: doneVar3});}}
                         />
@@ -398,27 +464,33 @@ class About extends Component {
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                alt="изображение"
                             />
                         </div>
                         <img
                             src={img3000}
                             className="calculate-example-img"
+                            alt="изображение"
                         />
                         <span className="calculate-example-price"> 3000 руб.</span>
                     </div>
@@ -428,26 +500,32 @@ class About extends Component {
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                alt="изображение"
                             />
                         </div>
                         <img
                             src={img5000}
+                            alt="изображение"
                             className="calculate-example-img"
                         />
                         <span className="calculate-example-price"> 5000 руб.</span>
@@ -458,26 +536,32 @@ class About extends Component {
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={star}
+                                 alt="изображение"
                             />
                         </div>
                         <img
                             src={img7000}
+                             alt="изображение"
                             className="calculate-example-img"
                         />
                         <span className="calculate-example-price"> 7000 руб.</span>
@@ -488,26 +572,32 @@ class About extends Component {
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                             <img
                                 className="calculate-example-star"
                                 src={starFull}
+                                 alt="изображение"
                             />
                         </div>
                         <img
                             src={img9000}
+                             alt="изображение"
                             className="calculate-example-img"
                         />
                         <span className="calculate-example-price"> 9000 руб.</span>
@@ -528,6 +618,7 @@ class About extends Component {
                     <img
                         className="divider-arrow"
                         src={nextArrowIcon}
+                        alt="подробнее"
                         onClick = {() =>
                                     {
                                         this.setState({uncover: !this.state.uncover});
