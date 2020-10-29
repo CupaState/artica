@@ -1,11 +1,13 @@
 .gallery-wrapper-block-show{
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 100;
-    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(59, 67, 76, 0.5);
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
@@ -74,12 +76,10 @@
         } 
 
 .gallery-img-block{
-    width: 85%;
-    max-width: 50%;
-    height: auto;
+    max-width: 60vw;
     position: absolute;
     left: 50%;
-    margin: 10% auto;
+    top: 25%;
     transform: translateX(-50%);
     user-select: none;
     -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
@@ -91,6 +91,7 @@
     position: absolute;
     top: 40%;
     left: 5%;
+    width: 9.4%;
     cursor: pointer;
 }
 
@@ -102,6 +103,7 @@
     position: absolute;
     top: 40%;
     right: 5%;
+    width: 9.4%;
     cursor: pointer;
 }
 
@@ -111,7 +113,7 @@
 
 .gallery-close-btn{
     margin-top: 3%;
-    margin-left: 80%;
+    margin-left: 80vw;
     width: 5%;
     cursor: pointer;
     transition: filter 0.5s;
@@ -119,4 +121,39 @@
 
 .gallery-close-btn:hover{
     filter: invert(20%);
+}
+
+@media screen and (max-width: 1000px)
+{
+    .gallery-img-block{
+        top: 27%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .gallery-img-block{
+        top: 27%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .gallery-img-block{
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .gallery-img-block{
+        top: 33%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .gallery-img-block{
+        top: 35%;
+    }
 }

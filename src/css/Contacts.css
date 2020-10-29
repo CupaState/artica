@@ -121,26 +121,44 @@
 .contacts-info-wrapper{
     display: flex;
     position: relative;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: 5%;
-    width: 51%;
+    margin-bottom: -5%;
+    width: 100%;
     flex-direction: column;
-    text-align: left;
+    text-align: start;
 }
 
 .contacts-info-header{
     color: white;
     font-size: 40px;
+    padding-right: 2%;
+    margin-left: 24vw;
     user-select: none;
 }
 
 .contacts-info-text{
     color: white;
     font-size: 20px;
+    padding-right: 2%;
     margin-top: 5%;
+    margin-left: 24vw;
     user-select: none;
+}
+
+@media screen and (max-width: 1400px)
+{
+    .contacts-info-header{
+        font-size: 39px;
+        margin-left: 19vw;
+    }
+    
+    .contacts-info-text{
+        font-size: 19px;
+        margin-top: 5%;
+        margin-left: 19vw;
+    }
 }
 
 @media screen and (max-width: 1300px)
@@ -206,6 +224,27 @@
     .contact-link-icons{
         width: 3.9vw;
     }
+
+    .map{
+        width: 63% !important;
+        height: 50vw !important;
+    }
+
+    .contacts-info-wrapper{
+        margin-bottom: -5%;
+        margin-top: 5%;
+    }
+    
+    .contacts-info-header{
+        font-size: 38px;
+        margin-left: 18vw;
+    }
+    
+    .contacts-info-text{
+        font-size: 18px;
+        margin-top: 5%;
+        margin-left: 18vw;
+    }
 }
 
 @media screen and (max-width: 1200px)
@@ -268,6 +307,22 @@
     
     .contact-link-icons{
         width: 3.9vw;
+    }
+
+    .contacts-info-wrapper{
+        margin-bottom: -5%;
+        margin-top: 5%;
+    }
+    
+    .contacts-info-header{
+        font-size: 37px;
+        padding-right: 1%;
+    }
+    
+    .contacts-info-text{
+        font-size: 17px;
+        margin-top: 5%;
+        padding-right: 2%;
     }
 }
 
@@ -336,6 +391,20 @@
     .contact-link-icons{
         width: 5vw;
     }
+
+    .contacts-info-wrapper{
+        margin-bottom: -5%;
+        margin-top: 5%;
+    }
+    
+    .contacts-info-header{
+        font-size: 34px;
+    }
+    
+    .contacts-info-text{
+        font-size: 16px;
+        margin-top: 5%;
+    }
 }
 
 @media screen and (max-width: 1000px)
@@ -402,6 +471,20 @@
     
     .contact-link-icons{
         width: 5vw;
+    }
+
+    .contacts-info-wrapper{
+        margin-top: 5%;
+        margin-bottom: -5%;
+    }
+    
+    .contacts-info-header{
+        font-size: 35px;
+    }
+    
+    .contacts-info-text{
+        font-size: 15px;
+        margin-top: 5%;
     }
 }
 
@@ -471,6 +554,24 @@
     .contact-link-icons{
         width: 5.5vw;
     }
+
+    .contact-map-wrapper{
+        margin-top: 5%;
+    }
+
+    .contacts-info-wrapper{
+        margin-top: 5%;
+        margin-bottom: -5%;
+    }
+    
+    .contacts-info-header{
+        font-size: 34px;
+    }
+    
+    .contacts-info-text{
+        font-size: 14px;
+        margin-top: 5%;
+    }
 }
 
 @media screen and (max-width: 800px)
@@ -539,6 +640,10 @@
     
     .contact-link-icons{
         width: 6vw;
+    }
+
+    .contacts-info-wrapper{
+        margin-bottom: -5%;
     }
 }
 
@@ -612,6 +717,17 @@
         width: 8vw;
     }
     
+    .contact-map-wrapper{
+        margin-top: 8%;
+    }
+
+    .contacts-info-wrapper{
+        margin-bottom: -8%;
+    }
+
+    .contacts-info-header{
+        font-size: 29px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -674,6 +790,20 @@
     
     .contact-link-icons{
         width: 8vw;
+    }
+
+    .contacts-info-wrapper{
+        margin-top: 10%;
+        margin-bottom: -8%;
+    }
+    
+    .contacts-info-header{
+        font-size: 28px;
+    }
+    
+    .contacts-info-text{
+        font-size: 13px;
+        margin-top: 5%;
     }
 
 }
@@ -739,6 +869,20 @@
     .contact-link-icons{
         width: 9vw;
     }
+
+    .contact-map-wrapper{
+        margin-top: 10%;
+    }
+
+    .contacts-info-wrapper{
+        margin-top: 10%;
+        margin-bottom: -10%;
+    }
+    
+    .contacts-info-header{
+        font-size: 25px;
+    }
+    
 }
 
 @media screen and (max-width: 400px)
@@ -802,6 +946,20 @@
     .contact-link-icons{
         width: 10vw;
     }
+
+    .contacts-info-wrapper{
+        margin-top: 10%;
+        margin-bottom: -10%;
+    }
+    
+    .contacts-info-header{
+        font-size: 23px;
+    }
+
+    .contacts-info-text{
+        font-size: 11px;
+    }
+    
 }
 
 @media screen and (max-width: 350px)
@@ -864,5 +1022,18 @@
     
     .contact-link-icons{
         width: 10vw;
+    }
+
+    .contacts-info-wrapper{
+        margin-top: 10%;
+        margin-bottom: -10%;
+    }
+    
+    .contacts-info-header{
+        font-size: 20px;
+    }
+
+    .contacts-info-text{
+        font-size: 10px;
     }
 }

@@ -153,6 +153,7 @@ class Contacts extends Component {
 
                 <div className="contact-map-wrapper">
                 <iframe
+                    className="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.5503625415711!2d38.18846682926847!3d55.807102998785496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ad022ec934ecb%3A0x3240dfad965d3c4c!2z0YPQuy4g0JPQvtGA0YzQutC-0LPQviwgMdCwLCDQmtGD0L_QsNCy0L3QsCDQodGC0LDRgNCw0Y8sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MjQ1MA!5e0!3m2!1sru!2sru!4v1602020930849!5m2!1sru!2sru"
                     width="800" height="600"
                     frameBorder="0"
