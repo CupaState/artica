@@ -8,7 +8,6 @@ import phoneIcon from "../assets/contactsImg/phoneIcon.png";
 import mailIcon from "../assets/contactsImg/mailIcon.png";
 import vk from "../assets/icons/footerIcons/vk.ico";
 import facebook from "../assets/icons/footerIcons/facebook.ico";
-import youtoube from "../assets/icons/footerIcons/youtoube.ico";
 import instagram from "../assets/icons/footerIcons/instagram.ico";
 import whatsapp from "../assets/icons/footerIcons/whatsapp.ico";
 
@@ -40,6 +39,7 @@ class Contacts extends Component {
                     <img
                         src={phoneIcon}
                         className="contact-phone-img"
+                        alt="телефон"
                         onClick = {() => {window.open("tel:+79779613936")}}
                     />
                     <span
@@ -55,6 +55,7 @@ class Contacts extends Component {
                 <div className="contacts-button-div">
                         <ButtonUI
                             classNameButton = "facades-bottom-button"
+                            classNameText = "textButtonUI-facades"
                             text = "Обратный звонок"
                             onClick = {() => {this.setState({show: !this.state.show})}}
                         />
@@ -64,6 +65,7 @@ class Contacts extends Component {
                     <img
                         src={mailIcon}
                         className="contact-mail-img"
+                        alt="почта"
                         href="mail:info@art-tiger-studio.ru"
                         onClick={() => {window.location='mailto:info@art-tiger-studio.ru?subject='+window.location.href;}}
                     />
@@ -79,6 +81,7 @@ class Contacts extends Component {
                 <div className="contacts-button-div">
                     <ButtonUI
                         classNameButton = "facades-bottom-button"
+                        classNameText = "textButtonUI-facades"
                         text = "Заказать рассчёт"
                         onClick = {() => {this.setState({show: !this.state.show})}}
                     />
@@ -95,9 +98,11 @@ class Contacts extends Component {
                         className="icon"
                         href="https://vk.com/arttiger_catalog"
                         target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => {window.href="https://vk.com/arttiger_catalog"}}>
                         <img
                             src={vk}
+                            alt="ВКонтакте"
                             className="contact-link-icons"
                         />
                     </a>
@@ -106,10 +111,12 @@ class Contacts extends Component {
                         className="icon"
                         href="https://www.facebook.com/groups/1157346364376526/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => {window.href="https://www.facebook.com/groups/1157346364376526/"}}
                     >
                         <img
                             src={facebook}
+                            alt="FaceBook"
                             className="contact-link-icons"
                         />
                     </a>
@@ -118,10 +125,12 @@ class Contacts extends Component {
                         className="icon"
                         href="https://www.instagram.com/art_tiger_/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => {window.href="https://www.instagram.com/art_tiger_/"}}
                     >
                         <img
                             src={instagram}
+                            alt="Instagram"
                             className="contact-link-icons"
                         />
                     </a>
@@ -130,10 +139,12 @@ class Contacts extends Component {
                         className="icon"
                         href="https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании"
                         target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => {window.open('https://wa.me/79776913936?text=Здравствуйте.%20Меня%20интересуют%20услуги%20Вашей%20компании')}}
                     >
                         <img
                             src={whatsapp}
+                            alt="WhatsApp"
                             className="contact-link-icons"
                         />
                     </a>
@@ -147,6 +158,7 @@ class Contacts extends Component {
                     frameBorder="0"
                     allowFullScreen={true}
                     aria-hidden="false"
+                    title="articaMap"
                     tabIndex="0">
                 </iframe>
                 </div>
