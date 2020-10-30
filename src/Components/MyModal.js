@@ -61,7 +61,7 @@ export default function MyModal(props)
                                 </Col>
                                 <Col>
                                     <PhoneInput
-                                        placeholder="Введите телефон*"
+                                        placeholder="  Введите телефон*"
                                         international
                                         value={value}
                                         onChange={setValue}
@@ -70,6 +70,7 @@ export default function MyModal(props)
                                 </Col>
                                 <Col className = "col-modal-btn">
                                     <ButtonUI
+                                        classNameText = "text-btn-modal"
                                         classNameButton={buttonAddClass}
                                         text = "Заказать"
                                         type="submit"
