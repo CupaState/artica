@@ -22,14 +22,22 @@ export default class MenuOther extends Component {
     render() {
         return (
             <>
-                <span className="menu-other-text">
+            <div
+                className="other-div-wrapper"
+            >
+                <span
+                    className="menu-other-text"
+                    onClick = {() => { this.handleClick() }}
+                >
                     ДРУГИЕ УСЛУГИ
                 </span>
                 <img
                     src={arrow}
+                    alt="другие услуги"
                     className="menu-other-arrow"
                     onClick = {() => { this.handleClick() }}
                 />
+            </div>
                 <div
                     className="wrapper-other"
                     id="wrap"

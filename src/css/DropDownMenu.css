@@ -6,9 +6,10 @@
     text-align: center;
     top: 0;
     left: 0;
-    right: 70%;
+    width: 500px;
     z-index: 9999;
-    height:auto;
+    overflow-y: auto;
+    height: auto;
     background-color: rgb(47, 46, 46);
     flex-wrap: wrap;
     flex-direction: column;
@@ -34,7 +35,7 @@
 .menu-arrow{
     position: absolute;
     filter: invert(100%);
-    width: 7%;
+    width: 35px;
     left: 5%;
     top: 9%;
     transform: rotate(90deg);
@@ -108,11 +109,13 @@
 .menu-icon{
     padding: 10px;
     cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .menu-icon-img{
     filter: invert(100%);
-    width: 70%;
+    width: 40px;
 }
 
 .menu-icon:hover{
@@ -147,4 +150,71 @@ a {
     -webkit-transform: none;
     transform: none;
     }
-    } 
+    }
+
+@media screen and (max-width: 770px)
+{
+    .menu-wrapper{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .menu-icon-wrapper{
+        position: absolute;
+        top: 85%;
+        width: 80%;
+    }
+    
+    .menu-icon-img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .menu-link1{
+        font-size: 18px;
+    }
+
+    .menu-link{
+        font-size: 18px;
+    }
+
+    .menu-main-link1{
+        font-size: 18px;
+    }
+
+    .menu-main-link{
+        font-size: 18px;
+    }
+
+    .menu-icon-img{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 350px)
+{
+    .menu-link1{
+        font-size: 15px;
+    }
+
+    .menu-link{
+        font-size: 15px;
+    }
+
+    .menu-main-link1{
+        font-size: 15px;
+    }
+
+    .menu-main-link{
+        font-size: 15px;
+    }
+
+    .menu-icon-img{
+        width: 25px;
+    }
+}
