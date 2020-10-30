@@ -53,6 +53,7 @@ export default class Gallery extends Component {
                         </div>
                         <img
                                 src={closeButton}
+                                alt="закрыть"
                                 className="gallery-component-close-btn"
                                 onClick = {() => {
                                     const wrapper = document.getElementById("wrapper-big-gallery");
