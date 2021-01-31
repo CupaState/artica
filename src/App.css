@@ -1,0 +1,738 @@
+body {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+.cssload-preloader {
+	font-family: Arial, Tahoma;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 10;
+	display: box;
+		display: -o-box;
+		display: -ms-box;
+		display: -webkit-box;
+		display: -moz-box;
+	display: flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	box-pack: center;
+		-o-box-pack: center;
+		-ms-box-pack: center;
+		-webkit-box-pack: center;
+		-moz-box-pack: center;
+	justify-content: center;
+		-o-justify-content: center;
+		-ms-justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+	box-align: center;
+		-o-box-align: center;
+		-ms-box-align: center;
+		-webkit-box-align: center;
+		-moz-box-align: center;
+	align-items: center;
+		-o-align-items: center;
+		-ms-align-items: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+	transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+	perspective: 688px;
+		-o-perspective: 688px;
+		-ms-perspective: 688px;
+		-webkit-perspective: 688px;
+		-moz-perspective: 688px;
+	overflow: hidden;
+	animation: wobble 5.75s ease-in-out infinite;
+		-o-animation: wobble 5.75s ease-in-out infinite;
+		-ms-animation: wobble 5.75s ease-in-out infinite;
+		-webkit-animation: wobble 5.75s ease-in-out infinite;
+		-moz-animation: wobble 5.75s ease-in-out infinite;
+	padding-bottom: 3em;
+}
+
+
+.cssload-preloader > span {
+	font-size: 69px;
+	animation: 5.75s ease-in-out infinite;
+		-o-animation: 5.75s ease-in-out infinite;
+		-ms-animation: 5.75s ease-in-out infinite;
+		-webkit-animation: 5.75s ease-in-out infinite;
+		-moz-animation: 5.75s ease-in-out infinite;
+	color: transparent;
+
+  text-shadow: 1 px  -1px 0   #000000,
+         0   -1px 0   #000000,
+        -0    1px 0   #000000,
+         0    1px 0   #000000,
+        -1px 1px   0   #000000,
+         1px 1px   0   #000000,
+        -1px  1px   0   #000000,
+         1px  1px   0   #000000,
+        -1px -1px 0   #000000,
+         1px -1px 0   #000000,
+        -1px  1px 0   #000000,
+         1px  1px 0   #000000,
+        -1px -1px 0   #000000,
+         1px -1px 0   #000000,
+        -1px  1px 0   #000000,
+         1px  1px 0   #000000;
+}
+span:nth-child(-n+3) {
+	animation-delay: -2.88s;
+		-o-animation-delay: -2.88s;
+		-ms-animation-delay: -2.88s;
+		-webkit-animation-delay: -2.88s;
+		-moz-animation-delay: -2.88s;
+}
+
+span:nth-child(1),
+span:nth-last-child(1) {
+	animation-name: blur-1;
+		-o-animation-name: blur-1;
+		-ms-animation-name: blur-1;
+		-webkit-animation-name: blur-1;
+		-moz-animation-name: blur-1;
+}
+
+
+
+span:nth-child(2),
+span:nth-last-child(2) {
+	animation-name: blur-2;
+		-o-animation-name: blur-2;
+		-ms-animation-name: blur-2;
+		-webkit-animation-name: blur-2;
+    -moz-animation-name: blur-2;
+}
+
+
+
+span:nth-child(3),
+span:nth-last-child(3) {
+	animation-name: blur-3;
+		-o-animation-name: blur-3;
+		-ms-animation-name: blur-3;
+		-webkit-animation-name: blur-3;
+		-moz-animation-name: blur-3;
+}
+
+@keyframes blur-1 {
+	50% {
+    text-shadow: 0 0 0.15em rgb(63,200,242),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em  rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-o-keyframes blur-1 {
+	50% {
+    text-shadow: 0 0 0.15em rgb(63,200,242),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-ms-keyframes blur-1 {
+	50% {
+    text-shadow: 0 0 0.15em rgb(63,200,242),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes blur-1 {
+	50% {
+    text-shadow: 0 0 0.15em rgb(63,200,242),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-moz-keyframes blur-1 {
+	50% {
+    text-shadow: 0 0 0.15em rgb(63,200,242),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@keyframes blur-2 {
+	50% {
+    text-shadow: 0 0 0.075em rgb(0,255,255),
+    0   -1px 0.15em rgb(0, 0, 0),
+    0    1px 0.15em rgb(63,200,242),
+     0 1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-o-keyframes blur-2 {
+	50% {
+    text-shadow: 0 0 0.075em rgb(0,255,255),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-ms-keyframes blur-2 {
+	50% {
+    text-shadow: 0 0 0.075em rgb(0,255,255),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes blur-2 {
+	50% {
+    text-shadow: 0 0 0.075em rgb(0,255,255),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-moz-keyframes blur-2 {
+	50% {
+    text-shadow: 0 0 0.075em rgb(0,255,255),
+    0   -1px 0.15em rgb(0, 0, 0),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@keyframes blur-3 {
+	50% {
+    text-shadow: 0 0 0.05em rgb(0,0,0),
+    0   0px 0.15em rgb(63,200,242),
+    -0    0px 0.15em rgb(63,200,242),
+     1px  0px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-o-keyframes blur-3 {
+	50% {
+    text-shadow: 0 0 0.05em rgb(0,0,0),
+    0   -1px 0.15em rgb(63,200,242),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-ms-keyframes blur-3 {
+	50% {
+    text-shadow: 0 0 0.05em rgb(0,0,0),
+    0   -1px 0.15em rgb(63,200,242),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes blur-3 {
+	50% {
+    text-shadow: 0 0 0.05em rgb(0,0,0),
+    0   -1px 0.15em rgb(63,200,242),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@-moz-keyframes blur-3 {
+	50% {
+    text-shadow: 0 0 0.05em rgb(0,0,0),
+    0   -1px 0.15em rgb(63,200,242),
+    -0    1px 0.15em rgb(63,200,242),
+     1px  1px 0.15em rgb(0, 0, 0);
+	}
+}
+
+@keyframes wobble {
+	from, to {
+		transform: rotateY(-45deg);
+	}
+	50% {
+		transform: rotateY(45deg);
+	}
+}
+
+@-o-keyframes wobble {
+	from, to {
+		-o-transform: rotateY(-45deg);
+	}
+	50% {
+		-o-transform: rotateY(45deg);
+	}
+}
+
+@-ms-keyframes wobble {
+	from, to {
+		-ms-transform: rotateY(-45deg);
+	}
+	50% {
+		-ms-transform: rotateY(45deg);
+	}
+}
+
+@-webkit-keyframes wobble {
+	from, to {
+		-webkit-transform: rotateY(-45deg);
+	}
+	50% {
+		-webkit-transform: rotateY(45deg);
+	}
+}
+
+@-moz-keyframes wobble {
+	from, to {
+		-moz-transform: rotateY(-45deg);
+	}
+	50% {
+		-moz-transform: rotateY(45deg);
+	}
+}
+
+.cssload-preloader.hide{
+  display: none;
+}
+
+.App{
+  display: none;
+  transition: left 1s;
+}
+
+.App.load.hide{
+  display: none;
+}
+
+.App.load{
+  display: block;
+  text-align: center;
+  background-color: black;
+  filter: none;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  } 
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.navbar-light .navbar-toggler{
+  outline: none;
+  outline-offset: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url('./assets/main/captures.png') !important;
+}
+
+.arc-dark {
+  background-color: #282c34 !important;
+}
+
+.nav-link{
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.logo {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root{
+  background-color: #000000;
+}
+
+
+.phoneText{
+  margin-right: 0;
+}
+
+.mailText{
+  margin-left: -47%;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.carousel-control-next-icon{
+  background-image: url('./assets/main/nextArrow.png') !important;
+  display: flex !important;
+  height: 5% !important;
+  width: 11% !important;
+  position: absolute;
+  bottom: 5%;
+}
+
+.carousel-control-prev-icon{
+  background-image: url("./assets/main/prevArrow.png") !important;
+  display: flex !important;
+  position: absolute;
+  height: 5% !important;
+  width: 11% !important;
+  bottom: 5%;
+}
+
+.blockBelowCarousel{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+
+.textBelowCarousel{
+  color: white;
+  font-size: 19px;
+  user-select: none;
+  margin-right: 2.5%;
+}
+
+.textButtonUI{
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 15px;
+  padding: 3px;
+}
+
+.callButtonUI{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-color: #4fbfc6;
+  border-radius: 50px;
+  align-content: space-between;
+  outline: none;
+  outline-offset: 0;
+  flex-wrap: wrap;
+  margin-left: 2.5%;
+}
+
+.callButtonUI:focus{
+  outline: none;
+  outline-offset: 0;
+}
+
+.callButtonUI:hover{
+  transition: .5s ease;
+  background-color: #4fbfc6;
+  border-color: none;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+  outline-offset: 0;
+}
+
+.callButtonUI:active{
+  border-color: #4fbfc6;
+  border-radius: 50px;
+  outline: none;
+  outline-offset: 0;
+}
+
+.imageBlock{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50%;
+
+}
+
+.interiorsImg{
+  position: absolute;
+  display: block flex;
+  top: 4%;
+  right: 21%;
+  align-content: space-between;
+}
+
+.facadesArt{
+  position: absolute;
+  left: 21%;
+}
+
+@media screen and (max-width: 1300px)
+{
+  .mailText{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+  .blockBelowCarousel{
+    margin-left: -40%;
+  }
+
+  .callButtonUI{
+    width: 10%;
+  }
+
+  .textButtonUI{
+    font-size: 12px;
+  }
+
+  .textBelowCarousel{
+    color: white;
+    margin-left: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  .blockBelowCarousel{
+    flex-direction: column;
+  }
+
+  .callButtonUI{
+    margin-right: -31%;
+    margin-top: 2%;
+    width: 11%;
+  }
+
+  .textButtonUI{
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  .phoneText{
+    margin-right: 0;
+    display: none;
+  }
+
+  .textBelowCarousel{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 950px)
+{
+  .callButtonUI{
+    width: 11% !important;
+  }
+
+  .textBelowCarousel{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px)
+{
+  .callButtonUI{
+    width: 13% !important;
+    height: 47px;
+  }
+
+  .textBelowCarousel{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  .callButtonUI{
+    width: 14% !important;
+    height: 45px;
+  }
+
+  .textBelowCarousel{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .callButtonUI{
+    width: 15% !important;
+    height: 43px;
+  }
+
+  .textButtonUI{
+    font-size: 10px;
+    padding: 4px !important;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .callButtonUI{
+    width: 16% !important;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .callButtonUI{
+    width: 30% !important;
+    height: 35px;
+  }
+
+  .textBelowCarousel{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px)
+{
+  .callButtonUI{
+    width: 35% !important;
+    height: 30px;
+  }
+
+  .textBelowCarousel{
+    font-size: 10px;
+  }
+}
+
+@font-face{
+  font-family: "AvenirNextCyr-Regular";
+  src: url("./fonts/avenir/AvenirNextCyr-Regular.woff") format("truetype");
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face{
+  font-family: "Arial-Tahoma";
+  src: url("./fonts/arial/tahoma.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; 
+}
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:10px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color: rgb(39, 38, 38);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border: 1px solid;
+  border-color: rgb(47, 46, 46);
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: rgb(12, 12, 12);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background-color:#191a1a;
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:10px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar{
+  width: 10px;
+  }
+
+  span{
+    font-family: "AvenirNextCyr-Regular";
+  }

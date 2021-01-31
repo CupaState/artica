@@ -1,0 +1,19 @@
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-top: 1%;
+}
+
+#wrapper-id{
+    width: 80%;
+}
+
+.wrapper::before{
+    margin-top: -6%;
+}
+
+span{
+    font-family: "AvenirNextCyr-Regular";
+}

@@ -1,0 +1,159 @@
+.tooltip-text{
+    position: absolute;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    top: 0%;
+    left: 80%;
+    background-color:black;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 10px;
+    z-index: 1000;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+    box-shadow: 10px 10px 5px 0px rgba(150,148,150,1);
+}
+
+.tooltip-question{
+    position: absolute;
+    filter: invert(100%);
+    opacity: 0;
+    width: 10%;
+    top: 0%;
+    right: 5%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.tooltip-question-visible{
+    display: none;
+    position: absolute;
+    filter: invert(100%);
+    opacity: 1;
+    width: 10%;
+    top: 0%;
+    right: 5%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.how-to-work-div:hover .tooltip-question{
+    opacity: 1.0;
+}
+
+.how-to-work-div1:hover .tooltip-question{
+    opacity: 1.0;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .tooltip-text{
+        padding: 5px;
+        font-size: 15px;
+        top: 0%;
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .tooltip-question-visible{
+        display: flex;
+    }
+
+    .tooltip-text{
+        padding: 5px;
+        font-size: 13px;
+        top: 0%;
+        left: 70%;
+    }
+
+    .tooltip-question{
+        position: absolute;
+        filter: invert(100%);
+        opacity: 1;
+        width: 10%;
+        top: 0%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .tooltip-text{
+        padding: 5px;
+        font-size: 11px;
+        top: 0%;
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .tooltip-question{
+        position: absolute;
+        filter: invert(100%);
+        opacity: 1;
+        width: 11%;
+        top: 0%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .tooltip-text{
+        padding: 5px;
+        font-size: 10px;
+        top: 0%;
+        left: 70%;
+    }
+
+    .tooltip-question{
+        position: absolute;
+        filter: invert(100%);
+        opacity: 1;
+        width: 13%;
+        top: 0%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .tooltip-text{
+        padding: 5px;
+        font-size: 9px;
+        top: 0%;
+        left: 70%;
+    }
+
+    .tooltip-question{
+        position: absolute;
+        filter: invert(100%);
+        opacity: 1;
+        width: 15%;
+        top: 0%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .tooltip-text{
+        padding: 5px;
+        font-size: 9px;
+        top: 0%;
+        left: 0%;
+    }
+
+    .tooltip-question{
+        position: absolute;
+        filter: invert(100%);
+        opacity: 1;
+        width: 18%;
+        top: 0%;
+        right: 5%;
+    }
+}

@@ -1,0 +1,53 @@
+.RestorationHeaderText{
+    position: absolute;
+    color: white;
+    margin-top: -10%;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000;
+    pointer-events: none;
+}
+
+.restoration-element-div{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    transition: all 1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.restoration-element-lost-div{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    transition: all 1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.restoration-element-img{
+    width: 50%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    transition: all 1s;
+    border-color: rgb(186, 184, 182);
+    border: 3px solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.restoration-element-img:hover{
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none; /* IE 6-9 */
+}
