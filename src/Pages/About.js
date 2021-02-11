@@ -3,6 +3,7 @@ import "../css/About.css";
 import "../css/Facades.css";
 import "../css/Home.css";
 
+import ModalImageGallery from "../Components/ModalImageGallery";
 import VideoHideBlock from "../Components/VideoHideBlock";
 import HideBlock from "../Components/HideBlock";
 import Tooltip from "../Components/Tooltip";
@@ -28,10 +29,12 @@ import var3 from "../assets/aboutImg/var3.png";
 import doneVar1 from "../assets/aboutImg/doneVar1.png";
 import doneVar2 from "../assets/aboutImg/doneVar2.png";
 import doneVar3 from "../assets/aboutImg/doneVar3.png";
-import img3000 from "../assets/aboutImg/img3000.png";
-import img5000 from "../assets/aboutImg/img5000.png";
-import img7000 from "../assets/aboutImg/img7000.png";
-import img9000 from "../assets/aboutImg/img9000.png";
+import img3000 from "../assets/aboutImg/img3000_1.jpg";
+import img5000 from "../assets/aboutImg/img5000_1.jpg";
+import img7000 from "../assets/aboutImg/img8000.jpg";
+import img9000 from "../assets/aboutImg/img15000.jpg";
+
+import rekvizit from "../assets/dials/rekvizit.pdf";
 
 import nextArrowIcon from "../assets/icons/rightarrow.ico";
 import starFull from "../assets/icons/starFull.png";
@@ -47,15 +50,92 @@ class About extends Component {
             show: false,
             images: doneVar1,
             uncover: false,
+            isShowImage: false
         };
 
+        this.imgArr = [img3000, img5000, img7000, img9000];
+        this.imgIndex = 0;
+
         this.firstToolTip = <div>
-        Звоните Нам и опишите свою задумку.
-        Мы предварительно проконсультируем Вас, что поможет
-        определиться с дальнейшим планом действий.
-        Желательно прикрепить фото объекта или дизайн-проект</div>
+        <div 
+        onClick={ () => {window.open("tel:+79779613936")}}
+        style={ { cursor:"pointer", textDecoration:"underline" } }>
+            Звоните нам</div> и опишите свою задумку.
+            Мы предварительно проконсультируем Вас, что поможет
+            определиться с дальнейшим планом действий.
+            Желательно прикрепить фото объекта или дизайн-проект
+        </div>
+
+        this.secondToolTip = <div>
+            Если нет возможности самостоятельно провести замеры, или для ознакомления с нюансами объекта 
+            необходимо личное присутствие, то
+            наши художники приездут к Вам, чтобы проконсультировать и
+            замерить площадь, планируемую под роспись.
+        </div>
+
+        this.thirdTooltip = <div>
+            Мы подберем рисунки, обсудим их с Вами, и выбранные
+            картинки разместим на фотографию объекта будущей росписи. 
+            <span style={{ textDecoration:"underline" }}><a href="#eskiz"
+            >
+            <br></br>Утвержденный эскиз мы прикрепляем в договор.</a></span>
+            Также он
+            дает нам возможность точно просчитать
+            стоимость работы.
+        </div>
+
+        this.fourthToolTip = <div>
+            Работаем как с физ.лицами так и с юр.лицами
+            <div style={{ border:"1px solid", borderColor:"whitesmoke", borderRadius:"15px", padding:"5px", marginTop:"5%" }}>
+                <a 
+                href="/dials"
+                >ДОГОВОРЫ</a>
+            </div>
+        </div>
+
+        this.fifthToolTip = <div>
+            Роспись, выполненная по всем правилам, будет безопасной,
+            экологичной и долговечной. Для лучшего результата необходимо
+            использовать материалы престижных брендов и соблюдать
+            технологии нанесения рисунка. Подготовленные поверхности снизу
+            и бесцветный лак сверху, надёжно защищают живописный слой
+            долгие годы.
+        </div>
+
+        this.sixthToolTip = <div>
+            Наши художники воплощают утвержденный эскиз, стараясь
+            отступать от него только по просьбе клиента, и то, если это
+            незначительное отступление и своевременно сказанное.
+        </div>
+
+        this.seventhToolTip = <div>
+            После завершения работы и приемки, подписываем акт.
+            Проводим оплату.
+            Оплата для ЮР.ЛИЦ:
+            <div style={{ border:"1px solid", borderColor:"whitesmoke", borderRadius:"15px", padding:"5px", marginTop:"5%" }}>
+                <a 
+                download
+                href={ rekvizit }
+                >РЕКВИЗИТЫ</a>
+            </div>
+        </div>
+
+        this.eighthToolTip = <div>
+            Наносим защитный слой лака, если это необходимо в связи
+            условиями эксплуатации рисунка или вызвано пожеланием
+            заказчика. Лак может быть матовый или глянцевый, прозрачный
+            или с цветом. Любой рисунок под лаком сохранится гораздо
+            дольше.
+        </div>
 
         this.onClose = this.onClose.bind(this);
+        this.closeImage = this.closeImage.bind(this);
+    }
+
+    closeImage = (isShowImage) =>
+    {
+        this.setState({ isShowImage: isShowImage });
+        this.imgIndex = 0;
     }
 
     onClose = (isShow) =>
@@ -109,7 +189,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "Lorem"
+                            text = { this.secondToolTip }
                             className="tooltip-question"
                         />
 
@@ -136,7 +216,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "sdfjdffndfglaalgnn gfkflflslagn rkkfmzg"
+                            text = { this.thirdTooltip }
                             className="tooltip-question"
                         />
 
@@ -162,7 +242,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "DFhla;gfgrpq"
+                            text = { this.fourthToolTip }
                             className="tooltip-question"
                         />
 
@@ -188,7 +268,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "oefkvlef;lfekfe'afe'la'adw"
+                            text = { this.fifthToolTip }
                             className="tooltip-question"
                         />
 
@@ -214,7 +294,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "poewjljdnfga;brfgbzsghvnsmu,mnzbfvd"
+                            text = { this.sixthToolTip }
                             className="tooltip-question"
                         />
 
@@ -245,7 +325,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "apodg;jhbvl,vroepsxvc"
+                            text = { this.seventhToolTip }
                             className="tooltip-question"
                         />
 
@@ -271,7 +351,7 @@ class About extends Component {
                         </div>
 
                         <Tooltip
-                            text = "[esd;jgvlbsfcfecd]"
+                            text = { this.eighthToolTip }
                             className="tooltip-question"
                         />
 
@@ -434,8 +514,9 @@ class About extends Component {
                 <div className="about-promise-block">
                     <div className="promise-text">
                         <span>
-                            За 3 дня бесплатно нарисуем Вам эскиз будущей <br></br> работы ещё
-                            до оплаты и заключения договора
+                            ЭСКИЗ – способ помочь клиенту выбрать, что
+                            нарисовать,<br></br> а художникам - оценить сроки и
+                            стоимость работы.
                         </span>
                     </div>
                     <div className="promise-button-div">
@@ -450,7 +531,7 @@ class About extends Component {
                 
                 <div className="sketch-create">
                     <span className="sketch-create-header">
-                            ПРОЦЕСС СОЗДАНИЯ ЭСКИЗА
+                            ПРОЦЕСС СОЗДАНИЯ:
                     </span>
                 </div>
 
@@ -534,8 +615,13 @@ class About extends Component {
                         Стоимость изображения зависит от сложности, проработки, количества<br></br> элементов
                         и цветовой гаммы. <br></br>
                         Ниже приведены цены нанесения изображения в интерьере за м<sup>2</sup>
+                        <br></br>
+                        <span style={{fontStyle:"italic"}}>(цифры приведены для рисунка размером от 10м<sup>2</sup>)</span>
+
                     </span>
                 </div>
+
+                <a name="eskiz"></a>
 
                 <div className="calculate-example-wrapper">
 
@@ -571,6 +657,13 @@ class About extends Component {
                             src={img3000}
                             className="calculate-example-img"
                             alt="изображение"
+                            onClick={
+                                (e)=>{
+                                    e.preventDefault();
+                                    this.setState({isShowImage: true });
+                                    this.imgIndex = 0;                                
+                                }
+                            }
                         />
                         <span className="calculate-example-price"> 3000 руб.</span>
                     </div>
@@ -607,6 +700,13 @@ class About extends Component {
                             src={img5000}
                             alt="изображение"
                             className="calculate-example-img"
+                            onClick={
+                                (e)=>{
+                                    e.preventDefault();
+                                    this.setState({isShowImage: true });
+                                    this.imgIndex = 1;                                
+                                }
+                            }
                         />
                         <span className="calculate-example-price"> 5000 руб.</span>
                     </div>
@@ -641,8 +741,15 @@ class About extends Component {
                         </div>
                         <img
                             src={img7000}
-                             alt="изображение"
+                            alt="изображение"
                             className="calculate-example-img"
+                            onClick={
+                                (e)=>{
+                                    e.preventDefault();
+                                    this.setState({isShowImage: true });
+                                    this.imgIndex = 2;                                
+                                }
+                            }
                         />
                         <span className="calculate-example-price"> 7000 руб.</span>
                     </div>
@@ -677,8 +784,15 @@ class About extends Component {
                         </div>
                         <img
                             src={img9000}
-                             alt="изображение"
+                            alt="изображение"
                             className="calculate-example-img"
+                            onClick={
+                                (e)=>{
+                                    e.preventDefault();
+                                    this.setState({isShowImage: true });
+                                    this.imgIndex = 3;                                
+                                }
+                            }
                         />
                         <span className="calculate-example-price"> 9000 руб.</span>
                     </div>
@@ -735,7 +849,7 @@ class About extends Component {
                                 </span>
                             </div>
                         </div>
-                
+                <ModalImageGallery isShowImage={this.state.isShowImage} ImageArr={this.imgArr} ImgArrIndex={this.imgIndex} closeImage={this.closeImage}/>
                 <MyModal isOpen = {this.state.show} onClose = {this.onClose}/>
             </>
         );

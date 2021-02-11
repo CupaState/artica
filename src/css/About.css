@@ -400,6 +400,10 @@
     margin-top: 5%;
 }
 
+.calculate-example-img:hover{
+    cursor:zoom-in;
+}
+
 .calculate-example-price{
     margin-top: 2%;
     color: white;

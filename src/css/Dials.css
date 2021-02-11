@@ -1,0 +1,164 @@
+.dial-header-div{
+    margin-top: 5%;
+}
+
+.dial-header{
+    font-size:30px;
+    color:white;
+    user-select:none;
+}
+
+.dial-fiz-div{
+    margin-top:2%;
+}
+
+.dial-fiz{
+    font-size:20px;
+    color: white;
+    user-select: none;
+}
+
+.dial-ur-div{
+    margin-top: 4%;
+}
+
+.dial-ur{
+    font-size: 20px;
+    color:white;
+    user-select: none;
+}
+
+.dial-button-div{
+    margin-top: 1%;
+}
+
+.dial-button{
+    border: 1px solid;
+    border-color: rgb(182, 179, 179);
+    background-color: #4fbfc6;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    text-shadow: 0px 2px 0px rgba(8, 8, 8, 0.3);
+}
+
+@media screen and (max-width: 1000px)
+{
+    .dial-fiz-div{
+        margin-top:3%;
+    }
+
+    .dial-ur-div{
+        margin-top: 5%;
+    }
+
+    .dial-button-div{
+        margin-top: 1.5%;
+    }
+
+    .dial-button{
+        padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .dial-fiz-div{
+        margin-top:3%;
+    }
+
+    .dial-ur-div{
+        margin-top: 5%;
+    }
+
+    .dial-button-div{
+        margin-top: 1.5%;
+    }
+
+    .dial-button{
+        padding-top: 3px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .dial-header{
+        font-size: 28px;
+    }
+
+    .dial-fiz-div{
+        margin-top:5%;
+    }
+
+    .dial-fiz{
+        font-size: 17px;
+    }
+
+    .dial-ur-div{
+        margin-top: 8%;
+    }
+
+    .dial-ur{
+        font-size: 17px;
+    }
+
+    .dial-button-div{
+        margin-top: 3%;
+    }
+
+    .dial-button{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .dial-header{
+        font-size: 25px;
+    }
+
+    .dial-fiz-div{
+        margin-top:5%;
+    }
+
+    .dial-ur-div{
+        margin-top: 8%;
+    }
+
+    .dial-button-div{
+        margin-top: 3%;
+    }
+
+    .dial-button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .dial-header{
+        font-size: 22px;
+    }
+
+    .dial-fiz-div{
+        margin-top:7%;
+    }
+
+    .dial-ur-div{
+        margin-top: 10%;
+    }
+
+    .dial-button-div{
+        margin-top: 3%;
+    }
+
+    .dial-button{
+        font-size: 14px;
+    }
+}

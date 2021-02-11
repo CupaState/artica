@@ -13,6 +13,7 @@ import Airbrushing from "../Pages/Airbrushing";
 import Interiors from "../Pages/Interiors";
 import Restoration from "../Pages/Restoration";
 import Facades from "../Pages/Facades";
+import Dials from "../Pages/Dials";
 
 import DropDownMenu from "./DropDownMenu";
 
@@ -38,6 +39,7 @@ export default class NewHeader extends Component {
                 <div className="header-wrapper">
                     <img
                         src={captures}
+                        alt="меню"
                         className="header-captures"
                         onClick={() => {this.setState({isShowMenu: !this.state.isShowMenu})}}
                     />
@@ -49,6 +51,7 @@ export default class NewHeader extends Component {
                     </span>
                     <img
                         src={messageMail}
+                        alt="почта"
                         className="mail-icon-header"
                         onClick={() => {window.location='mailto:info@art-tiger-studio.ru?subject='+window.location.href;}}
                     />
@@ -58,6 +61,7 @@ export default class NewHeader extends Component {
                     >
                         <img
                             src={logo}
+                            alt="ARTIKA"
                             className="header-logo-img"
                         />
                     </a>
@@ -70,6 +74,7 @@ export default class NewHeader extends Component {
                     </span>
                     <img
                         src={phoneCall}
+                        alt="телефон"
                         className="phone-icon-header"
                         onClick={ () => {window.open("tel:+79779613936")}}
                     />
@@ -84,6 +89,7 @@ export default class NewHeader extends Component {
                         <Route exact path="/interiors" component={Interiors}/>
                         <Route exact path="/restoration" component={Restoration}/>
                         <Route exact path="/facades" component={Facades}/>
+                        <Route exact path="/dials" component={Dials}/>
                     </Switch>
                     </Router>
 

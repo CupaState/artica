@@ -41,7 +41,9 @@ class Interiors extends Component {
             waitingRoom, waitingRoom,
             waitingRoom
             ];
+            
         this.imgIndex = 0;
+
         this.textAboutPaint = <div className=""><strong>Техники и стилистические направления росписи:</strong><br></br><br></br>
         <strong>1. Классические техники ( Монументальная живопись)</strong><br></br><br></br>
         <strong>Фреска</strong> (<strong>Fresco</strong> с итальянского «свежий»). Рисунок наносится на только что нанесенную
@@ -239,9 +241,11 @@ class Interiors extends Component {
                                             alt="изображение"
                                             title="Нажмите для увеличения изображения"
                                             onClick={() =>
-                                                {this.setState({isShowImage: true});
-                                                this.imgIndex = 0;
-                                            }}
+                                                {
+                                                    this.setState({isShowImage: true});
+                                                    this.imgIndex = 0;
+                                                }
+                                            }
                                         />
 
                                     </a>
