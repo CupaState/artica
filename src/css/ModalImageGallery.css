@@ -77,9 +77,11 @@
 
 .gallery-img-block{
     max-width: 60vw;
+    max-height: 70vh;
     position: absolute;
     left: 50%;
     top: 25%;
+    z-index: 0;
     transform: translateX(-50%);
     user-select: none;
     -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);

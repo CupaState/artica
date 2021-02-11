@@ -88,7 +88,7 @@ export default class ModalImageGallery extends Component {
                             {
                                 const wrapper = document.getElementById("animate");
                                 wrapper.classList.add("is-close");
-                                setTimeout(this.props.closeImage, 500, false);
+                                setTimeout(this.props.closeImage, 300, false);
                             }
                         }
                     }
@@ -100,7 +100,7 @@ export default class ModalImageGallery extends Component {
                             alt="закрыть"
                             onClick = {() => { const wrapper = document.getElementById("animate");
                                                 wrapper.classList.add("is-close");
-                                                setTimeout(this.props.closeImage, 500, false);}}
+                                                setTimeout(this.props.closeImage, 300, false);}}
                         />
                         <img
                             src={backArrow}
@@ -121,8 +121,6 @@ export default class ModalImageGallery extends Component {
                             onClick= { () => {this.forwardSlide(this.state.thisSlide);}}
                         />  
                     </div>
-
-            
                 </div>
                 }
             </div>

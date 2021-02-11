@@ -5,7 +5,6 @@ import "../css/Home.css";
 
 import ModalImageGallery from "../Components/ModalImageGallery";
 import VideoHideBlock from "../Components/VideoHideBlock";
-import HideBlock from "../Components/HideBlock";
 import Tooltip from "../Components/Tooltip";
 import ButtonUI from "../Components/Button";
 import MyModal from "../Components/MyModal";
@@ -31,8 +30,8 @@ import doneVar2 from "../assets/aboutImg/doneVar2.png";
 import doneVar3 from "../assets/aboutImg/doneVar3.png";
 import img3000 from "../assets/aboutImg/img3000_1.jpg";
 import img5000 from "../assets/aboutImg/img5000_1.jpg";
-import img7000 from "../assets/aboutImg/img8000.jpg";
-import img9000 from "../assets/aboutImg/img15000.jpg";
+import img8000 from "../assets/aboutImg/img8000.jpg";
+import img15000 from "../assets/aboutImg/img15000.jpg";
 
 import rekvizit from "../assets/dials/rekvizit.pdf";
 
@@ -53,7 +52,7 @@ class About extends Component {
             isShowImage: false
         };
 
-        this.imgArr = [img3000, img5000, img7000, img9000];
+        this.imgArr = [img3000, img5000, img8000, img15000];
         this.imgIndex = 0;
 
         this.firstToolTip = <div>
@@ -740,7 +739,7 @@ class About extends Component {
                             />
                         </div>
                         <img
-                            src={img7000}
+                            src={img8000}
                             alt="изображение"
                             className="calculate-example-img"
                             onClick={
@@ -751,7 +750,7 @@ class About extends Component {
                                 }
                             }
                         />
-                        <span className="calculate-example-price"> 7000 руб.</span>
+                        <span className="calculate-example-price"> 8000 руб.</span>
                     </div>
 
                     <div className="calculate-example-div">
@@ -783,7 +782,7 @@ class About extends Component {
                             />
                         </div>
                         <img
-                            src={img9000}
+                            src={img15000}
                             alt="изображение"
                             className="calculate-example-img"
                             onClick={
@@ -794,41 +793,9 @@ class About extends Component {
                                 }
                             }
                         />
-                        <span className="calculate-example-price"> 9000 руб.</span>
+                        <span className="calculate-example-price"> 15000 руб.</span>
                     </div>
                 </div>
-
-                <div
-                    className="divider-div"
-                >
-                    <hr className="facades-divider"></hr>
-                    <div
-                        className="facades-divider-header"
-                        onClick = {() =>
-                            {
-                                this.setState({uncover: !this.state.uncover});
-                            }
-                        }
-                    >
-                        <span className="facades-divider-text">
-                            ПОДРОБНЕЕ
-                        </span>
-                    </div>
-                    <img
-                        className="divider-arrow"
-                        src={nextArrowIcon}
-                        alt="подробнее"
-                        onClick = {() =>
-                            {
-                                this.setState({uncover: !this.state.uncover});
-                            }
-                        }
-                    />
-                </div>
-                <HideBlock
-                    isUncover = {this.state.uncover}
-                    text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
-                />
 
                 <div className="about-footer-info-block">
                             <div className="footer-phone-div">

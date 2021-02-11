@@ -556,6 +556,10 @@
         margin-top: 5%;
         font-size: 19px;
     }
+
+    .calculate-example-wrapper{
+        margin-top: 20%;
+    }
     
 }
 
@@ -751,7 +755,7 @@
         font-size: 13px;
         top: 0%;
     }
-/*  */
+
     .about-work-wrapper{
         margin-bottom: 20%;
     }
@@ -1256,6 +1260,11 @@
         font-size: 13.5px;
     }
 
+    .calculate-example-wrapper{
+        flex-wrap: wrap;
+        margin-top: 30%;
+    }
+
     .calculate-header-div{
         margin-top: 23%;
         margin-bottom: 25%;
@@ -1395,7 +1404,7 @@
 
     .calculate-example-wrapper{
         flex-wrap: wrap;
-        margin-top: 15%;
+        margin-top: 30%;
     }
     
     .calculate-example-div{
@@ -1575,9 +1584,8 @@
         font-size: 12.5px;
     }
 
-        .calculate-example-wrapper{
-        flex-wrap: wrap;
-        margin-top: 15%;
+    .calculate-example-wrapper{
+        margin-top: 35%;
     }
     
     .calculate-example-div{
@@ -1676,7 +1684,6 @@
     }
 
     .sketch-create-header{
-        /* font-size: 20px; */
         display: none;
     }
 
@@ -1696,6 +1703,10 @@
     .calculate-header-text{
         margin-top: 8%;
         font-size: 11px;
+    }
+
+    .calculate-example-wrapper{
+        margin-top: 40%;
     }
 
     .calculate-example-div{
@@ -1943,6 +1954,10 @@
     .calculate-header-text{
         margin-top: 8%;
         font-size: 10px;
+    }
+
+    .calculate-example-wrapper{
+        margin-top: 50%;
     }
 
     .calculate-example-div{
