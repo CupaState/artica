@@ -44,7 +44,7 @@ class Interiors extends Component {
             
         this.imgIndex = 0;
 
-        this.textAboutPaint = <div className=""><strong>Техники и стилистические направления росписи:</strong><br></br><br></br>
+        this.textAboutPaint = <div className="" style={{userSelect: "none"}}><strong>Техники и стилистические направления росписи:</strong><br></br><br></br>
         <strong>1. Классические техники ( Монументальная живопись)</strong><br></br><br></br>
         <strong>Фреска</strong> (<strong>Fresco</strong> с итальянского «свежий»). Рисунок наносится на только что нанесенную
         (влажную) штукатурку при помощи водорастворимых красок. При высыхании на её

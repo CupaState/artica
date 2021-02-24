@@ -32,7 +32,14 @@ class Airbrushing extends Component {
             uncover: false,
             isShowImage: false,
             isShowGallery: false,
-            isOpenBlock: true
+            isShowWhy: false,
+            isShowStages: false,
+            isShowPreliminaryStage: false,
+            isShowPrepareStage: false,
+            isShowMainStage: false,
+            isShowFinalStage: false,
+            isShowGarantText: false,
+            isShowOurAdvantages: false,
         };
         this.onClose = this.onClose.bind(this);
         this.closeImage = this.closeImage.bind(this);
@@ -44,6 +51,366 @@ class Airbrushing extends Component {
             waitingRoom
             ];
         this.imgIndex = 0;
+
+        this.airbrushingText = <div style={{ userSelect: "none" }}>
+             <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowWhy: !this.state.isShowWhy })
+                                        let why = document.getElementById("why");
+                                        if(!this.state.isShowWhy)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> ЗАЧЕМ НУЖНА? </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="why"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ul>
+                                    <li style={{marginTop: "2%"}}>
+                                        Создает уникальный стиль, помогая выделить автомобиль из автопотока скучных решений
+                                        и цветов.
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Способ показать, чем увлекается, или что любит делать его владелец. Возможно, отражает
+                                        его характер или взгляды на жизнь.
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Противоугонное средство – такие авто угонщики обходят стороной из-за опасности быть
+                                        легко пойманными
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Реклама и брендинг: логотипы, название услуги, номер телефона или сайт и т.д. все это
+                                        можно нарисовать на корпоративном авто
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <br></br><br></br>
+                            <hr style={{color: "gray", border: "1px solid"}}></hr>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowStages: !this.state.isShowStages })
+                                        let why = document.getElementsByName("stages");
+                                        if(!this.state.isShowStages)
+                                        {
+                                            why.forEach(element => {
+                                                element.classList.add("visible");
+                                            });
+                                        }
+                                        else
+                                        {
+                                            why.forEach(element => {
+                                                element.classList.remove("visible");
+                                            });
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> ЭТАПЫ РАБОТЫ: </strong>
+                            </span>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                name="stages"
+                                className="why-hide"
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowPreliminaryStage: !this.state.isShowPreliminaryStage });
+                                        let why = document.getElementById("preliminary");
+                                        if(!this.state.isShowPreliminaryStage)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> Предварительный: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="preliminary"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ol type="1">
+                                    <li style={{marginTop: "2%"}}>
+                                        Разработка эскиза (если у клиента нет готового дизайн-проекта).
+                                        <ol type="A" style={{marginTop: "2%"}} >
+                                            <li style={{marginTop: "1%"}}>
+                                                Общение с клиентом: запрос фотографий авто и обсуждение пожеланий. 
+                                            </li>
+                                            <li style={{marginTop: "1%"}}>
+                                                Подбор подходящих картинок (лучше если клиент сам высылает примеры картинок).
+                                            </li>
+                                            <li style={{marginTop: "1%"}}>
+                                                Оплата зависит от сложности эскиза, но иногда мы делаем эскиз бесплатно).
+                                            </li>
+                                            <li style={{marginTop: "1%"}}>
+                                                Художник создает эскиз(ы) от 1 до 7 дней в зависимости от сложности и загруженности.
+                                            </li>
+                                            <li style={{marginTop: "1%"}}>
+                                                Согласование эскиза с заказчиком: доработки, правки и утверждение окончательной версии.
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li style={{marginTop: "2%"}}>
+                                        Если клиент не вписывается в запланированный им бюджет, то ему предлагаются варианты
+                                        для снижения стоимости:
+                                        <ol type="A" style={{marginTop: "2%"}} >
+                                            <li style={{marginTop: "1%"}}>
+                                                Упрощение эскиза.
+                                            </li>
+                                            <li style={{marginTop: "1%"}}>
+                                                Снижение уровня прорисовки.
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li style={{marginTop: "2%"}}>
+                                        <a style={{ border:"1px solid", borderColor:"whitesmoke", borderRadius:"15px", padding:"5px"}} href="/dials">
+                                            <strong>Подписание договора</strong>
+                                        </a>
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Внесение аванса.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                name="stages"
+                                className="why-hide"
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowPrepareStage: !this.state.isShowPrepareStage })
+                                        let why = document.getElementById("prepare");
+                                        if(!this.state.isShowPrepareStage)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> Подготовительный: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="prepare"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ol type="1">
+                                    <li style={{marginTop: "2%"}}>
+                                        Мойка и чистка кузова.
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Демонтаж или(и) оклейка пленкой элементов кузова
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Подготовка поверхности: устраняются сколы и царапины, при необходимости выравнивается
+                                        кузов, если на нем есть вмятины. Снимается слой лака.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                name="stages"
+                                className="why-hide"
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowMainStage: !this.state.isShowMainStage });
+                                        let why = document.getElementById("main");
+                                        if(!this.state.isShowMainStage)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> Основной: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="main"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ol type="1">
+                                    <li style={{marginTop: "2%"}}>
+                                        Нанесение аэрографии (после завершения этого этапа заказчик приглашается на осмотр или
+                                        ему отправляют фото или видео осмотр получившегося рисунка. Если требуются какие-то
+                                        правки, то их делают на этом этапе, до лакировки).
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Лакировка (делается в несколько слоев).
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Детали кузова крепятся на прежние места.
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Полировка.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                name="stages"
+                                className="why-hide"
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowFinalStage: !this.state.isShowFinalStage });
+                                        let why = document.getElementById("final");
+                                        if(!this.state.isShowFinalStage)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> Завершающий: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="final"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ol type="1">
+                                    <li style={{marginTop: "2%"}}>
+                                        Заказчик принимает работу и подписывает акт выполненных работ. Оплачивает оставшуюся
+                                        часть средств и уезжает на своем обновленном улучшенном автомобиле.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <br></br><br></br>
+
+                            <hr style={{color: "gray", border: "1px solid"}}></hr>
+                            <span>
+                                <strong>Цена на аэрографию</strong> зависит от многих факторов: площадь рисунка, детализация изображения,
+                                место расположения рисунка, сложность подготовительных работ, используемая техника
+                                нанесения краски.
+                            </span>
+                            <hr style={{color: "gray", border: "1px solid"}}></hr>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowGarantText: !this.state.isShowGarantText });
+                                        let why = document.getElementById("garant");
+                                        if(!this.state.isShowGarantText)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> ГАРАНТИИ: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="garant"
+                                style={{marginTop: "1%"}}
+                            >
+                                Все работы, начиная от разработки эскиза, заканчивая нанесением защитного лака, выполняются
+                                профессионалами с использованием современного, высокотехнологичного оборудования.
+                                Рисунок наносится качественными, автомобильными красками, стойкими к выцветанию и любым
+                                внешним воздействиям.
+                                <br></br><br></br>
+                                Мы предоставляем гарантию на все работы сроком на 1 год. После выполнения аэрографии также
+                                сохраняется и заводская гарантия на автомобиль. Цены на наши услуги прописываются в договоре
+                                до начала работ и остаются неизменными. Отсутствуют скрытые тарифы и дополнительные
+                                платежи.
+                            </div>
+
+                            <br></br><br></br>
+
+                            <span
+                                style={{ cursor: "pointer", color: "gray", marginTop: "1%" }}
+                                onClick = {()=> 
+                                    {
+                                        this.setState({ isShowOurAdvantages: !this.state.isShowOurAdvantages });
+                                        let why = document.getElementById("advantages");
+                                        if(!this.state.isShowOurAdvantages)
+                                        {
+                                            why.classList.add("visible");
+                                        }
+                                        else
+                                        {
+                                            why.classList.remove("visible");
+                                        }
+                                    }
+                                }
+                            >
+                                <strong> НАШИ ПРЕИМУЩЕСТВА: </strong>
+                            </span>
+
+                            <div
+                                className="why-hide"
+                                id="advantages"
+                                style={{marginTop: "1%"}}
+                            >
+                                <ul>
+                                    <li style={{marginTop: "2%"}}>
+                                        Художники с опытом работы более 10 лет
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Гарантия на работы 1 год + сохранение заводской гарантии
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Разработка индивидуального дизайн-проекта
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Работы ведутся на оборудовании крупнейшего дилерского центра
+                                    </li>
+                                    <li style={{marginTop: "2%"}}>
+                                        Возможность предоставления подменного автомобиля.
+                                    </li>
+                                </ul>
+                            </div>
+        </div>
     }
 
     onClose = (isShow) =>
@@ -134,7 +501,7 @@ class Airbrushing extends Component {
                     </div>
                     <InteriorsHideBlock
                             isUncover = {this.state.uncover}
-                            text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+                            text = { this.airbrushingText }
                     />
 
                     <div className="wrapper-gallery-part">

@@ -527,7 +527,7 @@
 }
 
 .visible{
-    display:inherit;
+    display: inherit;
 }
 
 @media screen and (max-width: 1400px)
